@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.37554344.css",
-    "main.js": "/static/js/main.60664726.js",
+    "main.js": "/static/js/main.04f7d497.js",
     "static/media/banner_bball.png": "/static/media/banner_bball.e2eaac681772450e1393.png",
     "index.html": "/index.html",
     "main.37554344.css.map": "/static/css/main.37554344.css.map",
-    "main.60664726.js.map": "/static/js/main.60664726.js.map"
+    "main.04f7d497.js.map": "/static/js/main.04f7d497.js.map"
   },
   "entrypoints": [
     "static/css/main.37554344.css",
-    "static/js/main.60664726.js"
+    "static/js/main.04f7d497.js"
   ]
 }
