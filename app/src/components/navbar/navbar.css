@@ -1,0 +1,85 @@
+.navbar-top{
+
+    border-bottom: 1px solid rgba(96, 111, 140, 0.4);
+    height: 100%;
+    min-height: 70px;
+    
+
+}
+
+
+.hamburger{
+    z-index: 50;
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    transform: translate(-25%);
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.line{
+    cursor: pointer;
+    border-radius: 30px;
+    width: 25px;
+    height: 2px;
+    background-color:white;
+    transform: translate(-50%) rotate(0);
+    transition: 0.2s ease-in-out;
+}
+
+
+.lineA{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+
+}
+
+.lineB{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+}
+
+.lineC{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+}
+
+.hamburger.clicked .lineA{
+    top: 50%;
+    transform: translate(-50%) rotate(-45deg);
+    left: 50%;
+
+}
+
+.hamburger.clicked .lineB{
+    opacity: 0;
+    left: 50%;
+}
+
+
+.hamburger.clicked .lineC{
+    top: 50%;
+    transform: translate(-50%) rotate(45deg);
+    left: 50%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .navbar-top{
+        margin-left: 0;
+    }
+
+
+
+}

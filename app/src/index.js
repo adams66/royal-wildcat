@@ -1,8 +1,16 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import About from './About';
+import key from "./key/key.json";
+import "./css/index.css";
+import "./css/override.css";
+import React from 'react';
+
+import Home from './pages/Home/Home';
+import Draft from "./Draft";
+import DraftSeason from "./pages/DraftSeason/DraftSeason"
+
 import {HashRouter, Routes, Route} from "react-router-dom";
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,10 +18,27 @@ root.render(
   <React.StrictMode>
   <HashRouter>
 <Routes>
-<Route path="/" element={<App/>} />
-<Route path="/about" element={<About />}/>
+<Route path="/" element={<Home/>} />
+<Route path="/draft" element={<Draft />}/>
+{
+  key.draft.map((r) => {
+    return <Route path={"/draft" + "/" + r  }  element={<DraftSeason />}/>
+  })
+}
+
+
 </Routes>
   </HashRouter>
   </React.StrictMode>
 );
+
+
+
+  document.body.style.backgroundColor = key.background;
+
+  
+
+
+
+
 

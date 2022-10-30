@@ -1,0 +1,9 @@
+.sidebar{
+    top:0;
+    left:0;
+    width: 256px;
+    height: 100vh;
+    border-right: 1px solid rgba(96, 111, 140, 0.4);
+    z-index: 600;
+
+}
