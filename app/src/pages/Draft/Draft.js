@@ -1,8 +1,8 @@
-import Key from './key/key.json';
+import Key from '../../key/key.json';
 import React, { useEffect} from "react";
 import { Link } from 'react-router-dom';
-import Sidebar from './components/sidebar/Sidebar';
-import Navbar from './components/navbar/Navbar';
+import Sidebar from "../../components/sidebar/Sidebar";
+import Navbar from '../../components/navbar/Navbar';
 
 
 const Draft = () => {
