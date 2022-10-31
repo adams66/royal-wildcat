@@ -13,11 +13,8 @@ return(
   <Splash />
 
 
-    
-    </div>  
-
-
   </div>  
+  </div>
 
 );
 
