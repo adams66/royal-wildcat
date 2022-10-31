@@ -22,11 +22,12 @@
     height: 50px; 
     border-radius: 50%;
     margin:0 auto;
-    animation-name: playPosition;
+    animation-name: playerPosition;
     animation-duration: 3.5s;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
     animation-fill-mode: forwards;
-
+    box-shadow: 1px 1px 0px initial;
 
 }
 
