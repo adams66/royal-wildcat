@@ -29,7 +29,8 @@ function Sidebar() {
 			</div>
 
 			<ul class="nav flex-column navbar-dark">
-			    <NavLinks path="/draft" name="Draft History" />
+			    <NavLinks path="/"        name="Home" />
+			    <NavLinks path="/draft"   name="Draft History" />
 				<NavLinks path="/overall" name="Overall" />
 			</ul>
 		</div>
