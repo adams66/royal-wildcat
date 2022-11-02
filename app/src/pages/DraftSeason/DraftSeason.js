@@ -76,8 +76,6 @@ function Sdraft() {
   <tbody className="text-light">
         {user.draft && user.draft.length > 0 && user.draft.map((userObj, index) => (
             <tr>
-
-
       <th className="align-middle d-none d-md-table-cell" scope="row"><div className="text-center ">{userObj.Round}</div></th>
       <td className="align-middle d-none d-md-table-cell" ><div className="text-center align-middle">{userObj["Round Number"]}</div></td>
       <td className="align-middle " ><div className="text-center">{userObj.Overall}</div></td>
@@ -85,7 +83,6 @@ function Sdraft() {
       <td className="align-middle" ><div className="text-center">{userObj.Owner}</div></td>
       <td className="align-middle" ><div className="text-center"><Circle position={userObj} /></div></td>
       <td className="align-middle" ><div className="text-center">{userObj.College}</div></td>
-
             </tr>
       
           ))}

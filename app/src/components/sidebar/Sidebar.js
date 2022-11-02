@@ -8,9 +8,6 @@ import NavLinks from './Links';
 
 
 
-
-
-
 function Sidebar() {
 	useEffect(() => {
 		var sidebar = document.querySelector(".sidebar");
