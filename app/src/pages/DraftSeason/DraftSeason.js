@@ -36,7 +36,7 @@ function Circle(props){
 
 
 function Sdraft() { 
-  const [user, setUser] = useState([]);
+  const [draft, setDraft] = useState([]);
 
   const fetchData = () => {
     var url = window.location.href.split("/");
@@ -45,7 +45,7 @@ function Sdraft() {
 
     return fetch("https://adams66.github.io/api/draft-" + year + ".json")
           .then((response) => response.json())
-          .then((data) => setUser(data));
+          .then((data) => setDraft(data));
   }
 
   useEffect(() => {
@@ -74,7 +74,7 @@ function Sdraft() {
   
       
   <tbody className="text-light">
-        {user.draft && user.draft.length > 0 && user.draft.map((userObj, index) => (
+        {draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
             <tr>
       <th className="align-middle d-none d-md-table-cell" scope="row"><div className="text-center ">{userObj.Round}</div></th>
       <td className="align-middle d-none d-md-table-cell" ><div className="text-center align-middle">{userObj["Round Number"]}</div></td>
