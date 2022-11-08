@@ -7,6 +7,11 @@ import Navbar from '../../components/navbar/Navbar';
 
 
 const Draft = () => {
+	useEffect(() => {
+
+
+
+	  },[])
 
 
 	return (
@@ -40,7 +45,9 @@ const Draft = () => {
 				</div>
 			</div>
 		</div>
+
 	);
+
 };
 
 export default Draft;
