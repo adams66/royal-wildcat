@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./draftSeason.css";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
-import { keyboard } from '@testing-library/user-event/dist/keyboard';
+
 
 
 function Circle(props){

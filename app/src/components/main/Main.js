@@ -15,7 +15,7 @@ return(
 
   <div className="row m-2 ">
 <div className="col-12 col-md-4 p-0">
-<div className="m-2" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+<div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
 
   </div>
 
@@ -23,7 +23,7 @@ return(
 </div>
 
 <div className="col-12 col-md-4 p-0">
-<div className="m-2" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+<div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
 
   </div>
 
@@ -31,40 +31,13 @@ return(
 </div>
 
 <div className="col-12 col-md-4 p-0">
-  <div className="m-2" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+  <div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
 
   </div>
 
 
 </div>
   </div>
-
-  <div className="row m-2 ">
-<div className="col-12 col-md-4 p-0">
-<div className="m-2" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
-
-  </div>
-
-
-</div>
-
-<div className="col-12 col-md-4 p-0">
-<div className="m-2" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
-
-  </div>
-
-
-</div>
-
-<div className="col-12 col-md-4 p-0">
-  <div className="m-2" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
-
-  </div>
-
-
-</div>
-  </div>
-
 
   </div>  
   </div>
