@@ -1,11 +1,8 @@
 
 :root{
 --qb: #ff3131;
-<<<<<<< HEAD
 --rb: #0137B7; 
-=======
 --rb: #B026FF; 
->>>>>>> ae61bc35114c8f9234660b11a5d555a5e29f1b11
 --te: #1F51FF;
 --wr: #39ff14;
 --d:  #250096;
@@ -26,15 +23,15 @@
     height: 50px; 
     border-radius: 50%;
     margin:0 auto;
-<<<<<<< HEAD
-=======
+
+
     animation-name: playerPosition;
     animation-duration: 3.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-fill-mode: forwards;
     box-shadow: 1px 1px 0px initial;
->>>>>>> ae61bc35114c8f9234660b11a5d555a5e29f1b11
+
 
 }
 
@@ -50,18 +47,18 @@ box-shadow: 1px 1px 20px  var(--qb);
 }
 
 .rb-color{
-<<<<<<< HEAD
+
 animation-name: bsc;
 animation-duration: 8s;
 animation-fill-mode: forwards;
 animation-iteration-count: infinite;
-animation-direction: normal;
+animation-direction: alternate;
 border-color: var(--rb);
 box-shadow: 0px 0px 10px  var(--rb);
-=======
+
     border-color: var(--rb);
 box-shadow: 1px 1px 20px  var(--rb);
->>>>>>> ae61bc35114c8f9234660b11a5d555a5e29f1b11
+
 }
 
 .te-color{
@@ -106,34 +103,34 @@ animation-direction: normal;
     box-shadow: 1px 1px 15px var(--oc);
 }
 
-<<<<<<< HEAD
+
 
 @keyframes bsc {
 
     0%{
-        box-shadow: 0px 0px 10px  var(--rb);
+        box-shadow: 0px 0px 2px  var(--rb);
     }
 
     20%{
-        box-shadow: 0px -3px 10px  var(--rb);
+        box-shadow: 0px 0px 4px  var(--rb);
     }
 
 
     40%{
-        box-shadow: 3px 0px 10px  var(--rb);
+        box-shadow: 0px 0px 6px  var(--rb);
     }
 
     60%{
-        box-shadow: 0px 3px 10px  var(--rb);
+        box-shadow: 0px 0px 8px  var(--rb);
     }
 
 
     80%{
-        box-shadow: -3px 0px 10px  var(--rb);
+        box-shadow: 0px 0px 10px  var(--rb);
     }
 
     100%{
-        box-shadow: 0px 0px 10px  var(--rb);
+        box-shadow: 0px 0px 12px  var(--rb);
     }
     
 }
@@ -255,7 +252,8 @@ animation-direction: normal;
 
     100%{
         box-shadow: 0px 0px 10px  var(--k);
-=======
+    }
+}
 @keyframes playerPosition{
     from{
         box-shadow: 1px 1px 0px initial;
@@ -263,7 +261,7 @@ animation-direction: normal;
 
     to{
         box-shadow: 1px 1px 20px initial;
->>>>>>> ae61bc35114c8f9234660b11a5d555a5e29f1b11
+
     }
     
 }
