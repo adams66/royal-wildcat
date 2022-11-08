@@ -1,7 +1,7 @@
 
 :root{
 --qb: #ff3131;
---rb: #7af8ff; 
+--rb: #0137B7; 
 --te: #1F51FF;
 --wr: #39ff14;
 --d:  #250096;
@@ -23,32 +23,56 @@
     border-radius: 50%;
     margin:0 auto;
 
-
-
 }
 
 .qb-color{
+    animation-name: qsc;
+animation-duration: 8s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-direction: normal;
+
 border-color: var(--qb);
 box-shadow: 1px 1px 15px  var(--qb);
 }
 
 .rb-color{
-    border-color: var(--rb);
-box-shadow: 1px 1px 15px  var(--rb);
+animation-name: bsc;
+animation-duration: 8s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-direction: normal;
+border-color: var(--rb);
+box-shadow: 0px 0px 10px  var(--rb);
 }
 
 .te-color{
+    animation-name: tsc;
+animation-duration: 8s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-direction: normal;
     border-color: var(--te);
     box-shadow: 1px 1px 15px  var(--te);
 
 }
 
 .wr-color{
+    animation-name: wsc;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
     border-color: var(--wr);
     box-shadow: 1px 1px 15px  var(--wr);
 }
 
 .k-color{
+    animation-name: ksc;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
     border-color: var(--k);
     box-shadow: 1px 1px 15px var(--k);
 }
@@ -62,4 +86,156 @@ box-shadow: 1px 1px 15px  var(--rb);
 .other-color{
     border-color: var(--oc);
     box-shadow: 1px 1px 15px var(--oc);
+}
+
+
+@keyframes bsc {
+
+    0%{
+        box-shadow: 0px 0px 10px  var(--rb);
+    }
+
+    20%{
+        box-shadow: 0px -3px 10px  var(--rb);
+    }
+
+
+    40%{
+        box-shadow: 3px 0px 10px  var(--rb);
+    }
+
+    60%{
+        box-shadow: 0px 3px 10px  var(--rb);
+    }
+
+
+    80%{
+        box-shadow: -3px 0px 10px  var(--rb);
+    }
+
+    100%{
+        box-shadow: 0px 0px 10px  var(--rb);
+    }
+    
+}
+
+@keyframes qsc {
+
+    0%{
+        box-shadow: 0px 0px 10px  var(--qb);
+    }
+
+    20%{
+        box-shadow: 0px -3px 10px  var(--qb);
+    }
+
+
+    40%{
+        box-shadow: 3px 0px 10px  var(--qb);
+    }
+
+    60%{
+        box-shadow: 0px 3px 10px  var(--qb);
+    }
+
+
+    80%{
+        box-shadow: -3px 0px 10px  var(--qb);
+    }
+
+    100%{
+        box-shadow: 0px 0px 10px  var(--qb);
+    }
+    
+}
+
+@keyframes tsc {
+
+    0%{
+        box-shadow: 0px 0px 10px  var(--te);
+    }
+
+    20%{
+        box-shadow: 0px -3px 10px  var(--te);
+    }
+
+
+    40%{
+        box-shadow: 3px 0px 10px  var(--te);
+    }
+
+    60%{
+        box-shadow: 0px 3px 10px  var(--te);
+    }
+
+
+    80%{
+        box-shadow: -3px 0px 10px  var(--te);
+    }
+
+    100%{
+        box-shadow: 0px 0px 10px  var(--te);
+    }
+    
+}
+
+@keyframes wsc {
+
+    0%{
+        box-shadow: 0px 0px 10px  var(--wr);
+    }
+
+    20%{
+        box-shadow: 0px -3px 10px  var(--wr);
+    }
+
+
+    40%{
+        box-shadow: 3px 0px 10px  var(--wr);
+    }
+
+    60%{
+        box-shadow: 0px 3px 10px  var(--wr);
+    }
+
+
+    80%{
+        box-shadow: -3px 0px 10px  var(--wr);
+    }
+
+    100%{
+        box-shadow: 0px 0px 10px  var(--wr);
+    }
+    
+}
+
+
+@keyframes ksc {
+
+    0%{
+        box-shadow: 0px 0px 10px  var(--k);
+    }
+
+    20%{
+        box-shadow: 0px -3px 10px  var(--k);
+    }
+
+
+    40%{
+        box-shadow: 3px 0px 10px  var(--k);
+    }
+
+    60%{
+        box-shadow: 0px 3px 10px  var(--k);
+    }
+
+
+    80%{
+        box-shadow: -3px 0px 10px  var(--k);
+    }
+
+    100%{
+        box-shadow: 0px 0px 10px  var(--k);
+    }
+    
 }

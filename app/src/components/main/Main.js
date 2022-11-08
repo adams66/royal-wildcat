@@ -11,6 +11,7 @@ return(
   <div className="main">
   <Navbar />
   <Splash />
+  
 
 
     
