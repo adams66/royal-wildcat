@@ -1,7 +1,10 @@
+import Key from '../../key/key.json';
 import React, { useEffect, useState } from "react";
 import "./draftSeason.css";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
+import { keyboard } from '@testing-library/user-event/dist/keyboard';
+
 
 function Circle(props){
   var position = props.position;
@@ -37,20 +40,34 @@ function Circle(props){
 
 function Sdraft() { 
   const [draft, setDraft] = useState([]);
+  var url = window.location.href.split("/");
+  var year = url[5];
 
-  const fetchData = () => {
-    var url = window.location.href.split("/");
-    var year = url[5];
+  const fetchData = (year,url) => {
+
+
     console.log(url);
+
+    if(Key.draft.includes(year)){
+
+    
 
     return fetch("https://adams66.github.io/api/draft-" + year + ".json")
           .then((response) => response.json())
           .then((data) => setDraft(data));
+
+
+        }
   }
 
-  useEffect(() => {
-    fetchData();
+  useEffect((year,url) => {
+    var url = window.location.href.split("/");
+    var year = url[5];
+    fetchData(year,url);
   },[])
+
+
+  if(Key.draft.includes(year)){
 
   return (
     <div>
@@ -93,6 +110,15 @@ function Sdraft() {
     </div>
     </div>
   );
+        }
+
+  
+  else{
+    return(
+      <h2>Nothing</h2>
+    )
+  }
+
 }
 
 export default Sdraft;

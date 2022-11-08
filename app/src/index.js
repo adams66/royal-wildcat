@@ -18,6 +18,10 @@ root.render(
 <Routes>
 <Route path="/" element={<Home/>} />
 <Route path="/draft" element={<Draft />}/>
+
+
+
+
 {
   key.draft.map((r) => {
     return <Route path={"/draft" + "/" + r  }  element={<DraftSeason />}/>
