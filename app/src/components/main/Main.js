@@ -14,17 +14,26 @@ return(
 
 
   <div className="row m-3 ">
-<div style={{height: "300px", backgroundColor: "purple"}} className="col-12 col-md-4">
+<div className="col-12 col-md-4 p-0">
+  <div className="m-2" style={{height: "300px", backgroundColor: "purple"}} >
+
+  </div>
 
 
 </div>
 
-<div style={{height: "300px", backgroundColor: "red"}} className="col-12 col-md-4">
+<div className="col-12 col-md-4 p-0">
+  <div className="m-2" style={{height: "300px", backgroundColor: "purple"}} >
+
+  </div>
 
 
 </div>
 
-<div style={{height: "300px", backgroundColor: "blue"}} className="col-12 col-md-4">
+<div className="col-12 col-md-4 p-0">
+  <div className="m-2" style={{height: "300px", backgroundColor: "purple"}} >
+
+  </div>
 
 
 </div>
