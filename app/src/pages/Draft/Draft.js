@@ -1,8 +1,8 @@
-import Key from './key/key.json';
+import Key from '../../key/key.json';
 import React, { useEffect} from "react";
 import { Link } from 'react-router-dom';
-import Sidebar from './components/sidebar/Sidebar';
-import Navbar from './components/navbar/Navbar';
+import Sidebar from "../../components/sidebar/Sidebar";
+import Navbar from '../../components/navbar/Navbar';
 
 
 const Draft = () => {
@@ -28,7 +28,7 @@ const Draft = () => {
                                               Come view the draft details from {r} season.
 											</p>
 
-                                            <Link className="card-link text-light text-decoration-none" to={"/draft/" + r}>View</Link>
+                                            <Link className="btn btn-secondary card-link text-light text-decoration-none" to={"/draft/" + r}>View Draft</Link>
 
 										</div>
 									</div>
