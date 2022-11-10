@@ -4,6 +4,7 @@ import "./main.css"
 
 
 
+
 function Main(){
 return(
 
@@ -14,25 +15,34 @@ return(
 
 
   <div className="row m-2 ">
-<div className="col-12 col-md-4 p-0">
-<div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+<div className="col-12 col-md-3 p-0">
+<div className="m-3 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+  <img className="homeImage" src="/football.jpg" />
 
   </div>
 
 
 </div>
 
-<div className="col-12 col-md-4 p-0">
-<div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
-
+<div className="col-12 col-md-3 p-0">
+<div className="m-3 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+<img className="homeImage" src="/football.jpg" />
   </div>
 
 
 </div>
 
-<div className="col-12 col-md-4 p-0">
-  <div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+<div className="col-12 col-md-3 p-0">
+  <div className="m-3 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+  <img className="homeImage" src="/football.jpg" />
+  </div>
 
+
+</div>
+
+<div className="col-12 col-md-3 p-0">
+  <div className="m-3 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+  <img className="homeImage" src="/football.jpg" />
   </div>
 
 
