@@ -11,7 +11,7 @@ import NavLinks from './Links';
 function Sidebar() {
 	useEffect(() => {
 		var sidebar = document.querySelector(".sidebar");
-	sidebar.style.backgroundColor = key.background;
+
 	
 	  },[])
 

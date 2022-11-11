@@ -10,7 +10,7 @@ function Circle(props){
   var position = props.position;
 
 
-  switch(position.Position	){
+  switch(position.Position){
 
   case "QB": 
   return <div className="d-flex justify-content-center align-items-center positionCircle qb-color"><div>{position.Position}</div></div>;

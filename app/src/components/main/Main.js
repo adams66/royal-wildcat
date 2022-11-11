@@ -14,29 +14,35 @@ return(
 
 
   <div className="row m-1">
-<div className="col-12 col-md-4 p-0">
+<div className="col-12 col-md-3 p-0">
 <div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
-
+<img style={{width: "100%", maxWidth: "100%"}} src="football.jpg" />
   </div>
-
-
 </div>
 
-<div className="col-12 col-md-4 p-0">
+<div className="col-12 col-md-3 p-0">
 <div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
-
+<img style={{width: "100%", maxWidth: "100%"}} src="football.jpg" />
   </div>
-
-
 </div>
 
-<div className="col-12 col-md-4 p-0">
-  <div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
-
+<div className="col-12 col-md-3 p-0">
+<div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+<img style={{width: "100%", maxWidth: "100%"}} src="football.jpg" />
   </div>
-
-
 </div>
+
+<div className="col-12 col-md-3 p-0">
+<div className="m-2 home" style={{height: "300px", backgroundColor: "rgb(35, 28, 79"}}>
+<img style={{width: "100%", maxWidth: "100%"}} src="football.jpg" />
+  </div>
+</div>
+
+
+
+
+
+
   </div>
 
   </div>  
