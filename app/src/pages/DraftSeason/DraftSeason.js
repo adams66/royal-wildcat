@@ -39,7 +39,7 @@ function Circle(props){
 
 
 function Sdraft() { 
-  const [width, setWidth] = useState([]);
+  const [width, setWidth] = useState(window.innerWidth);
   const [draft, setDraft] = useState([]);
   var url = window.location.href.split("/");
   var year = url[5];
