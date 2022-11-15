@@ -39,6 +39,7 @@ function Circle(props){
 
 
 function Sdraft() { 
+  const [width, setWidth] = useState([]);
   const [draft, setDraft] = useState([]);
   var url = window.location.href.split("/");
   var year = url[5];
@@ -65,6 +66,20 @@ function Sdraft() {
     var year = url[5];
     fetchData(year,url);
   },[])
+
+function handleWindowSizeChange(){
+    setWidth(window.innerWidth);
+    console.log(width);
+  }
+
+ function componentWillMount(){
+    window.addEventListener('resize', handleWindowSizeChange);
+  }
+  
+componentWillMount();
+  
+
+
 
 
   if(Key.draft.includes(year)){
@@ -94,7 +109,7 @@ function Sdraft() {
         {draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
 
 
-          userObj.Round === 3 ?
+          width > 400 ?
             <tr>
       <th className="align-middle d-none d-md-table-cell" scope="row"><div className="text-center ">{userObj.Round}</div></th>
       <td className="align-middle d-none d-md-table-cell" ><div className="text-center align-middle">{userObj["Round Number"]}</div></td>
