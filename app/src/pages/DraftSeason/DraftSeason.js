@@ -77,7 +77,7 @@ function Sdraft() {
 
             return fetch("https://adams66.github.io/api/draft-" + year + ".json").then((response) => response.json()).then((data) => {
                 setDraft(data)
-                setRound(data.rounds);
+                
             });
 
 
@@ -93,6 +93,21 @@ function Sdraft() {
     function handleWindowSizeChange() {
         setWidth(window.innerWidth);
 
+    }
+
+    function page(){
+        var a = window.event.target.text;
+        console.log(draft.round)
+      if(a == "Next" ){
+
+        
+        setRound(round + 1);
+        console.log(round);
+      }
+      else{
+        console.log("Previous");
+        setRound(round - 1);
+      }
     }
 
     function componentWillMount() {
@@ -129,7 +144,7 @@ function Sdraft() {
                             {
                             draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
 
-                               userObj.Round === 1 ?
+                               userObj.Round === round ?
                                 <tr>
                                     <th className="align-middle d-none d-md-table-cell" scope="row">
                                         <div className="text-center ">
@@ -180,8 +195,8 @@ function Sdraft() {
 
                     <nav aria-label="Page navigation example">
   <ul className="pagination ">
-
-    <li className="page-item"><a className="page-link" href="#">1</a></li>
+  <li className="page-item"><a className="page-link"  onClick={page}>Previous</a></li>
+    <li className="page-item"><a className="page-link"  onClick={ page}>Next</a></li>
 
 
   </ul>
