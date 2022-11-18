@@ -63,6 +63,7 @@ function Circle(props) {
 function Sdraft() {
     const [width, setWidth] = useState(window.innerWidth);
     const [draft, setDraft] = useState([]);
+    const [round, setRound] = useState(1);
     var url = window.location.href.split("/");
     var year = url[5];
 
@@ -74,7 +75,10 @@ function Sdraft() {
         if (Key.draft.includes(year)) {
 
 
-            return fetch("https://adams66.github.io/api/draft-" + year + ".json").then((response) => response.json()).then((data) => setDraft(data));
+            return fetch("https://adams66.github.io/api/draft-" + year + ".json").then((response) => response.json()).then((data) => {
+                setDraft(data)
+                setRound(data.rounds);
+            });
 
 
         }
@@ -125,7 +129,7 @@ function Sdraft() {
                             {
                             draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
 
-
+                               userObj.Round === 1 ?
                                 <tr>
                                     <th className="align-middle d-none d-md-table-cell" scope="row">
                                         <div className="text-center ">
@@ -167,11 +171,21 @@ function Sdraft() {
                                         }</div>
                                     </td>
                                 </tr>
-
+                                : null
 
                             ))
                         } </tbody>
                     </table>
+
+
+                    <nav aria-label="Page navigation example">
+  <ul className="pagination ">
+
+    <li className="page-item"><a className="page-link" href="#">1</a></li>
+
+
+  </ul>
+</nav>
 
 
                 </div>
@@ -187,7 +201,7 @@ function Sdraft() {
                         {
                         draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
 
-
+                     
                             <div className="col-12  p-0 ">
                                 <div style={
                                         {borderRadius: "25px"}
@@ -213,7 +227,7 @@ function Sdraft() {
 
                                 </div>
                             </div>
-
+                    
 
                         ))
                     } </div>
