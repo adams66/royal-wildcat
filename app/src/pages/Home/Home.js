@@ -3,11 +3,16 @@ import "../Home/home.css";
 import Foundation from "../../layout/Foundation";
 import HomeHeader from "./homeComponents/HomeHeader";
 import HomeGrid from "./homeComponents/HomeGrid";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 
 function Home() {
+
+
+
   useEffect(() => {
+
+
     },[])
 
   return (

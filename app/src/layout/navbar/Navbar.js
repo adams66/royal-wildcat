@@ -1,3 +1,4 @@
+import Key from "../../key/key.json";
 import { useEffect } from "react";
 import "./navbar.css";
 
@@ -54,15 +55,16 @@ const Navbar = () => {
 	useEffect(() =>{
 		var hamburger = document.querySelector(".hamburger");
 		hamburger.addEventListener("click", hamburgerFunction);
-	
+		
 	
 	
 	
 	});
-
+	var color = "0 0 15px" +" " + Key.buttons;
 
 	return (
-		<div className="navbar-top d-flex align-items-center">
+
+		<div style={{borderBottomWidth: "1px",borderBottomColor: Key.buttons, boxShadow: color }} className="navbar-top d-flex align-items-center">
 			<div className="hamburger d-block d-md-none">
 				<div className ="position-relative h-100">
 				<div className="line lineA"></div>

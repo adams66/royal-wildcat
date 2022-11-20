@@ -16,9 +16,9 @@ function Sidebar() {
 	  },[])
 
 
-
+	  var color = "0 0 15px" +" " + key.buttons;
 	return (
-		<div style={{backgroundColor: key.background}} className="sidebar position-fixed d-none d-md-block">
+		<div style={{backgroundColor: key.background, borderRightWidth:"1px", borderRightColor: key.buttons, boxShadow: color}} className="sidebar position-fixed d-none d-md-block">
 			<div className="Logo p-3">
 				<a className="navbar-brand" href="/">
 					<h2 className="text-center text-light">Royal Wildcat</h2>
