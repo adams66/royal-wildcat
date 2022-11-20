@@ -220,20 +220,20 @@ function Sdraft() {
                                         {borderRadius: "25px"}
                                     }
                                     className="details bg-dark m-2 p-2">
-                                    <h5 className="p-3 card-title text-center">
+                                    <h5 className="p-3 card-title text-center text-light">
                                         {
                                         userObj["Overall"]
                                     }</h5>
                                     <Circle position={userObj}/>
-                                    <h4 className="p-3 card-title text-center">
+                                    <h4 className="p-3 card-title text-center text-light">
                                         {
                                         userObj.Owner
                                     }</h4>
-                                    <h5 className="mt-1 card-title text-center">
+                                    <h5 className="mt-1 card-title text-center text-light">
                                         {
                                         userObj["Player_id"]
                                     }</h5>
-                                    <h4 className="mt-1 card-title text-center">
+                                    <h4 className="mt-1 card-title text-center text-light">
                                         {
                                         userObj.College
                                     }</h4>
