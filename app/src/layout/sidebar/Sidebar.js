@@ -18,7 +18,7 @@ function Sidebar() {
 
 
 	return (
-		<div className="sidebar position-fixed d-none d-md-block">
+		<div style={{backgroundColor: key.background}} className="sidebar position-fixed d-none d-md-block">
 			<div className="Logo p-3">
 				<a className="navbar-brand" href="/">
 					<h2 className="text-center">Royal Wildcat</h2>

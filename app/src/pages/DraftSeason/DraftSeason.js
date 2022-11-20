@@ -1,8 +1,9 @@
 import Key from '../../key/key.json';
 import React, {useEffect, useState} from "react";
 import "./draftSeason.css";
-import Sidebar from "../../components/sidebar/Sidebar";
-import Navbar from "../../components/navbar/Navbar";
+import Foundation from '../../layout/Foundation';
+
+
 
 
 function Circle(props) {
@@ -120,10 +121,8 @@ function Sdraft() {
     if (width >= 700) {
 
         return (
-            <div>
-                <Sidebar/>
-                <div className="main mb-2">
-                    <Navbar/>
+     
+<Foundation>
 
                     <table className="table ">
                         <thead>
@@ -201,17 +200,16 @@ function Sdraft() {
 
   </ul>
 </nav>
+</Foundation>
 
-
-                </div>
-            </div>
+           
+     
         );
     } else {
         return (
-            <div>
-                <Sidebar/>
-                <div className="main mb-2">
-                    <Navbar/>
+
+
+<Foundation>   
                     <div className="row p-0">
                         {
                         draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
@@ -246,8 +244,9 @@ function Sdraft() {
 
                         ))
                     } </div>
-                </div>
-            </div>
+
+</Foundation> 
+
         )
     }
 

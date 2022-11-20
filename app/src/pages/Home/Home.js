@@ -1,28 +1,6 @@
 import "../Home/home.css";
-import Sidebar from "../../components/sidebar/Sidebar";
-import Main from "../../components/main/Main";
+import Foundation from "../../layout/Foundation";
 import {useEffect} from "react";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
 
 
 function Home() {
@@ -30,16 +8,10 @@ function Home() {
     },[])
 
   return (
-    <div>
+<Foundation>
 
-      <Sidebar />
-      <Main />
+</Foundation>
 
-    </div>
-      
-
-
-    
   );
 }
 
