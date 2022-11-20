@@ -21,7 +21,7 @@ function Sidebar() {
 		<div style={{backgroundColor: key.background}} className="sidebar position-fixed d-none d-md-block">
 			<div className="Logo p-3">
 				<a className="navbar-brand" href="/">
-					<h2 className="text-center">Royal Wildcat</h2>
+					<h2 className="text-center text-light">Royal Wildcat</h2>
 				</a>
 			</div>
 
@@ -29,6 +29,7 @@ function Sidebar() {
 			    <NavLinks path="/"        name="Home" />
 			    <NavLinks path="/draft"   name="Draft History" />
 				<NavLinks path="/overall" name="Overall" />
+				<NavLinks path="/hall-of-fame" name="Hall of Fame" />
 			</ul>
 		</div>
 	);

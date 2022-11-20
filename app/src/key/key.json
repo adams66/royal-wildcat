@@ -2,7 +2,39 @@
 
 "background" : "#030303",
 "component" : "#201e26",
-"draft":["2018","2019","2020", "2021"]
+"buttons" : "#6610f2",
+"draft":["2018","2019","2020", "2021"],
+"champions" : [
+{
+  "name": "Name",
+  "season": "2018",
+  "topPlayer" : "Player"
+},
+
+{
+    "name": "Name",
+    "season": "2019",
+    "topPlayer" : "Player"
+  },
+
+  {
+    "name": "Name",
+    "season": "2020",
+    "topPlayer" : "Player"
+  },
+
+  {
+    "name": "Name",
+    "season": "2021",
+    "topPlayer" : "Player"
+  }
+
+
+
+
+
+
+]
 
 
 

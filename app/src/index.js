@@ -5,7 +5,8 @@ import "./css/override.css";
 import React from 'react';
 import Home from './pages/Home/Home';
 import Draft from './pages/Draft/Draft';
-import DraftSeason from "./pages/DraftSeason/DraftSeason"
+import DraftSeason from "./pages/DraftSeason/DraftSeason";
+import HallOfFame from './pages/HallOfFame/HallOfFame';
 import {HashRouter, Routes, Route} from "react-router-dom";
 
 
@@ -18,6 +19,7 @@ root.render(
 <Routes>
 <Route path="/" element={<Home/>} />
 <Route path="/draft" element={<Draft />}/>
+<Route path="/hall-of-fame" element={<HallOfFame />}/> 
 
 
 
