@@ -4,8 +4,6 @@ import "./draftSeason.css";
 import Foundation from '../../layout/Foundation';
 
 
-
-
 function Circle(props) {
     var position = props.position;
 
@@ -13,31 +11,31 @@ function Circle(props) {
     switch (position.Position) {
 
         case "QB":
-            return <div className="d-flex justify-content-center align-items-center positionCircle text-light qb-color">
-                <div>{
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light qb-color text-light">
+                <div class="text-light">{
                     position.Position
                 }</div>
             </div>;
         case "RB":
-            return <div className="d-flex justify-content-center align-items-center positionCircle text-light rb-color">
-                <div>{
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light rb-color text-light">
+                <div class="text-light">{
                     position.Position
                 }</div>
             </div>;
         case "WR":
-            return <div className="d-flex justify-content-center align-items-center positionCircle text-light wr-color">
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light wr-color text-light">
                 <div>{
                     position.Position
                 }</div>
             </div>;
         case "K":
-            return <div className="d-flex justify-content-center align-items-center positionCircle text-light k-color">
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light k-color text-light">
                 <div>{
                     position.Position
                 }</div>
             </div>;
         case "TE":
-            return <div className="d-flex justify-content-center align-items-center positionCircle text-light te-color">
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light te-color text-light">
                 <div>{
                     position.Position
                 }</div>
@@ -78,7 +76,7 @@ function Sdraft() {
 
             return fetch("https://adams66.github.io/api/draft-" + year + ".json").then((response) => response.json()).then((data) => {
                 setDraft(data)
-                
+
             });
 
 
@@ -96,19 +94,18 @@ function Sdraft() {
 
     }
 
-    function page(){
+    function page() {
         var a = window.event.target.text;
         console.log(draft.round)
-      if(a == "Next" ){
+        if (a == "Next") {
 
-        
-        setRound(round + 1);
-        console.log(round);
-      }
-      else{
-        console.log("Previous");
-        setRound(round - 1);
-      }
+
+            setRound(round + 1);
+            console.log(round);
+        } else {
+            console.log("Previous");
+            setRound(round - 1);
+        }
     }
 
     function componentWillMount() {
@@ -121,131 +118,165 @@ function Sdraft() {
     if (width >= 700) {
 
         return (
-     
-<Foundation>
 
-                    <table className="table m-3 ">
-                        <thead >
-                            <tr className="text-light">
-                                <th style={{borderColor: Key.buttons}} class="text-center d-none d-md-table-cell" scope="col">Round</th>
-                                <th style={{borderColor: Key.buttons}} class="text-center d-none d-md-table-cell" scope="col">Round Number</th>
-                                <th style={{borderColor: Key.buttons}} class="text-center " scope="col">Overall</th>
-                                <th style={{borderColor: Key.buttons}} class="text-center" scope="col">Player Id</th>
-                                <th style={{borderColor: Key.buttons}} class="text-center" scope="col">Owner</th>
-                                <th style={{borderColor: Key.buttons}} class="text-center" scope="col">Position</th>
-                                <th style={{borderColor: Key.buttons}} class="text-center" scope="col">College</th>
+            <Foundation>
 
-                            </tr>
-                        </thead>
+                <table className="table m-3 ">
+                    <thead>
+                        <tr className="text-light">
+                            <th style={
+                                    {borderColor: Key.buttons}
+                                }
+                                class="text-center d-none d-md-table-cell"
+                                scope="col">Round</th>
+                            <th style={
+                                    {borderColor: Key.buttons}
+                                }
+                                class="text-center d-none d-md-table-cell"
+                                scope="col">Round Number</th>
+                            <th style={
+                                    {borderColor: Key.buttons}
+                                }
+                                class="text-center "
+                                scope="col">Overall</th>
+                            <th style={
+                                    {borderColor: Key.buttons}
+                                }
+                                class="text-center"
+                                scope="col">Player Id</th>
+                            <th style={
+                                    {borderColor: Key.buttons}
+                                }
+                                class="text-center"
+                                scope="col">Owner</th>
+                            <th style={
+                                    {borderColor: Key.buttons}
+                                }
+                                class="text-center"
+                                scope="col">Position</th>
+                            <th style={
+                                    {borderColor: Key.buttons}
+                                }
+                                class="text-center"
+                                scope="col">College</th>
 
-
-                        <tbody className="text-light">
-                            {
-                            draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
-
-                               userObj.Round === round ?
-                                <tr>
-                                    <th style={{borderColor: Key.buttons}} className="align-middle d-none d-md-table-cell" scope="row">
-                                        <div className="text-center ">
-                                            {
-                                            userObj.Round
-                                        }</div>
-                                    </th>
-                                    <td style={{borderColor: Key.buttons}} className="align-middle d-none d-md-table-cell">
-                                        <div className="text-center align-middle">
-                                            {
-                                            userObj["Round Number"]
-                                        }</div>
-                                    </td>
-                                    <td style={{borderColor: Key.buttons}} className="align-middle ">
-                                        <div className="text-center">
-                                            {
-                                            userObj.Overall
-                                        }</div>
-                                    </td>
-                                    <td style={{borderColor: Key.buttons}} className="align-middle">
-                                        <div className="text-center">
-                                            {
-                                            userObj.Player_id
-                                        }</div>
-                                    </td>
-                                    <td style={{borderColor: Key.buttons}} className="align-middle">
-                                        <div className="text-center">
-                                            {
-                                            userObj.Owner
-                                        }</div>
-                                    </td>
-                                    <td style={{borderColor: Key.buttons}} className="align-middle">
-                                        <div className="text-center"><Circle position={userObj}/></div>
-                                    </td>
-                                    <td style={{borderColor: Key.buttons}} className="align-middle">
-                                        <div className="text-center">
-                                            {
-                                            userObj.College
-                                        }</div>
-                                    </td>
-                                </tr>
-                                : null
-
-                            ))
-                        } </tbody>
-                    </table>
+                        </tr>
+                    </thead>
 
 
-                    <nav aria-label="Page navigation example">
-  <ul className="pagination ">
-  <li className="page-item"><a className="page-link"  onClick={page}>Previous</a></li>
-    <li className="page-item"><a className="page-link"  onClick={ page}>Next</a></li>
+                    <tbody className="text-light">
+                        {
+                        draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (userObj.Round === round ? <tr>
+                            <th style={
+                                    {borderColor: Key.buttons}
+                                }
+                                className="align-middle d-none d-md-table-cell"
+                                scope="row">
+                                <div className="text-center ">
+                                    {
+                                    userObj.Round
+                                }</div>
+                            </th>
+                            <td style={
+                                    {borderColor: Key.buttons}
+                                }
+                                className="align-middle d-none d-md-table-cell">
+                                <div className="text-center align-middle">
+                                    {
+                                    userObj["Round Number"]
+                                }</div>
+                            </td>
+                            <td style={
+                                    {borderColor: Key.buttons}
+                                }
+                                className="align-middle ">
+                                <div className="text-center">
+                                    {
+                                    userObj.Overall
+                                }</div>
+                            </td>
+                            <td style={
+                                    {borderColor: Key.buttons}
+                                }
+                                className="align-middle">
+                                <div className="text-center">
+                                    {
+                                    userObj.Player_id
+                                }</div>
+                            </td>
+                            <td style={
+                                    {borderColor: Key.buttons}
+                                }
+                                className="align-middle">
+                                <div className="text-center">
+                                    {
+                                    userObj.Owner
+                                }</div>
+                            </td>
+                            <td style={
+                                    {borderColor: Key.buttons}
+                                }
+                                className="align-middle">
+                                <div className="text-center"><Circle position={userObj}/></div>
+                            </td>
+                            <td style={
+                                    {borderColor: Key.buttons}
+                                }
+                                className="align-middle">
+                                <div className="text-center">
+                                    {
+                                    userObj.College
+                                }</div>
+                            </td>
+                        </tr> : null))
+                    } </tbody>
+                </table>
 
 
-  </ul>
-</nav>
-</Foundation>
+                <nav aria-label="Page navigation example">
+                    <ul className="pagination ">
+                        <li className="page-item">
+                            <a className="page-link"
+                                onClick={page}>Previous</a>
+                        </li>
+                        <li className="page-item">
+                            <a className="page-link"
+                                onClick={page}>Next</a>
+                        </li>
 
-           
-     
+
+                    </ul>
+                </nav>
+            </Foundation>
+
+
         );
     } else {
         return (
 
 
-<Foundation>   
-                    <div className="row p-0">
-                        {
-                        draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
+            <Foundation>
+                <div className="row">
+                    {
+                    draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
 
-                     
-                            <div className="col-12  p-0 ">
-                                <div style={
-                                        {borderRadius: "25px"}
-                                    }
-                                    className="details bg-dark m-2 p-2">
-                                    <h5 className="p-3 card-title text-center text-light">
-                                        {
-                                        userObj["Overall"]
-                                    }</h5>
-                                    <Circle position={userObj}/>
-                                    <h4 className="p-3 card-title text-center text-light">
-                                        {
-                                        userObj.Owner
-                                    }</h4>
-                                    <h5 className="mt-1 card-title text-center text-light">
-                                        {
-                                        userObj["Player_id"]
-                                    }</h5>
-                                    <h4 className="mt-1 card-title text-center text-light">
-                                        {
-                                        userObj.College
-                                    }</h4>
-
+                        <div className="col-12 ">
+                            <div style={{backgroundColor: 'transparent'}} class="card">
+                                <div className="card-body">
+                                 <span><Circle position={userObj}></Circle></span>
+                                 <span className="text-light">{userObj.Round}</span>
+                                 <span className="text-light">   {userObj.Owner}</span>
+                                 <span className="text-light">   {userObj.Owner}</span>
                                 </div>
                             </div>
-                    
+        
+                        </div>
 
-                        ))
-                    } </div>
 
-</Foundation> 
+                    ))
+                } </div>
+
+            </Foundation>
 
         )
     }
