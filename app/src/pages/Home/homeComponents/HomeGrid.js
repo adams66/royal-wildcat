@@ -1,8 +1,20 @@
 import Key from '../../../key/key.json';
+import "../../../helpers/theme";
+import { useEffect } from 'react';
+import theme from '../../../helpers/theme';
 
 function HomeGrid() {
+	useEffect(() => {
+    
+
+	},[])
+
+	var btn = theme() + " btn text-light";
+
+
 	return (
 
+	
 
 
 		<div className="row m-3 m-md-4 m-lg-5">
@@ -35,7 +47,7 @@ function HomeGrid() {
 							Some quick example text to build on the card title and make up the bulk of the card's
 							content.
 						</p>
-						<a style={{backgroundColor: Key.buttons}} href="#" className="btn text-light ">
+						<a  href="#" className={btn}>
 							Go somewhere
 						</a>
 					</div>
