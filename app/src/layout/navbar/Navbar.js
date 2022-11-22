@@ -1,3 +1,4 @@
+import Key from "../../key/key.json";
 import { useEffect } from "react";
 import "./navbar.css";
 
@@ -11,6 +12,7 @@ var	sideBarH = document.querySelector(".sidebar h2");
 if(!checkHam){
 sideBarH.style.display = "none";
 sideBar.classList.remove("d-none");
+sideBar.classList.add("clicked");
 sideBar.classList.add("d-flex");
 sideBar.classList.add("flex-column");
 sideBar.classList.add("justify-content-center");
@@ -23,8 +25,10 @@ sideBar.style.height ="100%";
 }
 
 else{
+
 	sideBarH.style.display = "block";
 	sideBar.classList.add("d-none");
+	sideBar.classList.remove("clicked");
 	sideBar.classList.remove("d-flex");
     sideBar.classList.remove("flex-column");
     sideBar.classList.remove("justify-content-center");
@@ -54,15 +58,16 @@ const Navbar = () => {
 	useEffect(() =>{
 		var hamburger = document.querySelector(".hamburger");
 		hamburger.addEventListener("click", hamburgerFunction);
-	
+		
 	
 	
 	
 	});
-
+	var color = "0 0 15px" +" " + Key.buttons;
 
 	return (
-		<div className="navbar-top d-flex align-items-center">
+
+		<div style={{borderBottomWidth: "1px",borderBottomColor: Key.buttons, boxShadow: color }} className="navbar-top d-flex align-items-center">
 			<div className="hamburger d-block d-md-none">
 				<div className ="position-relative h-100">
 				<div className="line lineA"></div>

@@ -13,43 +13,43 @@ function Circle(props) {
     switch (position.Position) {
 
         case "QB":
-            return <div className="d-flex justify-content-center align-items-center positionCircle qb-color">
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light qb-color">
                 <div>{
                     position.Position
                 }</div>
             </div>;
         case "RB":
-            return <div className="d-flex justify-content-center align-items-center positionCircle rb-color">
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light rb-color">
                 <div>{
                     position.Position
                 }</div>
             </div>;
         case "WR":
-            return <div className="d-flex justify-content-center align-items-center positionCircle wr-color">
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light wr-color">
                 <div>{
                     position.Position
                 }</div>
             </div>;
         case "K":
-            return <div className="d-flex justify-content-center align-items-center positionCircle k-color">
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light k-color">
                 <div>{
                     position.Position
                 }</div>
             </div>;
         case "TE":
-            return <div className="d-flex justify-content-center align-items-center positionCircle te-color">
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light te-color">
                 <div>{
                     position.Position
                 }</div>
             </div>;
         case "D/ST":
-            return <div className="d-flex justify-content-center align-items-center positionCircle d-color">
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light d-color">
                 <div>{
                     position.Position
                 }</div>
             </div>;
         default:
-            return <div className="d-flex justify-content-center align-items-center positionCircle other-color">
+            return <div className="d-flex justify-content-center align-items-center positionCircle text-light other-color">
                 <div>{
                     position.Position
                 }</div>
@@ -124,16 +124,16 @@ function Sdraft() {
      
 <Foundation>
 
-                    <table className="table ">
-                        <thead>
+                    <table className="table m-3 ">
+                        <thead >
                             <tr className="text-light">
-                                <th class="text-center d-none d-md-table-cell" scope="col">Round</th>
-                                <th class="text-center d-none d-md-table-cell" scope="col">Round Number</th>
-                                <th class="text-center " scope="col">Overall</th>
-                                <th class="text-center" scope="col">Player Id</th>
-                                <th class="text-center" scope="col">Owner</th>
-                                <th class="text-center" scope="col">Position</th>
-                                <th class="text-center" scope="col">College</th>
+                                <th style={{borderColor: Key.buttons}} class="text-center d-none d-md-table-cell" scope="col">Round</th>
+                                <th style={{borderColor: Key.buttons}} class="text-center d-none d-md-table-cell" scope="col">Round Number</th>
+                                <th style={{borderColor: Key.buttons}} class="text-center " scope="col">Overall</th>
+                                <th style={{borderColor: Key.buttons}} class="text-center" scope="col">Player Id</th>
+                                <th style={{borderColor: Key.buttons}} class="text-center" scope="col">Owner</th>
+                                <th style={{borderColor: Key.buttons}} class="text-center" scope="col">Position</th>
+                                <th style={{borderColor: Key.buttons}} class="text-center" scope="col">College</th>
 
                             </tr>
                         </thead>
@@ -145,40 +145,40 @@ function Sdraft() {
 
                                userObj.Round === round ?
                                 <tr>
-                                    <th className="align-middle d-none d-md-table-cell" scope="row">
+                                    <th style={{borderColor: Key.buttons}} className="align-middle d-none d-md-table-cell" scope="row">
                                         <div className="text-center ">
                                             {
                                             userObj.Round
                                         }</div>
                                     </th>
-                                    <td className="align-middle d-none d-md-table-cell">
+                                    <td style={{borderColor: Key.buttons}} className="align-middle d-none d-md-table-cell">
                                         <div className="text-center align-middle">
                                             {
                                             userObj["Round Number"]
                                         }</div>
                                     </td>
-                                    <td className="align-middle ">
+                                    <td style={{borderColor: Key.buttons}} className="align-middle ">
                                         <div className="text-center">
                                             {
                                             userObj.Overall
                                         }</div>
                                     </td>
-                                    <td className="align-middle">
+                                    <td style={{borderColor: Key.buttons}} className="align-middle">
                                         <div className="text-center">
                                             {
                                             userObj.Player_id
                                         }</div>
                                     </td>
-                                    <td className="align-middle">
+                                    <td style={{borderColor: Key.buttons}} className="align-middle">
                                         <div className="text-center">
                                             {
                                             userObj.Owner
                                         }</div>
                                     </td>
-                                    <td className="align-middle">
+                                    <td style={{borderColor: Key.buttons}} className="align-middle">
                                         <div className="text-center"><Circle position={userObj}/></div>
                                     </td>
-                                    <td className="align-middle">
+                                    <td style={{borderColor: Key.buttons}} className="align-middle">
                                         <div className="text-center">
                                             {
                                             userObj.College

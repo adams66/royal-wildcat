@@ -4,18 +4,13 @@ import Foundation from "../../layout/Foundation";
 import HomeHeader from "./homeComponents/HomeHeader";
 import HomeGrid from "./homeComponents/HomeGrid";
 import {useEffect} from "react";
-import  "../../helpers/theme"
-import theme from "../../helpers/theme";
 
 
 function Home() {
-  useEffect(() => {
-var theme = localStorage.getItem("theme");
 
-if(!theme){
-  localStorage.setItem("theme", "wildcat");
-}
-    
+
+
+  useEffect(() => {
     },[])
 
   return (
