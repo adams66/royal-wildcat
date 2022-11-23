@@ -256,25 +256,24 @@ function Sdraft() {
 
 
             <Foundation>
-                <div className="row">
+               
                     {
                     draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
-
-                        <div className="col-12 ">
-                            <div style={{backgroundColor: 'transparent'}} class="card">
-                                <div className="card-body">
-                                 <span><Circle position={userObj}></Circle></span>
-                                 <span className="text-light">{userObj.Round}</span>
-                                 <span className="text-light">   {userObj.Owner}</span>
-                                 <span className="text-light">   {userObj.Owner}</span>
-                                </div>
+                        <div style={{border: "1px solid rgb(102,16,242) "}} className="row pt-2 m-2 rounded">
+                            <div className="col-8 d-flex flex-column ">
+                            <div className='text-light'>Round: {userObj.Round}</div>
+                            <div className='text-light'>Overall: {userObj.Overall}</div>
+                              <h6 className='text-light'>{userObj.Player_id}</h6>
+                              <h6 className="text-light">{userObj.Owner}</h6>
                             </div>
-        
-                        </div>
+                            <div className="col-4 d-flex align-items-center justify-content-end">
+                                <Circle position={userObj}></Circle>
+                                </div>
 
+                          </div>
 
                     ))
-                } </div>
+                } 
 
             </Foundation>
 

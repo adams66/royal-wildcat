@@ -2,12 +2,12 @@
     border-bottom: 1px solid rgba(96, 111, 140, 0.4);
     height: 100%;
     min-height: 70px;
+    box-shadow: 1px 1px 23px 0px rgb(102,16,242) ;
 }
 
 .sidebar.clicked{
-
     border: 5px solid rgb(102, 16, 242);
-    box-shadow: rgb(102 16 242) 0px 0px 15px;
+    box-shadow: 1px 1px 23px 0px rgb(102,16,242) inset;
 }
 
 .hamburger{

@@ -67,7 +67,7 @@ const Navbar = () => {
 
 	return (
 
-		<div style={{borderBottomWidth: "1px",borderBottomColor: Key.buttons, boxShadow: color }} className="navbar-top d-flex align-items-center">
+		<div style={{borderBottomWidth: "1px",borderBottomColor: Key.buttons }} className="navbar-top d-flex align-items-center">
 			<div className="hamburger d-block d-md-none">
 				<div className ="position-relative h-100">
 				<div className="line lineA"></div>
