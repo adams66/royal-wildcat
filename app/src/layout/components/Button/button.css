@@ -1,0 +1,32 @@
+.btn{
+    box-shadow: none !important
+}
+
+.btn-wildcat{
+    background-color: rgb(102, 16, 242);   
+}
+
+.btn-wildcat:hover{
+    background-color: rgb(102, 16, 242) !important;   
+}
+
+.btn-chief{
+    background-color: red;
+}
+
+.btn-chief:hover{
+    background-color: red !important;
+}
+
+.btn-ku{
+    background-color: blue;  
+}
+
+
+.btn-ku:hover{
+    background-color: blue !important;  
+}
+
+
+
+
