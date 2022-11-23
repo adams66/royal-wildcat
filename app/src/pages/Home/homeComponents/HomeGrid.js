@@ -1,7 +1,10 @@
 import Key from '../../../key/key.json';
+import Button from '../../../layout/components/Button/Button';
+import Engine from '../../../layout/engine/Engine';
 import "../../../helpers/theme";
 import { useEffect } from 'react';
 import theme from '../../../helpers/theme';
+
 
 function HomeGrid() {
 	useEffect(() => {
@@ -31,9 +34,7 @@ function HomeGrid() {
 							Some quick example text to build on the card title and make up the bulk of the card's
 							content.
 						</p>
-						<a style={{backgroundColor: Key.buttons}} href="#" className="btn text-light">
-							Go somewhere
-						</a>
+						<Button content="Go somewhere"></Button>
 					</div>
 				</div>
 			</div>
@@ -47,9 +48,7 @@ function HomeGrid() {
 							Some quick example text to build on the card title and make up the bulk of the card's
 							content.
 						</p>
-						<a  href="#" className={btn}>
-							Go somewhere
-						</a>
+						<Button content="Go somewhere"></Button>
 					</div>
 				</div>
 			</div>
@@ -63,9 +62,7 @@ function HomeGrid() {
 							Some quick example text to build on the card title and make up the bulk of the card's
 							content.
 						</p>
-						<a style={{backgroundColor: Key.buttons}} href="#" className="btn text-light ">
-							Go somewhere
-						</a>
+						<Button content="Go somewhere"></Button>
 					</div>
 				</div>   
 			</div>
@@ -79,9 +76,7 @@ function HomeGrid() {
 							Some quick example text to build on the card title and make up the bulk of the card's
 							content.
 						</p>
-						<a style={{backgroundColor: Key.buttons}} href="#" className="btn text-light ">
-							Go somewhere
-						</a>
+						<Button href="#" content="Go somewhere"></Button>
 					</div>
 				</div>   
 			</div>

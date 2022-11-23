@@ -1,14 +1,21 @@
 import Key from '../../key/key.json';
-import "../Draft/draft.css"
+import "../Draft/draft.css";
+import Button  from '../../layout/components/Button/Button';
 import React, { useEffect} from "react";
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import Foundation from '../../layout/Foundation';
+import Engine from '../../layout/engine/Engine';
+
 
 
 
 const Draft = () => {
+	const [theme, setTheme] = useState([]);
+
 	useEffect(() => {
 
+      setTheme(Engine());
 
 	  },[])
 
@@ -29,7 +36,7 @@ const Draft = () => {
 								  Come view the draft details from {r} season.
 								</p>
 
-								<Link style={{backgroundColor: Key.buttons}} className="btn  card-link text-light text-decoration-none" to={"/draft/" + r}>View Draft</Link>
+								 <Button className={"btn card-link text-light text-decoration-none " + theme } href={"/draft/" + r} app={"true"} content={"View Draft"} />
 
 							</div>
 						</div>

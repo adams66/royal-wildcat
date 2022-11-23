@@ -6,25 +6,25 @@
 "draft":["2018","2019","2020", "2021"],
 "champions" : [
 {
-  "name": "Name",
+  "name": "Great Kicker",
   "season": "2018",
   "topPlayer" : "Player"
 },
 
 {
-    "name": "Name",
+    "name": "Kansas City",
     "season": "2019",
     "topPlayer" : "Player"
   },
 
   {
-    "name": "Name",
+    "name": "Great Kicker",
     "season": "2020",
     "topPlayer" : "Player"
   },
 
   {
-    "name": "Name",
+    "name": "Queen Bee",
     "season": "2021",
     "topPlayer" : "Player"
   }

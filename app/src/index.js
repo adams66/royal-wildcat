@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+
 import key from "./key/key.json";
 import "./css/index.css";
 import "./css/override.css";
@@ -12,9 +13,18 @@ import {HashRouter, Routes, Route} from "react-router-dom";
 
 
 
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
+
+
+
   <React.StrictMode>
+
   <HashRouter>
 <Routes>
 <Route path="/" element={<Home/>} />
