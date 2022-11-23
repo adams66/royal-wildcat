@@ -22,9 +22,10 @@ const Draft = () => {
 				return (
 					<div className="col-12 col-md-6 col-lg-3 mb-3">
 						<div className="card" style={{backgroundColor: Key.component}}>
-							<div className="card-body">
-								<h5 className="card-title text-light">{r}</h5>
-							
+							<div className="card-body p-2">
+								
+							   <img className="card-img-top mb-3" src="wildcat.gif" />
+							   <h5 className="card-title text-light">{r}</h5>
 								<p className="card-text text-light">
 								  Come view the draft details from {r} season.
 								</p>
