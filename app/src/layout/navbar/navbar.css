@@ -1,9 +1,27 @@
-.navbar-top{
+
+.navbar-top-wildcat{
     border-bottom: 1px solid rgba(96, 111, 140, 0.4);
     height: 100%;
     min-height: 70px;
     box-shadow: 1px 1px 23px 0px rgb(102,16,242) ;
 }
+
+.navbar-top-chief{
+    border-bottom: 1px solid rgba(96, 111, 140, 0.4);
+    height: 100%;
+    min-height: 70px;
+    box-shadow: 1px 1px 23px 0px red;
+}
+
+.navbar-top-jayhawk{
+    border-bottom: 1px solid rgba(96, 111, 140, 0.4);
+    height: 100%;
+    min-height: 70px;
+    box-shadow: 1px 1px 23px 0px blue;
+}
+
+
+
 
 .sidebar.clicked{
     border: 5px solid rgb(102, 16, 242);

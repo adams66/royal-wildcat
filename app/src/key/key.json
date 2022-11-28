@@ -1,40 +1,80 @@
 {
+  "background": "#030303",
+  "component": "#201e26",
+  "buttons": "#6610f2",
+  "draft": [
+    {
+      "year": "2018",
+      "card": "wildcat.gif"
+    },
+    {
+      "year": "2019",
+      "card": "pat.gif"
+    },
+    {
+      "year": "2020",
+      "card": "willie.gif"
+    },
+    {
+      "year": "2021",
+      "card": "pixel.gif"
+    }
+  ],
+  "champions": [
+    {
+      "name": "Great Kicker",
+      "season": "2018",
+      "topPlayer": "Player"
+    },
+    {
+      "name": "Kansas City",
+      "season": "2019",
+      "topPlayer": "Player"
+    },
+    {
+      "name": "Great Kicker",
+      "season": "2020",
+      "topPlayer": "Player"
+    },
+    {
+      "name": "Queen Bee",
+      "season": "2021",
+      "topPlayer": "Player"
+    }
+  ],
 
-"background" : "#030303",
-"component" : "#201e26",
-"buttons" : "#6610f2",
-"draft":["2018","2019","2020", "2021"],
-"champions" : [
-{
-  "name": "Great Kicker",
-  "season": "2018",
-  "topPlayer" : "Player"
-},
 
-{
-    "name": "Kansas City",
-    "season": "2019",
-    "topPlayer" : "Player"
-  },
+  "homeCards":[
+   {
+    "card": "pat.gif",
+    "description": "This is some dummy text for the first card",
+    "link":"#"
+   },
 
-  {
-    "name": "Great Kicker",
-    "season": "2020",
-    "topPlayer" : "Player"
-  },
+   {
+    "card": "willie.gif",
+    "description": "This is some dummy text for the second card",
+    "link":"#"
+   },
 
-  {
-    "name": "Queen Bee",
-    "season": "2021",
-    "topPlayer" : "Player"
-  }
+   {
+    "card": "pixel.gif",
+    "description": "This is some dummy text for the third card",
+    "link":"#"
+   },
+
+   {
+    "card": "wildcat.gif",
+    "description": "This is some dummy text for the forth card",
+    "link":"#"
+   }
 
 
 
 
 
+  ]
 
-]
 
 
 
@@ -44,3 +84,9 @@
 
 
 }
+
+
+
+
+
+

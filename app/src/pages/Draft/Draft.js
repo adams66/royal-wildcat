@@ -5,7 +5,6 @@ import React, { useEffect} from "react";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Foundation from '../../layout/Foundation';
-import Engine from '../../layout/engine/Engine';
 
 
 
@@ -14,8 +13,9 @@ const Draft = () => {
 	const [theme, setTheme] = useState([]);
 
 	useEffect(() => {
+      var getTheme = localStorage.getItem("theme");
+      setTheme(getTheme);
 
-      setTheme(Engine());
 
 	  },[])
 
@@ -30,14 +30,12 @@ const Draft = () => {
 					<div className="col-12 col-md-6 col-lg-3 mb-3">
 						<div className="card" style={{backgroundColor: Key.component}}>
 							<div className="card-body p-2">
-							   <img className="card-img-top mb-3" src="wildcat.gif" />
-							   <h5 className="card-title text-light">{r}</h5>
+							   <img style={{height: "200px"}} className="card-img-top mb-3" src={r.card} alt="null" />
+							   <h5 className="card-title text-light">{r.year}</h5>
 								<p className="card-text text-light">
-								  Come view the draft details from {r} season.
+								  Come view the draft details from {r.year} season.
 								</p>
-
-								 <Button className={"btn card-link text-light text-decoration-none " + theme } href={"/draft/" + r} app={"true"} content={"View Draft"} />
-
+								 <Button content={"View Draft"} href={"/draft/" + r.year}  buttonTheme={theme} app={"true"}></Button>
 							</div>
 						</div>
 					</div>

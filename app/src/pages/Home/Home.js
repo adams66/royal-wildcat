@@ -1,5 +1,4 @@
 import { Key } from "../../key/key.json";
-
 import "../Home/home.css";
 import Foundation from "../../layout/Foundation";
 import HomeHeader from "./homeComponents/HomeHeader";
@@ -24,16 +23,25 @@ function click(e){
     case "wildcat": 
     localStorage.setItem("theme", "wildcat");
     SetRoyal(value);
-    case "chief": 
-    localStorage.setItem("theme", "chief");
-    case "jayhawk": 
+    break;
+    
+    case "chief":
+    localStorage.setItem("theme", "chief"); 
     SetRoyal(value);
+    
+    break;
+
+    case "jayhawk": 
     localStorage.setItem("theme", "jayhawk");
     SetRoyal(value);
+    
+    break;
 
     default:
     localStorage.setItem("theme", "wildcat");  
     SetRoyal("wildcat");
+    
+    
   }
 }
 
@@ -44,12 +52,13 @@ function click(e){
 
   useEffect(() => {
   var getTheme = localStorage.getItem("theme");
-  
+  console.log(getTheme);
   if(getTheme == null){
     localStorage.setItem("theme", "undecided");
   }
 
   else{
+
     SetRoyal(getTheme);
   }
 
@@ -61,7 +70,7 @@ if(royal !== "undecided"){
   return (
     <Foundation>
     <HomeHeader />
-    <HomeGrid   />
+    <HomeGrid  theme={royal}    />
     </Foundation>
     
       );

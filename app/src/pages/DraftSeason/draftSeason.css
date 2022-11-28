@@ -14,6 +14,45 @@
 }
 
 
+
+ .wildcat.pageChanger{
+
+    background-color: rgb(102,16,242) !important;
+    color: #fff;
+}
+
+.chief.pageChanger{
+
+    background-color: red !important;
+    color: #fff;
+}
+
+
+
+.jayhawk.pageChanger{
+    background-color: blue !important;
+    color: #fff;
+}
+
+
+
+thead.wildcat, tr.wildcat{
+    border-color: rgb(102,16,242);
+
+}
+
+thead.chief, tr.chief{
+    border-color: red;
+
+}
+
+thead.jayhawk, tr.jayhawk{
+    border-color: blue;
+
+}
+
+
+
 .positionCircle{
     position: relative;
     font-size:12px; 

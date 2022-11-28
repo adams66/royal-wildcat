@@ -1,6 +1,5 @@
-import ReactDOM from 'react-dom/client';
-
 import key from "./key/key.json";
+import ReactDOM from 'react-dom/client';
 import "./css/index.css";
 import "./css/override.css";
 import React from 'react';
@@ -17,7 +16,9 @@ import {HashRouter, Routes, Route} from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+var theme = localStorage.getItem("theme");
 
+console.log(theme);
 
 root.render(
 
@@ -36,13 +37,19 @@ root.render(
 
 {
   key.draft.map((r) => {
-    return <Route path={"/draft" + "/" + r  }  element={<DraftSeason />}/>
+    return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason />}/>
   })
 }
 
 
 </Routes>
   </HashRouter>
+
+
+
+
+
+
   </React.StrictMode>
 );
 

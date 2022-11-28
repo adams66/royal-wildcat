@@ -4,21 +4,46 @@ import './sidebar.css';
 import NavLinks from './Links';
 
 
+function reset(){
+localStorage.removeItem("theme");
+window.location.href = "/"
+}
+
+
 
 
 
 
 function Sidebar() {
+	const [theme, setTheme] = useState();
+
+
+
 	useEffect(() => {
-		var sidebar = document.querySelector(".sidebar");
+	var getTheme = localStorage.getItem("theme");
+	
+		switch(getTheme){
+		case "wildcat":
+		setTheme("sidebar-wildcat");
+		break;
+		case "chief":
+		setTheme("sidebar-chief");
+		break;
+		case "jayhawk":
+		setTheme("sidebar-jayhawk");
+        break;
+
+
+		}
+
 
 	
 	  },[])
 
 
-	  var color = "0 0 15px" +" " + key.buttons;
+
 	return (
-		<div style={{backgroundColor: key.background}} className="sidebar position-fixed d-none d-md-block">
+		<div style={{backgroundColor: key.background}} className={theme + " sidebar position-fixed d-none d-md-block"}>
 			<div className="Logo p-3">
 				<a className="navbar-brand" href="/">
 					<h2 className="text-center text-light">Royal Wildcat</h2>
@@ -31,6 +56,8 @@ function Sidebar() {
 				<NavLinks path="/overall" name="Overall" />
 				<NavLinks path="/hall-of-fame" name="Hall of Fame" />
 			</ul>
+
+			<button onClick={reset} style={{position: "absolute", left: "50%", bottom: "30px"}}>Reset</button>
 		</div>
 	);
 }

@@ -1,5 +1,6 @@
 import Key from "../../key/key.json";
 import { useEffect } from "react";
+import { useState } from "react";
 import "./navbar.css";
 
 
@@ -55,10 +56,27 @@ else{
 
 
 const Navbar = () => {
+	const [theme, setTheme] = useState();
+
+
 	useEffect(() =>{
 		var hamburger = document.querySelector(".hamburger");
 		hamburger.addEventListener("click", hamburgerFunction);
-		
+		var getTheme = localStorage.getItem("theme");
+	
+		switch(getTheme){
+		case "wildcat":
+		setTheme("navbar-top-wildcat");
+		break;
+		case "chief":
+		setTheme("navbar-top-chief");
+		break;
+		case "jayhawk":
+		setTheme("navbar-top-jayhawk");
+        break;
+
+
+		}
 	
 	
 	
@@ -67,7 +85,7 @@ const Navbar = () => {
 
 	return (
 
-		<div style={{borderBottomWidth: "1px",borderBottomColor: Key.buttons }} className="navbar-top d-flex align-items-center">
+		<div className={ theme + " d-flex align-items-center"}>
 			<div className="hamburger d-block d-md-none">
 				<div className ="position-relative h-100">
 				<div className="line lineA"></div>

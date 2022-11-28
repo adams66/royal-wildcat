@@ -1,18 +1,22 @@
 import Key from '../../../key/key.json';
-import Button from '../../../layout/components/Button/Button';
-import Engine from '../../../layout/engine/Engine';
 import "../../../helpers/theme";
-import { useEffect } from 'react';
+import Button from '../../../layout/components/Button/Button';
 import theme from '../../../helpers/theme';
+import { useEffect } from 'react';
 
 
-function HomeGrid() {
+
+function HomeGrid(props) {
+
+var theme = props.theme;
+
+
 	useEffect(() => {
-    
+
 
 	},[])
 
-	var btn = theme() + " btn text-light";
+
 
 
 	return (
@@ -25,61 +29,22 @@ function HomeGrid() {
             <h3 className="text-light">Quick Links</h3>
 
             </div>
-			<div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
-				<div style={{backgroundColor: Key.component}} className="card p-0 rounded m-2">
-					<img src="football.jpg" className="card-img-top" alt="" />
-					<div className="card-body">
-						<h5 className="card-title text-light">Card title</h5>
-						<p className="card-text text-light">
-							Some quick example text to build on the card title and make up the bulk of the card's
-							content.
-						</p>
-						<Button content="Go somewhere"></Button>
-					</div>
-				</div>
-			</div>
 
-            <div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
-				<div style={{backgroundColor: Key.component}} className="card p-0 rounded m-2 ">
-					<img src="football.jpg" className="card-img-top" alt="" />
-					<div className="card-body">
-						<h5 className="card-title text-light">Card title</h5>
-						<p className="card-text text-light">
-							Some quick example text to build on the card title and make up the bulk of the card's
-							content.
-						</p>
-						<Button content="Go somewhere"></Button>
-					</div>
-				</div>
-			</div>
 
-            <div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
-				<div style={{backgroundColor: Key.component}} className="card p-0 rounded m-2">
-					<img src="football.jpg" className="card-img-top" alt="" />
-					<div className="card-body">
-						<h5 className="card-title text-light">Card title</h5>
-						<p className="card-text text-light">
-							Some quick example text to build on the card title and make up the bulk of the card's
-							content.
-						</p>
-						<Button content="Go somewhere"></Button>
-					</div>
-				</div>   
-			</div>
 
-            <div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
-				<div style={{backgroundColor: Key.component}} className="card p-0 rounded m-2">
-					<img src="football.jpg" className="card-img-top" alt="" />
-					<div className="card-body">
-						<h5 className="card-title text-light">Card title</h5>
-						<p className="card-text text-light">
-							Some quick example text to build on the card title and make up the bulk of the card's
-							content.
-						</p>
-						<Button href="#" content="Go somewhere"></Button>
+{Key.homeCards.map((r) => {
+				return (
+					<div className="col-12 col-md-6 col-lg-3 mb-3">
+						<div className="card" style={{backgroundColor: Key.component, height:"100%"}}>
+							<div className="card-body p-1">
+							   <img style={{height: "250px"}} className="card-img-top" src={r.card} />
+	
+	
+							</div>
+						</div>
 					</div>
-				</div>   
-			</div>
+				);
+			})}
 		</div>
 	);
 }
