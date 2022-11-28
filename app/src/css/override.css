@@ -4,13 +4,6 @@
 
 
 
-.btn-wildcat{
-    background-color: rgb(102, 16, 242);   
-}
-
-.btn-chief{
-    background-color: red;
-}
 
 
 
@@ -19,8 +12,10 @@ body{
     font-family: 'Merriweather', serif;
 }
 
+img{
+    opacity: 0;
 
-.btn{
-    box-shadow: none !important
 }
+
+
 

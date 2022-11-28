@@ -11,11 +11,11 @@
 }
 
 .btn-chief{
-    background-color: red;
+    background-color: #FF3131;
 }
 
 .btn-chief:hover{
-    background-color: red !important;
+    background-color: #FF3131 !important;
 }
 
 .btn-jayhawk{

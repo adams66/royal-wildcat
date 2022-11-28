@@ -197,11 +197,11 @@ function Sdraft() {
                 <nav aria-label="Page navigation example ">
                     <ul className="pagination d-flex justify-content-center">
                         <li className="page-item">
-                            <a className= {theme + " pageChanger btn  text-light"}
+                            <a style={round == 1 ? {background:"red"} : null} className= {theme + " pageChanger btn  text-light"}
                                 onClick={() => page(draft, round)}>Previous</a>
                         </li>
-                        <li className="page-item">
-                            <a className={theme + " pageChanger btn text-light"}
+                        <li  className="page-item">
+                            <a style={round == draft.rounds ? {background:"red"} : null} className={theme + " pageChanger btn text-light"}
                                 onClick={() => page(draft, round)}>Next</a>
                         </li>
 
@@ -220,7 +220,7 @@ function Sdraft() {
                
                     {
                     draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
-                        <div style={{border: "1px solid rgb(102,16,242) "}} className="row pt-2 m-2 rounded">
+                        <div style={{border: "2px solid rgb(102,16,242) "}} className="row pt-2 m-2 rounded">
                             <div className="col-9 d-flex flex-column ">
                             <div className='text-light'>Round: {userObj.Round}</div>
                             <div className='text-light'>Overall: {userObj.Overall}</div>

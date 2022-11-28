@@ -17,13 +17,13 @@
 
  .wildcat.pageChanger{
 
-    background-color: rgb(102,16,242) !important;
+    background-color: rgb(102,16,242);
     color: #fff;
 }
 
 .chief.pageChanger{
 
-    background-color: red !important;
+    background-color: #FF3131;
     color: #fff;
 }
 
@@ -42,8 +42,8 @@ thead.wildcat, tr.wildcat{
 }
 
 thead.chief, tr.chief{
-    border-color: red;
-
+    border-color: #FF3131;
+    box-shadow: 1px 1px 3px #FF3131;
 }
 
 thead.jayhawk, tr.jayhawk{

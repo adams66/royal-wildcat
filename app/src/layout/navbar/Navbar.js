@@ -57,12 +57,16 @@ else{
 
 const Navbar = () => {
 	const [theme, setTheme] = useState();
+	const [year,setYear] = useState();
 
 
 	useEffect(() =>{
 		var hamburger = document.querySelector(".hamburger");
 		hamburger.addEventListener("click", hamburgerFunction);
 		var getTheme = localStorage.getItem("theme");
+		var url = window.location.href.split("/");
+        var year = url[5];
+		setYear(year);
 	
 		switch(getTheme){
 		case "wildcat":
@@ -93,6 +97,9 @@ const Navbar = () => {
 				<div className="line lineC"></div>
 				</div>
 			</div>
+
+		<div className="text-light" style={{position:"absolute", right: "20px", top:"15px"}}><h2>{year}</h2></div>
+
 		</div>
 	);
 };
