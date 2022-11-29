@@ -21,6 +21,8 @@ function Sidebar() {
 		navigate("/");
 		window.location.reload(false);
 		
+
+		
 		
 		
 		}
@@ -46,7 +48,7 @@ function Sidebar() {
 
 
 	
-	  },[])
+	  })
 
 
 
