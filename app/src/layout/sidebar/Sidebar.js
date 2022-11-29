@@ -1,13 +1,11 @@
 import key from "../../key/key.json"
+import { useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import './sidebar.css';
 import NavLinks from './Links';
 
 
-function reset(){
-localStorage.removeItem("theme");
-window.location.href = "/"
-}
+
 
 
 
@@ -16,6 +14,16 @@ window.location.href = "/"
 
 function Sidebar() {
 	const [theme, setTheme] = useState();
+    let navigate = useNavigate();
+	function reset(){
+			
+		localStorage.removeItem("theme");
+		navigate("/");
+		window.location.reload(false);
+		
+		
+		
+		}
 
 
 
