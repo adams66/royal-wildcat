@@ -56,7 +56,7 @@ function Sidebar() {
 		<div style={{backgroundColor: key.background}} className={theme + " sidebar position-fixed d-none d-lg-block"}>
 			<div className="Logo p-3">
 				<a className="navbar-brand" href="/">
-					<h2 className="text-center text-light">Royal Wildcat</h2>
+					<h2 className="text-center text-light">{key.title}</h2>
 				</a>
 			</div>
 

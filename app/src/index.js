@@ -31,6 +31,11 @@ root.render(
 <Route path="/" element={<Home/>} />
 <Route path="/draft" element={<Draft />}/>
 <Route path="/hall-of-fame" element={<HallOfFame />}/> 
+<Route path="/college-football" element={<HallOfFame />}/> 
+
+
+
+
 
 
 

@@ -89,8 +89,8 @@ const Navbar = () => {
 
 	return (
 
-		<div className={ theme + " d-flex align-items-center"}>
-			<div className="hamburger d-block d-lg-none">
+		<div className={ theme + " d-flex align-items-center "}>
+			<div   className="hamburger d-block d-lg-none ">
 				<div className ="position-relative h-100">
 				<div className="line lineA"></div>
 				<div className="line lineB"></div>
@@ -98,7 +98,7 @@ const Navbar = () => {
 				</div>
 			</div>
 
-		<div className="text-light" style={{position:"absolute", right: "20px", top:"15px"}}><h2>{year}</h2></div>
+		<div className="text-light" style={{position:"absolute", right: "20px", top:"20px"}}><h4>{year}</h4></div>
 
 		</div>
 	);

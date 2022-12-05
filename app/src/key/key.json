@@ -1,7 +1,16 @@
 {
+  "title": "Royal Wildcat",
   "background": "#030303",
   "component": "#201e26",
   "buttons": "#6610f2",
+  "pages":[{
+   
+  }
+
+  ],
+
+
+
   "draft": [
     {
       "year": "2018",

@@ -74,6 +74,60 @@ thead.jayhawk, tr.jayhawk{
 
 }
 
+.qb-square{
+border-color: var(--qb);
+}
+
+.rb-square{
+    border-color: var(--rb);
+
+}
+
+.te-square{
+border-color: var(--te);
+
+}
+
+.wr-square{
+    border-color: var(--te);
+}
+
+.k-square{
+    border-color: var(--k);
+}
+
+.d-square{
+    border-color: var(--d);
+}
+
+
+.other-square{
+    border-color: var(--wr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .qb-color{
     animation-name: qsc;
 animation-duration: 8s;
