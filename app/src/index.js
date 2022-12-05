@@ -8,6 +8,7 @@ import Draft from './pages/Draft/Draft';
 import DraftSeason from "./pages/DraftSeason/DraftSeason";
 import HallOfFame from './pages/HallOfFame/HallOfFame';
 import {HashRouter, Routes, Route} from "react-router-dom";
+import CollegeFootball from "./pages/CollegeFootball/CollegeFootball";
 
 
 
@@ -25,13 +26,12 @@ root.render(
 
 
   <React.StrictMode>
-
   <HashRouter>
 <Routes>
 <Route path="/" element={<Home/>} />
 <Route path="/draft" element={<Draft />}/>
 <Route path="/hall-of-fame" element={<HallOfFame />}/> 
-<Route path="/college-football" element={<HallOfFame />}/> 
+<Route path="/college-football" element={<CollegeFootball />}/> 
 
 
 

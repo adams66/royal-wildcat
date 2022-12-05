@@ -65,6 +65,7 @@ function Sidebar() {
 			    <NavLinks path="/draft"   name="Draft History" />
 				<NavLinks path="/overall" name="Overall" />
 				<NavLinks path="/hall-of-fame" name="Hall of Fame" />
+				<NavLinks path="/college-football" name="College Map" />
 			</ul>
 
 			<a onClick={reset} style={{position: "absolute", left: "50%", bottom: "30px", transform:"translate(-50%)"}}><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-bootstrap-reboot" viewBox="0 0 16 16">
