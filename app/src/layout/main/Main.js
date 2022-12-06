@@ -8,7 +8,7 @@ function Main(props){
 return(
 
   <div className="container-fluid p-0 ">
-  <div className="main">
+  <div className="main ">
   <Navbar />
      {props.children}
   </div>

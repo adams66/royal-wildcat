@@ -23,7 +23,7 @@ const Draft = () => {
 	return (
 
 <Foundation>
-		<div className="container-fluid mt-3">
+		<div className="container-fluid mt-3 draft-container">
 		<div className="row">
 			{Key.draft.map((r) => {
 				return (

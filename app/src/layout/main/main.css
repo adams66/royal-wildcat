@@ -3,6 +3,10 @@
 
 }
 
+.main-container{
+    height: 100vh;
+}
+
 
 .homeImage{
     width: 100%;
