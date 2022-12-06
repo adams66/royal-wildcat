@@ -3,6 +3,11 @@
   "background": "#030303",
   "component": "#201e26",
   "buttons": "#6610f2",
+  "theme":{
+   "wildcat": {"background": "black", "color": "purple" },
+   "chief":   {"background": "black", "color": "red" },
+   "jayhawk": {"background": "black", "color": "red"}
+  },
 
   "pages":[{
 

@@ -1,14 +1,13 @@
 import Key from '../../../key/key.json';
-import "../../../helpers/theme";
+
 import Button from '../../../layout/components/Button/Button';
-import theme from '../../../helpers/theme';
 import { useEffect } from 'react';
 
 
 
 function HomeGrid(props) {
 
-var theme = props.theme;
+
 
 
 	useEffect(() => {
