@@ -12,20 +12,16 @@ body{
     font-family: 'Merriweather', serif;
 }
 
+
 img{
     opacity: 0;
-
 }
 
 
-.header{
-    background-color: rgb(32, 30, 38) !important;
-    background-image: url("") !important;
-}
 
-h1{
-    display: none !important;
-}
+
+
+
 
 
 

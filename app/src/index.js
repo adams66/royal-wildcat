@@ -9,8 +9,8 @@ import Theme from "./pages/Theme/Theme";
 import DraftSeason from "./pages/DraftSeason/DraftSeason";
 import HallOfFame from './pages/HallOfFame/HallOfFame';
 import {HashRouter, Routes, Route} from "react-router-dom";
-import CollegeFootball from "./pages/CollegeFootball/CollegeFootball";
-import { useState } from 'react';
+
+
 
 var getTheme = localStorage.getItem("theme");
 console.log(getTheme);
@@ -33,7 +33,7 @@ if(theme !== "undecided"){
   <Route path="/" element={<Home/>} />
   <Route path="/draft" element={<Draft />}/>
   <Route path="/hall-of-fame" element={<HallOfFame />}/> 
-  <Route path="/college-football" element={<CollegeFootball />}/> 
+
   
   {
     key.draft.map((r) => {
@@ -60,14 +60,6 @@ else{
   );
   
 }
-
-
-
-
-
-
-
-
 
   
   document.body.style.backgroundColor = key.background;

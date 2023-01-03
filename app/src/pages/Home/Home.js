@@ -6,6 +6,7 @@ import HomeGrid from "./homeComponents/HomeGrid";
 import Button from "../../layout/components/Button/Button";
 import {useEffect} from "react";
 import { useState } from "react";
+import HomeIconGrid from "./homeComponents/HomeIconGrid";
 
 
 
@@ -23,6 +24,9 @@ const [royal, SetRoyal] = useState(1);
     <Foundation>
     <HomeHeader />
     <HomeGrid  theme={royal}    />
+
+    <HomeIconGrid    />
+
     </Foundation>
     
       );

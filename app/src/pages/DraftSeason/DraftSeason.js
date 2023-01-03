@@ -15,7 +15,7 @@ import Circle from './componets/Circle';
 
 
 function Sdraft() {
-    var colors = ["red", "blue","green","#7af8ff","#00FF00", "#CC00FF", "#FF3300", "#099FFF", "orange", "#FF0099", "#00FF66", "#6E0DD0", "skyblue", "purple", "yellow", "purple","red"];
+    
     const [width, setWidth] = useState(window.innerWidth);
     const [draft, setDraft] = useState([]);
     const [round, setRound] = useState(1);
@@ -195,13 +195,13 @@ function Sdraft() {
 
                 <nav aria-label="Page navigation example ">
                     <ul className="pagination d-flex justify-content-center">
-                        <li className="page-item">
+                        <li className="page-item m-1">
                             <a  onClick={(event) => page(draft, round,"Previous")}  style={round == 1 ? {background:"red"} : null} className= {theme + " pageChanger btn  text-light"}
                                 ><svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
                               </svg></a>
                         </li>
-                        <li  className="page-item">
+                        <li  className="page-item m-1">
                             <a  onClick={(event) => page(draft, round,"Next")}  style={round == draft.rounds ? {background:"red"} : null} className={theme + " pageChanger btn text-light"}
                                 ><svg id="Next" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
@@ -226,7 +226,7 @@ function Sdraft() {
                     {
                     
                     draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
-                        <div style={{borderWidth: "2px", borderColor: colors[userObj.Round], borderStyle: "solid"}} className="row pt-2 m-2 rounded" >
+                        <div style={{borderWidth: "2px", borderColor: "grey", borderStyle: "solid"}} className="row pt-2 m-2 rounded" >
                             <div className="col-9 d-flex flex-column ">
                             <div className='text-light'>Round: {userObj.Round}</div>
                             <div className='text-light'>Overall: {userObj.Overall}</div>
