@@ -62,7 +62,7 @@ else{
 }
 
   
-  document.body.style.backgroundColor = key.background;
+  // document.body.style.backgroundColor = key.background;
 
 
 

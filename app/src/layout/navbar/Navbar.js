@@ -89,7 +89,7 @@ const Navbar = () => {
 
 	return (
 
-		<div className={ theme + " d-flex align-items-center "}>
+		<div className={ theme + " d-flex align-items-center navbar-top "}>
 			<div   className="hamburger d-block d-lg-none ">
 				<div className ="position-relative h-100">
 				<div className="line lineA"></div>

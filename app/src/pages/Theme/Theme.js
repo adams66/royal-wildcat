@@ -12,10 +12,19 @@ function theme() {
 				localStorage.setItem('theme', 'chief');
 				window.location.reload();
 				break;
-			case 'jayhawk':
-				localStorage.setItem('theme', 'jayhawk');
+			case 'shocker':
+				localStorage.setItem('theme', 'shocker');
 				window.location.reload();
 				break;
+
+				case 'jayhawk':
+					localStorage.setItem('theme', 'jayhawk');
+					window.location.reload();
+					break;	
+
+
+
+
             default:
                 localStorage.setItem('theme', 'jayhawk');
 				window.location.reload();
@@ -43,9 +52,9 @@ function theme() {
 			<div style={{ height: '100vh' }} className="row d-flex justify-content-center align-items-center">
 				<div 			onClick={() => {
 				click('wildcat');
-			}} className="col-12 col-md-3 d-flex justify-content-center">
+			}} className="col-12 col-md-3 d-flex justify-content-center logo">
 					<svg
-						style={{ width: '100%', maxWidth: '150px' }}
+						style={{ width: '100%', maxWidth: '250px' }}
 						xmlns="http://www.w3.org/2000/svg"
 						version="1.0"
 						width="450.000000pt"
@@ -69,10 +78,10 @@ function theme() {
 					onClick={() => {
 						click('chief');
 					}}
-					className="col-12 col-md-3 d-flex justify-content-center "
+					className="col-12 col-md-3 d-flex justify-content-center logo"
 				>
 					<svg
-						style={{ width: '100%', maxWidth: '150px' }}
+						style={{ width: '100%', maxWidth: '250px' }}
 						xmlns="http://www.w3.org/2000/svg"
 						version="1.0"
 						width="450.000000pt"
@@ -97,10 +106,10 @@ function theme() {
 					onClick={() => {
 						click('shocker');
 					}}
-					className="col-12 col-md-3 d-flex justify-content-center "
+					className="col-12 col-md-3 d-flex justify-content-center logo "
 				>
 					<svg
-						style={{ width: '100%', maxWidth: '150px' }}
+						style={{ width: '100%', maxWidth: '250px' }}
 						xmlns="http://www.w3.org/2000/svg"
 						version="1.0"
 						width="300.000000pt"
@@ -108,7 +117,7 @@ function theme() {
 						viewBox="0 0 300.000000 189.000000"
 						preserveAspectRatio="xMidYMid meet"
 					>
-						<metadata>Created by potrace 1.10, written by Peter Selinger 2001-2011</metadata>
+						
 						<g
 							transform="translate(0.000000,189.000000) scale(0.100000,-0.100000)"
 							fill="#f6c506"
@@ -140,10 +149,10 @@ function theme() {
 					onClick={() => {
 						click('jayhawk');
 					}}
-					className="col-12 col-md-3 d-flex justify-content-center "
+					className="col-12 col-md-3 d-flex justify-content-center logo "
 				>
 					<svg
-						style={{ width: '100%', maxWidth: '150px' }}
+						style={{ width: '100%', maxWidth: '250px' }}
 						xmlns="http://www.w3.org/2000/svg"
 						version="1.0"
 						width="450.000000pt"

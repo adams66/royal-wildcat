@@ -3,6 +3,16 @@
 }
 
 
+.logo{
+transform: scale(0);
+animation-name: logo;
+animation-duration: 1.2s;
+animation-fill-mode: forwards;
+animation-iteration-count: 1;
+
+}
+
+
 .wrapper {
     z-index: -1;
     position: fixed;
@@ -21,6 +31,20 @@
     content: "";
     position: absolute;
     top: 3000px;
+  }
+
+
+  @keyframes logo {
+
+    0%{
+      transform: scale(0);
+    }
+
+
+    100%{
+      transform: scale(1);
+    }
+    
   }
 
   
