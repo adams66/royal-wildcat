@@ -54,6 +54,8 @@ function theme() {
 				click('wildcat');
 			}} className="col-12 col-md-3 d-flex justify-content-center logo">
 					<svg
+
+						className="wildcat-svg"
 						style={{ width: '100%', maxWidth: '250px' }}
 						xmlns="http://www.w3.org/2000/svg"
 						version="1.0"
@@ -81,6 +83,7 @@ function theme() {
 					className="col-12 col-md-3 d-flex justify-content-center logo"
 				>
 					<svg
+						className="chief-svg"
 						style={{ width: '100%', maxWidth: '250px' }}
 						xmlns="http://www.w3.org/2000/svg"
 						version="1.0"
@@ -109,6 +112,7 @@ function theme() {
 					className="col-12 col-md-3 d-flex justify-content-center logo "
 				>
 					<svg
+						className="shocker-svg"
 						style={{ width: '100%', maxWidth: '250px' }}
 						xmlns="http://www.w3.org/2000/svg"
 						version="1.0"
@@ -152,6 +156,7 @@ function theme() {
 					className="col-12 col-md-3 d-flex justify-content-center logo "
 				>
 					<svg
+						className="jayhawk-svg"
 						style={{ width: '100%', maxWidth: '250px' }}
 						xmlns="http://www.w3.org/2000/svg"
 						version="1.0"

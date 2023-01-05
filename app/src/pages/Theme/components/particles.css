@@ -13,6 +13,21 @@ animation-iteration-count: 1;
 }
 
 
+.wildcat-svg g,
+.shocker-svg g,
+.jayhawk-svg g,
+.chief-svg   g{
+  transition: 0.2s ease-in-out;
+}
+
+.wildcat-svg:hover g,
+.shocker-svg:hover g,
+.jayhawk-svg:hover g,
+.chief-svg:hover g{
+  fill: white !important;
+}
+
+
 .wrapper {
     z-index: -1;
     position: fixed;
