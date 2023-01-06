@@ -1,6 +1,25 @@
 import Particles from "./components/particles";
 
 function theme() {
+
+
+	function hoveroff(color){
+
+		document.documentElement.style.setProperty('--pColor', color);
+
+
+
+	}
+
+	function hover(color){
+
+		document.documentElement.style.setProperty('--pColor', color);
+	}
+
+
+
+
+
 	function click(theme) {
 	
 		switch (theme) {
@@ -50,7 +69,7 @@ function theme() {
 
 
 			<div style={{ height: '100vh' }} className="row d-flex justify-content-center align-items-center">
-				<div 			onClick={() => {
+				<div onMouseEnter={() => hover("rgb(102,16,242)")} onMouseLeave={() => hoveroff("white")}			onClick={() => {
 				click('wildcat');
 			}} className="col-12 col-md-3 d-flex justify-content-center logo">
 					<svg
@@ -80,6 +99,7 @@ function theme() {
 					onClick={() => {
 						click('chief');
 					}}
+					onMouseEnter={() => hover("red")} onMouseLeave={() => hoveroff("white")}
 					className="col-12 col-md-3 d-flex justify-content-center logo"
 				>
 					<svg
@@ -109,6 +129,8 @@ function theme() {
 					onClick={() => {
 						click('shocker');
 					}}
+
+					onMouseEnter={() => hover("#f6c506")} onMouseLeave={() => hoveroff("white")}
 					className="col-12 col-md-3 d-flex justify-content-center logo "
 				>
 					<svg
@@ -153,6 +175,7 @@ function theme() {
 					onClick={() => {
 						click('jayhawk');
 					}}
+					onMouseEnter={() => hover("#1F51FF")} onMouseLeave={() => hoveroff("white")}
 					className="col-12 col-md-3 d-flex justify-content-center logo "
 				>
 					<svg
