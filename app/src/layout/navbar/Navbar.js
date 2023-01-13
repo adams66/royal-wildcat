@@ -58,6 +58,7 @@ else{
 const Navbar = () => {
 	const [theme, setTheme] = useState();
 	const [year,setYear] = useState();
+	var bgc = Key.background;
 
 
 	useEffect(() =>{
@@ -89,7 +90,7 @@ const Navbar = () => {
 
 	return (
 
-		<div className={ theme + " d-flex align-items-center navbar-top "}>
+		<div style={{backgroundColor: bgc, position:"sticky",top:"0", left: "0",right:"0", zIndex:"1000"}} className={ theme + " d-flex align-items-center navbar-top "}>
 			<div   className="hamburger d-block d-lg-none ">
 				<div className ="position-relative h-100">
 				<div className="line lineA"></div>

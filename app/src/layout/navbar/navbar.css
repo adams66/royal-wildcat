@@ -3,7 +3,12 @@
     border-bottom: 1px solid rgba(96, 111, 140, 0.4);
     height: 100%;
     min-height: 70px;
-    box-shadow: 1px 1px 23px 0px rgb(102,16,242) ;
+    box-shadow: 1px 1px 23px 0px rgb(102,16,242);
+    animation-name: neon;
+    animation-duration:16s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
 .navbar-top-chief{
@@ -11,6 +16,10 @@
     height: 100%;
     min-height: 70px;
     box-shadow: 1px 1px 23px 0px #FF3131;
+    animation-name: neon;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 
 .navbar-top-jayhawk{
@@ -18,6 +27,10 @@
     height: 100%;
     min-height: 70px;
     box-shadow: 1px 1px 23px 0px blue;
+    animation-name: neon;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 
 
@@ -111,3 +124,18 @@
 
 
 }
+
+
+@keyframes neon {
+
+    0%{
+        box-shadow: 1px 1px 23px 0px transparent;
+    }
+
+    100%{
+        box-shadow: 1px 1px 23px 0px inherit;
+    }
+    
+}
+
+
