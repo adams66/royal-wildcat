@@ -7,24 +7,36 @@
 
 
     function click(theme) {
+        
+
+        function opacity(){
+            document.body.classList.add("fadeout");
+            setTimeout(function() {
+                window.location.reload();
+              }, 2000);
+                
+            }
+        
+
+        
 	
 		switch (theme) {
 			case 'wildcat':
 				localStorage.setItem('theme', 'wildcat');
-				window.location.reload();
+                opacity();
 				break;
 			case 'chief':
 				localStorage.setItem('theme', 'chief');
-				window.location.reload();
+				opacity();
 				break;
 			case 'shocker':
 				localStorage.setItem('theme', 'shocker');
-				window.location.reload();
+				opacity();
 				break;
 
 				case 'jayhawk':
 					localStorage.setItem('theme', 'jayhawk');
-					window.location.reload();
+					opacity();
 					break;	
 
             default:
@@ -34,8 +46,8 @@
 
 		}
 
-
-	}
+    }
+	
 
         function hoveroff(color){
             document.documentElement.style.setProperty('--pColor', color);
@@ -49,22 +61,13 @@
     
 
 
-
-
-
-
-
-
-
         switch(rotate){
         case  1: 
         return(
-
-
             <div style={{height:"100%"}}  className="col d-flex justify-content-center">
 			<div onMouseEnter={() => hover("rgb(102,16,242)")} onMouseLeave={() => hoveroff("white")}			onClick={() => { click('wildcat');
 			}} className="col-12 d-flex justify-content-center logo">
-            <svg className="wildcat-svg" style={{ width: '100%', maxWidth: '30%' }} version="1.0" viewBox="0 0 300.000000 223.000000" preserveAspectRatio="xMidYMid meet"
+            <svg className="wildcat-svg" style={{ width: '100%', maxWidth: '30%', cursor:"pointer" }} version="1.0" viewBox="0 0 300.000000 223.000000" preserveAspectRatio="xMidYMid meet"
 					>
 						<g transform="translate(0.000000,223.000000) scale(0.100000,-0.100000)" fill="rgb(102,16,242)" stroke="none" >
 							<path d="M1188 2154 c-16 -212 -182 -330 -417 -295 -137 21 -335 139 -411 245 -14 20 -29 36 -34 36 -5 0 -78 -23 -162 -51 l-154 -51 0 -653 c0 -359 -3 -660 -6 -669 -12 -32 13 -12 72 57 147 174 403 346 627 423 265 91 548 115 848 74 154 -20 312 -56 399 -89 l54 -20 14 22 c30 44 112 117 161 141 92 47 181 43 283 -12 70 -37 92 -88 85 -193 -5 -75 -4 -78 14 -68 24 12 71 76 89 120 14 33 16 33 93 14 23 -6 31 1 75 61 84 113 172 312 172 386 0 100 -503 325 -872 388 -38 7 -66 16 -63 20 3 5 44 8 91 7 47 -1 88 1 90 5 7 10 -194 85 -302 112 -167 42 -220 48 -485 53 l-256 5 -5 -68z m532 12 c112 -18 292 -61 322 -77 15 -8 16 -13 6 -35 -11 -23 -10 -29 9 -43 11 -10 88 -35 169 -56 267 -68 469 -146 619 -240 104 -64 112 -75 97 -133 -17 -64 -92 -218 -142 -293 l-42 -61 -45 5 c-40 4 -50 0 -80 -26 -18 -16 -35 -28 -37 -26 -1 2 -11 26 -20 52 -37 100 -140 161 -271 161 -93 0 -165 -33 -249 -114 -34 -33 -69 -60 -77 -60 -8 0 -59 13 -115 29 -250 72 -591 100 -827 67 -360 -51 -650 -187 -893 -418 -50 -48 -94 -85 -98 -81 -8 8 -8 1156 0 1177 4 10 56 32 136 58 l129 41 62 -60 c85 -82 131 -115 216 -158 197 -99 418 -80 540 46 51 53 78 107 95 190 9 45 18 65 32 70 32 13 353 2 464 -15z" />
@@ -78,8 +81,6 @@
 
 
                 </div>
-
-
         )
         break;
 
@@ -90,7 +91,7 @@
                 }} className="col-12 d-flex justify-content-center logo">
                 <svg
                 className="chief-svg"
-                style={{ width: '100%', maxWidth: '30%' }}
+                style={{ width: '100%', maxWidth: '40%', cursor:"pointer"  }}
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.0"
                 width="450.000000pt"
@@ -121,7 +122,7 @@
                 }} className="col-12 d-flex justify-content-center logo">
                 <svg
 						className="shocker-svg"
-						style={{ width: '100%', maxWidth: '30%' }}
+						style={{ width: '100%', maxWidth: '40%', cursor:"pointer"  }}
 						xmlns="http://www.w3.org/2000/svg"
 						version="1.0"
 						width="300.000000pt"
@@ -167,7 +168,7 @@
                 }} className="col-12 d-flex justify-content-center logo">
                 <svg
                 className="jayhawk-svg"
-                style={{ width: '100%', maxWidth: '30%' }}
+                style={{ width: '100%', maxWidth: '40%' }}
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.0"
                 width="450.000000pt"

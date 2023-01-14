@@ -9,6 +9,7 @@ import Theme from "./pages/Theme/Theme";
 import DraftSeason from "./pages/DraftSeason/DraftSeason";
 import HallOfFame from './pages/HallOfFame/HallOfFame';
 import NflTeams from './pages/NflTeams/NflTeams';
+import NotFound from "./pages/NotFound/NotFound";
 import {HashRouter, Routes, Route} from "react-router-dom";
 
 
@@ -32,6 +33,7 @@ if(theme !== "undecided"){
   <Route path="/draft" element={<Draft />}/>
   <Route path="/hall-of-fame" element={<HallOfFame />}/> 
   <Route path="/nflTeams" element={<NflTeams />}/> 
+  <Route path="/*" element={<NotFound />}/> 
   {
     key.draft.map((r) => {
       return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason />}/>

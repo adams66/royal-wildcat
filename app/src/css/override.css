@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 
+body:not([class]){
+    opacity: 1;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-iteration-count: 1;
 
 
+}
 
 
+body.fadeout{
+    opacity: 0;
+    animation-name: fadeout;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
 
 
 
@@ -20,6 +36,31 @@ body{
 
 img{
     opacity: 0;
+}
+
+
+@keyframes fadeout {
+
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes fadein {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
 }
 
 

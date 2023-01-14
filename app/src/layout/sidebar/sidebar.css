@@ -5,6 +5,15 @@
     --jayhawk: blue;
 }
 
+.reset-button{
+    width: 25px;
+    height: 25px;
+}
+
+.nav-link{
+    font-size: 1rem;
+}
+
 .sidebar-wildcat{
     
     top:0;
@@ -52,6 +61,9 @@
 }
 
 
+
+
+
 @keyframes neon {
 
     0%{
@@ -62,6 +74,18 @@
         box-shadow: 1px 1px 23px 0px inherit;
     }
     
+}
+
+
+@media  screen and (max-width: 776px){
+    .nav-link{
+        font-size: 1.5rem;
+    }
+
+    .reset-button{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 
