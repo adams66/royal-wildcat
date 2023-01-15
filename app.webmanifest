@@ -1,6 +1,7 @@
 {
     "short_name": "Royal Wildcat",
     "name": "Royal Wildcat Fantasy",
+    "description": "Welcome to the Royal Wildcat Fantasy Football App!",
     "icons": [
       {
         "src": "favicon.ico",
