@@ -13,8 +13,8 @@ function Sidebar() {
 	console.log(currentPath);
 	function reset() {
 		localStorage.removeItem('theme');
-		navigate('/');
-		window.location.reload(false);
+		window.location.replace("/")
+
 	}
 
 
@@ -78,7 +78,7 @@ function Sidebar() {
 					left: '50%',
 					bottom: '35px',
 					transform: 'translate(-50%)',
-		
+					cursor:'pointer'
 				}}
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" class="bi bi-bootstrap-reboot reset-button" viewBox="0 0 16 16">

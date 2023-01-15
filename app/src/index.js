@@ -13,7 +13,6 @@ import NotFound from "./pages/NotFound/NotFound";
 import {HashRouter, Routes, Route} from "react-router-dom";
 
 
-
 var getTheme = localStorage.getItem("theme");
 console.log(getTheme);
 if(getTheme == null){

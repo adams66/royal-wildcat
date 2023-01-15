@@ -125,17 +125,6 @@
 
 }
 
-
-@keyframes neon {
-
-    0%{
-        box-shadow: 1px 1px 23px 0px transparent;
-    }
-
-    100%{
-        box-shadow: 1px 1px 23px 0px inherit;
-    }
-    
-}
+/*Neon keyframes in sidebar*/
 
 
