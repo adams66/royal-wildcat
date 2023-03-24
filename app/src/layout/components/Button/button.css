@@ -2,31 +2,5 @@
     box-shadow: none !important;
 }
 
-.btn-wildcat{
-    background-color: rgb(102, 16, 242);   
-}
-
-.btn-wildcat:hover{
-    background-color: rgb(102, 16, 242) !important;   
-}
-
-.btn-chief{
-    background-color: #FF3131;
-}
-
-.btn-chief:hover{
-    background-color: #FF3131 !important;
-}
-
-.btn-jayhawk{
-    background-color: blue;  
-}
-
-
-.btn-jayhawk:hover{
-    background-color: blue !important;  
-}
-
-
 
 

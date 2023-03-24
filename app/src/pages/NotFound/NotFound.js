@@ -20,13 +20,13 @@ function NotFound(){
 
 return(
 
-<div style={{height:"100vh"}} className="container">
+<div style={{height:"100vh"}} className="container-fluid">
 
-<div style={{height:"100%"}} className="row d-flex justify-content-center align-items-center">
+<div style={{height:"100%",}} className="row d-flex justify-content-center align-items-center">
 
-    <div  className="col">
-    <h1 className="text-center text-light">It appears that you are lost.</h1>
-    <h2 style={{opacity: "0", transition:"0.3s ease-in-out"}} className="fixthat text-center text-light">I can fix that...</h2>
+    <div  className="col ">
+    <h1 className="text-center text-light m-0">It appears that you are lost.</h1>
+    <h3 style={{opacity: "0", transition:"0.3s ease-in-out"}} className="fixthat text-center text-light m-0">I can fix that...</h3>
     </div>
 
 </div>

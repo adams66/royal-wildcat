@@ -5,10 +5,10 @@
   "component": "#201e26",
   "buttons": "#6610f2",
   "theme":{
-   "wildcat": {"background": "black", "color": "purple"},
-   "chief":   {"background": "black", "color": "red" },
-   "shocker":{"background":"yellow", "color": "black"},
-   "jayhawk": {"background": "black", "color": "red"}
+   "wildcat":{"background": "rgb(3, 3, 3)", "color": "rgb(102, 16, 242)", "buttons": "rgb(102, 16, 242)", "cards": "grey", "shadow":"rgb(102, 16, 242)"},
+   "chief":{"background": "red", "color": "red", "buttons": "red", "cards": "grey", "shadow":"rgb(102, 16, 242)"},
+   "shocker":{"background":"yellow", "color": "black", "buttons": "black", "cards": "grey","shadow":"rgb(102, 16, 242)"},
+   "jayhawk":{"background": "black", "color": "red", "buttons": "blue", "cards": "grey","shadow":"rgb(102, 16, 242)"}
   },
 
   "draft": [

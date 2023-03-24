@@ -1,4 +1,5 @@
 import key from "./key/key.json";
+import  * as helper  from "../src/helpers/helpers.js";
 import ReactDOM from 'react-dom/client';
 import "./css/index.css";
 import "./css/override.css";
@@ -13,6 +14,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import {HashRouter, Routes, Route} from "react-router-dom";
 
 
+
 var getTheme = localStorage.getItem("theme");
 console.log(getTheme);
 if(getTheme == null){
@@ -24,6 +26,7 @@ var theme = localStorage.getItem("theme");
 
 
 if(theme !== "undecided"){
+
   root.render(
     <React.StrictMode>
     <HashRouter>
@@ -42,6 +45,7 @@ if(theme !== "undecided"){
     </HashRouter>
     </React.StrictMode>
   );
+
 }
 
 else{

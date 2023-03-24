@@ -1,9 +1,14 @@
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
 
 function NavLinks(props){
-var color = props.active == true ? "rgb(102,16,242)" : "white";
+    let activeStyle = {
+        color: "rgb(102 16 242)"
+      };
+    let normalStyle = {
+        color: "#fff"
+    }
 
     function click(event){
         if(event.target.style.color !=="white"){
@@ -18,7 +23,8 @@ var color = props.active == true ? "rgb(102,16,242)" : "white";
     return(
 
         <li  class="nav-item text-center">
-        <Link onClick={click}  style={{color: color}} className="sidebar-navLink nav-link" to={props.path}>{props.name}</Link>
+        <NavLink onClick={click}  style={({ isActive }) =>
+              isActive ? activeStyle : normalStyle} className="sidebar-navLink nav-link" to={props.path}>{props.name}</NavLink>
           </li>
 
     );

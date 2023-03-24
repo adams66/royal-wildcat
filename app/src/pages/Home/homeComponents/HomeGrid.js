@@ -34,7 +34,7 @@ function HomeGrid(props) {
 {Key.homeCards.map((r) => {
 				return (
 					<div className="col-12 col-md-6 col-lg-3 mb-3">
-						<div className="card" style={{backgroundColor: Key.component, height:"100%"}}>
+						<div className="card" style={{height:"100%", backgroundColor: "Grey" }}>
 							<div className="card-body p-1">
 							   <img style={{height: "250px"}} className="card-img-top" src={r.card} />
 	

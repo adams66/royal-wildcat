@@ -1,4 +1,5 @@
 import Key from "../../key/key.json";
+import  * as helper  from "../../helpers/helpers";
 import { useEffect } from "react";
 import { useState } from "react";
 import "./navbar.css";
@@ -55,7 +56,7 @@ else{
 
 
 
-const Navbar = () => {
+const Navbar = (props) => {
 	const [theme, setTheme] = useState();
 	const [year,setYear] = useState();
 	var bgc = Key.background;
@@ -69,28 +70,16 @@ const Navbar = () => {
         var year = url[5];
 		setYear(year);
 	
-		switch(getTheme){
-		case "wildcat":
-		setTheme("navbar-top-wildcat");
-		break;
-		case "chief":
-		setTheme("navbar-top-chief");
-		break;
-		case "jayhawk":
-		setTheme("navbar-top-jayhawk");
-        break;
 
-
-		}
 	
 	
 	
 	});
-	var color = "0 0 15px" +" " + Key.buttons;
+
 
 	return (
 
-		<div style={{backgroundColor: bgc, position:"sticky",top:"0", left: "0",right:"0", zIndex:"1000"}} className={ theme + " d-flex align-items-center navbar-top "}>
+		<div style={{position:"sticky",top:"0", left: "0",right:"0", zIndex:"1000", backgroundColor: props.background}} className={"d-flex align-items-center navbar-top "}>
 			<div   className="hamburger d-block d-lg-none ">
 				<div className ="position-relative h-100">
 				<div className="line lineA"></div>

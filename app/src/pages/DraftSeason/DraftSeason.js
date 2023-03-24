@@ -70,7 +70,7 @@ function Sdraft() {
 
 
     useEffect((year, url) => {
-        
+        window.scrollTo(0,0);
         var url = window.location.href.split("/");
         var year = url[5];
         fetchData(year, url);

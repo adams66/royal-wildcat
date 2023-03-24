@@ -1,9 +1,10 @@
+import Key from '../../../key/key.json';
 import "./particles.css";
 
 
 function Particles() {
 	return (
-		<div class="wrapper">
+		<div style={{backgroundColor:Key.background}} class="wrapper">
 			<div class="particle partical1" />
 			<div class="particle partical2" />
 			<div class="particle partical3" />

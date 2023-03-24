@@ -13,8 +13,11 @@ const Draft = () => {
 	const [theme, setTheme] = useState([]);
 
 	useEffect(() => {
+	  window.scrollTo(0,0);	
       var getTheme = localStorage.getItem("theme");
       setTheme(getTheme);
+
+	 
 
 
 	  },[])
@@ -35,7 +38,7 @@ const Draft = () => {
 								<p className="card-text text-light">
 								  Come view the draft details from {r.year} season.
 								</p>
-								 <Button content={"View Draft"} href={"/draft/" + r.year}  buttonTheme={theme} app={"true"}></Button>
+								 <Button content={"View Draft"} href={"/draft/" + r.year}></Button>
 							</div>
 						</div>
 					</div>
@@ -46,6 +49,8 @@ const Draft = () => {
 	</Foundation>
 
 	);
+
+
 
 };
 

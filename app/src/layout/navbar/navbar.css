@@ -1,5 +1,5 @@
 
-.navbar-top-wildcat{
+.navbar-top{
     border-bottom: 1px solid rgba(96, 111, 140, 0.4);
     height: 100%;
     min-height: 70px;
@@ -11,35 +11,13 @@
     animation-iteration-count: infinite;
 }
 
-.navbar-top-chief{
-    border-bottom: 1px solid rgba(96, 111, 140, 0.4);
-    height: 100%;
-    min-height: 70px;
-    box-shadow: 1px 1px 23px 0px #FF3131;
-    animation-name: neon;
-    animation-duration:2s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}
-
-.navbar-top-jayhawk{
-    border-bottom: 1px solid rgba(96, 111, 140, 0.4);
-    height: 100%;
-    min-height: 70px;
-    box-shadow: 1px 1px 23px 0px blue;
-    animation-name: neon;
-    animation-duration:2s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}
 
 
 
 
-.sidebar.clicked{
 
-   
-}
+
+
 
 .hamburger{
     z-index: 100;

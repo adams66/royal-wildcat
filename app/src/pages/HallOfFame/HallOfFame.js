@@ -1,10 +1,20 @@
 import Key from "../../key/key.json";
+import  * as helper  from "../../helpers/helpers";
 import Foundation from "../../layout/Foundation";
+import { useEffect } from "react";
 
 
 
 
 function HallOfFame(){
+
+    useEffect(() => {
+		helper.windowReset();	
+	}, []);
+
+
+
+
 return(
 
     <Foundation>

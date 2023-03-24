@@ -55,11 +55,11 @@ return(
 		</div>
 		
 
-<div  onClick={() => {rotate(theme,countTheme, "up")}}  style={{right:"10%", top: "50%", transform:"translateY(-50%)", cursor: "pointer"}}  className="position-fixed">
+<div  onClick={() => {rotate(theme,countTheme, "up")}}  style={{right:"5%", top: "50%", transform:"translateY(-50%)", cursor: "pointer"}}  className="position-fixed">
 <Icon color="rgb(102,16,242)" icon="bi bi-chevron-right" size="40px" />
 
 </div>
-<div onClick={() => {rotate(theme,countTheme, "down")}} style={{left:"10%", top: "50%", transform:"translateY(-50%)", cursor:"pointer"}} className="position-fixed">
+<div onClick={() => {rotate(theme,countTheme, "down")}} style={{left:"5%", top: "50%", transform:"translateY(-50%)", cursor:"pointer"}} className="position-fixed">
 <Icon color="rgb(102,16,242)" icon="bi bi-chevron-left" size="40px"  />
 </div>
 
