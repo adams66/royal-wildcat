@@ -1,16 +1,47 @@
 {
   "title": "Royal Wildcat",
   "background": "#030303",
-  "text"      : "white",
+  "text": "white",
   "component": "#201e26",
   "buttons": "#6610f2",
-  "theme":{
-   "wildcat":{"background": "rgb(3, 3, 3)", "color": "rgb(102, 16, 242)", "buttons": "rgb(102, 16, 242)", "cards": "grey", "shadow":"rgb(102, 16, 242)"},
-   "chief":{"background": "red", "color": "red", "buttons": "red", "cards": "grey", "shadow":"rgb(102, 16, 242)"},
-   "shocker":{"background":"yellow", "color": "black", "buttons": "black", "cards": "grey","shadow":"rgb(102, 16, 242)"},
-   "jayhawk":{"background": "black", "color": "red", "buttons": "blue", "cards": "grey","shadow":"rgb(102, 16, 242)"}
+  "theme": {
+    "wildcat": {
+      "background": "rgb(3, 3, 3)",
+      "sidebar": "rgb(3, 3, 3)",
+      "nav": "rgb(3, 3, 3)",
+      "color": "rgb(102, 16, 242)",
+      "buttons": "rgb(102, 16, 242)",
+      "cards": "grey",
+      "shadow": "rgb(102, 16, 242)"
+    },
+    "chief": {
+      "background": "#eee",
+      "sidebar": "#ffc111",
+      "nav": "#E31836",
+      "color": "#E31836",
+      "buttons": "red",
+      "cards": "grey",
+      "shadow": "rgb(102, 16, 242)"
+    },
+    "shocker": {
+      "background": "white",
+      "sidebar": "black",
+      "nav": "black",
+      "color": "black",
+      "buttons": "black",
+      "cards": "grey",
+      "shadow": "rgb(102, 16, 242)"
+    },
+    "jayhawk": {
+      "background": "black",
+      "sidebar": "#E31836",
+      "nav": "blue",
+      "color": "red",
+      "buttons": "blue",
+      "cards": "grey",
+      "shadow": "rgb(102, 16, 242)"
+    }
   },
-
   "draft": [
     {
       "year": "2018",
@@ -56,51 +87,26 @@
       "topPlayer": "Player"
     }
   ],
-
-
-  "homeCards":[
-   {
-    "card": "pat.gif",
-    "description": "This is some dummy text for the first card",
-    "link":"#"
-   },
-
-   {
-    "card": "willie.gif",
-    "description": "This is some dummy text for the second card",
-    "link":"#"
-   },
-
-   {
-    "card": "pixel.gif",
-    "description": "This is some dummy text for the third card",
-    "link":"#"
-   },
-
-   {
-    "card": "wildcat.gif",
-    "description": "This is some dummy text for the forth card",
-    "link":"#"
-   }
-
-
-
-
-
+  "homeCards": [
+    {
+      "card": "pat.gif",
+      "description": "This is some dummy text for the first card",
+      "link": "#"
+    },
+    {
+      "card": "willie.gif",
+      "description": "This is some dummy text for the second card",
+      "link": "#"
+    },
+    {
+      "card": "pixel.gif",
+      "description": "This is some dummy text for the third card",
+      "link": "#"
+    },
+    {
+      "card": "wildcat.gif",
+      "description": "This is some dummy text for the forth card",
+      "link": "#"
+    }
   ]
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-

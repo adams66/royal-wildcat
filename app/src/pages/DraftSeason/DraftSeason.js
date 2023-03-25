@@ -23,6 +23,8 @@ function Sdraft() {
     var url = window.location.href.split("/");
     var year = url[5];
 
+
+
     const fetchData = (year, url) => {
 
 

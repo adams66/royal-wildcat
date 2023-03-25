@@ -1,9 +1,10 @@
 
 .navbar-top{
-    border-bottom: 1px solid rgba(96, 111, 140, 0.4);
+    overflow-y: hidden;
+    border-bottom: 1px solid rgba(3,3,3);
     height: 100%;
     min-height: 70px;
-    box-shadow: 1px 1px 23px 0px rgb(102,16,242);
+    box-shadow: 15px 0px 23px 0px rgb(102,16,242);
     animation-name: neon;
     animation-duration:16s;
     animation-direction: alternate;

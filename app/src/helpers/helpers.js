@@ -18,6 +18,10 @@ export function themeColor(key,themePart){
         return key.theme[getTheme].cards;    
         case "shadow":
         return key.theme[getTheme].shadow;
+        case "nav":
+        return key.theme[getTheme].nav;
+        case "sidebar":
+        return key.theme[getTheme].sidebar;    
         default:
         return "yellow";    
         }

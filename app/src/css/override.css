@@ -32,6 +32,7 @@ body:not([class]){
 
 
 body.fadeout{
+    background-color: black;
     opacity: 0;
     animation-name: fadeout;
     animation-duration: 2s;

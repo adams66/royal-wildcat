@@ -9,22 +9,28 @@ import { useEffect } from 'react';
 
 function Foundation(props) {
 	const [ theme, setTheme ] = useState([ 0 ]);
+	const [sidebar, setSidebar] = useState([0]);
+	const [nav, setNav]       = useState([0])
 	const [ button, setButtons ] = useState([ 0 ]);
 	const [ cards, setCards ] = useState([ 0 ]);
 
 	useEffect(() => {
-		var bgc = helper.themeColor(key, 'backgroundColor');
+		var bgc     = helper.themeColor(key, 'backgroundColor');
+		var nav     = helper.themeColor(key, 'nav');
+		var sidebar = helper.themeColor(key, 'sidebar');
 		var buttons = helper.themeColor(key, 'buttons');
-		var cards = helper.themeColor(key, 'cards');
+		var cards   = helper.themeColor(key, 'cards');
 		setButtons(buttons);
 		setTheme(bgc);
 		setCards(cards);
+		setNav(nav);
+		setSidebar(sidebar);
 	});
 
 	return (
 		<div>
-			<Sidebar background={theme} />
-			<Main background={theme}>
+			<Sidebar background={sidebar} />
+			<Main navbar={nav} background={theme}>
 				{props.children}
 				<Footer background={theme} />
 			</Main>

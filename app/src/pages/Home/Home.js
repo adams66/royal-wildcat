@@ -7,7 +7,9 @@ import HomeGrid from './homeComponents/HomeGrid';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import HomeIconGrid from './homeComponents/HomeIconGrid';
-import { queryHelpers } from '@testing-library/react';
+
+
+
 
 function Home(props) {
 	const [ royal, SetRoyal ] = useState(1);

@@ -10,7 +10,7 @@ return(
 
   <div style={{backgroundColor: props.background}} className="container-fluid p-0 ">
   <div  className="main ">
-  <Navbar background={props.background} />
+  <Navbar background={props.navbar} />
      {props.children}
   </div>
   </div>
