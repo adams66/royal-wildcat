@@ -114,45 +114,22 @@ function Sdraft() {
                 <table className="table m-3 ">
                     <thead className={theme}>
                         <tr className="text-light">
-                            <th 
-                                class="text-center d-none d-md-table-cell"
-                                scope="col">Round</th>
-                            <th 
-                                class="text-center d-none d-md-table-cell"
-                                scope="col">Round Number</th>
-                            <th 
-                                class="text-center "
-                                scope="col">Overall</th>
-                            <th 
-                                class="text-center"
-                                scope="col">Player Id</th>
-                            <th 
-                                class="text-center"
-                                scope="col">Owner</th>
-                            <th 
-                                class="text-center"
-                                scope="col">Position</th>
-                            <th 
-                                class="text-center"
-                                scope="col">College</th>
-
+                            <th class="text-center d-none d-md-table-cell"  scope="col">Round</th>
+                            <th class="text-center d-none d-md-table-cell"  scope="col">Round Number</th>
+                            <th class="text-center"                         scope="col">Overall</th>
+                            <th class="text-center"                         scope="col">Player Id</th>
+                            <th class="text-center"                         scope="col">Owner</th>
+                            <th class="text-center"                         scope="col">Position</th>
+                            <th class="text-center"                         scope="col">College</th>
                         </tr>
                     </thead>
-
-
                     <tbody className="text-light">
                         {
                         draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (userObj.Round === round ? <tr className={theme}>
-                            <th  
-                                className="align-middle d-none d-md-table-cell"
-                                scope="row">
-                                <div className="text-center ">
-                                    {
-                                    userObj.Round
-                                }</div>
+                            <th className="align-middle d-none d-md-table-cell" scope="row">
+                                <div className="text-center ">{userObj.Round}</div>
                             </th>
-                            <td 
-                                className="align-middle d-none d-md-table-cell">
+                            <td className="align-middle d-none d-md-table-cell">
                                 <div className="text-center align-middle">
                                     {
                                     userObj["Round Number"]
@@ -193,8 +170,6 @@ function Sdraft() {
                         </tr> : null))
                     } </tbody>
                 </table>
-
-
                 <nav aria-label="Page navigation example ">
                     <ul className="pagination d-flex justify-content-center">
                         <li className="page-item m-1">
@@ -224,7 +199,6 @@ function Sdraft() {
 
 
             <Foundation>
-               
                     {
                     
                     draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
@@ -243,7 +217,6 @@ function Sdraft() {
 
                     ))
                 } 
-
             </Foundation>
 
         )
