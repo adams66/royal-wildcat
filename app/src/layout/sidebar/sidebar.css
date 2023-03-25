@@ -20,9 +20,7 @@
     left:0;
     width: 256px;
     height: 100vh;
-    border-right: 1px solid rgba(3,3,3);
     z-index: 600;
-    box-shadow: 1px 1px 23px 0px var(--wildcat); 
     animation-name: neon;
     animation-duration:8s;
     animation-direction: alternate;

@@ -25,7 +25,7 @@ function Sidebar(props) {
 	},[]);
 
 	return (
-		<div style={{backgroundColor: props.background}}   className={'sidebar position-fixed d-none d-lg-block'}>
+		<div style={{backgroundColor: props.background, boxShadow: "1px 1px 23px 0px " + props.neon}}   className={'sidebar position-fixed d-none d-lg-block'}>
 			<div className="Logo p-3">
 				<a className="navbar-brand" href="/">
 					<h2 className="text-center text-light">{key.title}</h2>

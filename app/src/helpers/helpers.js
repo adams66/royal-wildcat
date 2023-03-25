@@ -22,6 +22,8 @@ export function themeColor(key,themePart){
         return key.theme[getTheme].nav;
         case "sidebar":
         return key.theme[getTheme].sidebar;    
+        case "neon":
+        return key.theme[getTheme].neon;       
         default:
         return "yellow";    
         }

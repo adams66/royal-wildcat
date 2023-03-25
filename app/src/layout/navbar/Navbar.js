@@ -20,10 +20,7 @@ sideBar.classList.add("flex-column");
 sideBar.classList.add("justify-content-center");
 sideBar.style.width = "100%";
 sideBar.style.height ="100%";
-
-
-	realHamburger.classList.add("clicked");
-
+realHamburger.classList.add("clicked");
 }
 
 else{
@@ -40,9 +37,6 @@ else{
 	realHamburger.classList.remove("clicked");
 }
 
-
-
-
 }
 
 
@@ -50,13 +44,7 @@ else{
 
 
 
-
-
-
-
-
-
-const Navbar = (props) => {
+function Navbar(props){
 	const [theme, setTheme] = useState();
 	const [year,setYear] = useState();
 	var bgc = Key.background;
@@ -79,7 +67,7 @@ const Navbar = (props) => {
 
 	return (
 
-		<div style={{position:"sticky",top:"0", left: "0",right:"0", zIndex:"1000", backgroundColor: props.background}} className={"d-flex align-items-center navbar-top "}>
+		<div style={{position:"sticky",top:"0", left: "0",right:"0", zIndex:"1000", backgroundColor: props.background, boxShadow: "15px 0px 23px 0px " + props.neon}} className={"d-flex align-items-center navbar-top "}>
 			<div   className="hamburger d-block d-lg-none ">
 				<div className ="position-relative h-100">
 				<div className="line lineA"></div>
