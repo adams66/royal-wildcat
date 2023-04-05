@@ -12,16 +12,59 @@ function Theme(){
 const countTheme = Object.keys(Key.theme).length;
 
 const [theme, setTheme] = useState(1);
+const [particles, setParticles] = useState("rgb(102, 16, 242)");
 
 function rotate(rotate,count, direction){
 
 switch(direction){
     case "up":
-    var countCheckup = (theme < count) ? setTheme(rotate + 1) : null;   
-    console.log(theme);
+    var countCheckup = (theme < count) ? setTheme(rotate + 1) : null; 
+
+    console.log(rotate+1);
+
+    switch(rotate+1){
+
+        case 1:
+
+         setParticles(Key.theme.wildcat.particles);
+        break;
+        case 2:
+            setParticles(Key.theme.chief.particles); 
+        break;
+        case 3:
+            setParticles(Key.theme.shocker.particles); 
+        break;
+        case 4:
+            setParticles(Key.theme.jayhawk.particles);
+        break;
+
+
+    }
+
     break;
     case "down":
         var countCheckdown = (theme > 1) ? setTheme(rotate - 1) : null;
+
+        switch(rotate-1){
+
+            case 1:
+    
+             setParticles(Key.theme.wildcat.particles);
+            break;
+            case 2:
+                setParticles(Key.theme.chief.particles); 
+            break;
+            case 3:
+                setParticles(Key.theme.shocker.particles); 
+            break;
+            case 4:
+                setParticles(Key.theme.jayhawk.particles);
+            break;
+    
+    
+        }
+
+
     console.log(theme);    
     break;
 
@@ -56,14 +99,14 @@ return(
 		
 
 <div  onClick={() => {rotate(theme,countTheme, "up")}}  style={{right:"5%", top: "50%", transform:"translateY(-50%)", cursor: "pointer"}}  className="position-fixed">
-<Icon color="rgb(102,16,242)" icon="bi bi-chevron-right" size="40px" />
+<Icon color={particles} icon="bi bi-chevron-right" size="40px" />
 
 </div>
 <div onClick={() => {rotate(theme,countTheme, "down")}} style={{left:"5%", top: "50%", transform:"translateY(-50%)", cursor:"pointer"}} className="position-fixed">
-<Icon color="rgb(102,16,242)" icon="bi bi-chevron-left" size="40px"  />
+<Icon color={particles} icon="bi bi-chevron-left" size="40px"  />
 </div>
 
-<Particles />
+<Particles particleColor ={particles} />
 
 </div>
 

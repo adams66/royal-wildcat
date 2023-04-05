@@ -120,6 +120,7 @@ function Sdraft() {
                             <th class="text-center"                         scope="col">Player Id</th>
                             <th class="text-center"                         scope="col">Owner</th>
                             <th class="text-center"                         scope="col">Position</th>
+                            <th class="text-center"                         scope="col">NFL</th>
                             <th class="text-center"                         scope="col">College</th>
                         </tr>
                     </thead>
@@ -160,6 +161,15 @@ function Sdraft() {
                                 className="align-middle">
                                 <div className="text-center"><Circle position={userObj}/></div>
                             </td>
+                            <td 
+                                className="align-middle">
+                                <div className="text-center">
+                                    
+                                        NFL
+                                </div>
+                            </td>
+
+
                             <td 
                                 className="align-middle">
                                 <div className="text-center">

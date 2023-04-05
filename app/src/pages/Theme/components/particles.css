@@ -1,5 +1,5 @@
 :root{
-    --pColor: white;
+    --pColor: transparent;
 }
 
 
@@ -20,12 +20,7 @@ animation-iteration-count: 1;
   transition: 0.2s ease-in-out;
 }
 
-.wildcat-svg:hover g,
-.shocker-svg:hover g,
-.jayhawk-svg:hover g,
-.chief-svg:hover g{
-  fill: white !important;
-}
+
 
 
 .wrapper {

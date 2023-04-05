@@ -46,8 +46,7 @@ export default function Svg(props) {
 			return (
 				<div style={{ height: '100%' }} className="col d-flex justify-content-center">
 					<div
-						onMouseEnter={() => hover('rgb(102,16,242)')}
-						onMouseLeave={() => hoveroff('white')}
+
 						className="col-12 d-flex justify-content-center logo"
 					>
 						<svg
@@ -80,8 +79,7 @@ export default function Svg(props) {
 			return (
 				<div style={{ height: '100%' }} className="col d-flex justify-content-center">
 					<div
-						onMouseEnter={() => hover('red')}
-						onMouseLeave={() => hoveroff('white')}
+
 						className="col-12 d-flex justify-content-center logo"
 					>
 						<svg
@@ -116,8 +114,7 @@ export default function Svg(props) {
 			return (
 				<div style={{ height: '100%' }} className="col d-flex justify-content-center">
 					<div
-						onMouseEnter={() => hover('gold')}
-						onMouseLeave={() => hoveroff('white')}
+
 						className="col-12 d-flex justify-content-center logo"
 					>
 						<svg
@@ -167,8 +164,6 @@ export default function Svg(props) {
 			return (
 				<div style={{ height: '100%' }} className="col d-flex justify-content-center">
 					<div
-						onMouseEnter={() => hover('rgb(102,16,242)')}
-						onMouseLeave={() => hoveroff('white')}
 						className="col-12 d-flex justify-content-center logo"
 					>
 						<svg

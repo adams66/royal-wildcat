@@ -6,6 +6,7 @@
   "buttons": "#6610f2",
   "theme": {
     "wildcat": {
+      "particles":"rgb(102, 16, 242)",
       "background": "rgb(3, 3, 3)",
       "sidebar": "rgb(3, 3, 3)",
       "neon"   :"rgb(102, 16, 242)",
@@ -13,9 +14,11 @@
       "color": "rgb(102, 16, 242)",
       "buttons": "rgb(102, 16, 242)",
       "cards": "grey",
-      "shadow": "rgb(102, 16, 242)"
+      "shadow": "rgb(102, 16, 242)",
+      "reset": "rgb(102, 16, 242)"
     },
     "chief": {
+      "particles":"red",
       "background": "#eee",
       "sidebar": "#ffc111",
       "neon"   :"red",
@@ -23,9 +26,11 @@
       "color": "#E31836",
       "buttons": "red",
       "cards": "grey",
-      "shadow": "rgb(102, 16, 242)"
+      "shadow": "rgb(102, 16, 242)",
+      "reset": "#E31836"
     },
     "shocker": {
+      "particles":"#d99a26",
       "background": "white",
       "sidebar": "black",
       "nav": "black",
@@ -33,9 +38,11 @@
       "color": "black",
       "buttons": "black",
       "cards": "grey",
-      "shadow": "rgb(102, 16, 242)"
+      "shadow": "rgb(102, 16, 242)",
+      "reset": "#d99a26"
     },
     "jayhawk": {
+      "particles":"rgb(31, 81, 255)",
       "background": "black",
       "sidebar": "#E31836",
       "nav": "blue",
@@ -43,7 +50,8 @@
       "color": "red",
       "buttons": "blue",
       "cards": "grey",
-      "shadow": "rgb(102, 16, 242)"
+      "shadow": "rgb(102, 16, 242)",
+      "reset": "red"
     }
   },
   "draft": [

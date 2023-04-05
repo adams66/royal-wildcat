@@ -14,6 +14,7 @@ function Foundation(props) {
 	const [neon, setNeon]        = useState([0]);
 	const [ button, setButtons]  = useState([0]);
 	const [ cards, setCards ]    = useState([0]);
+	const [ reset, setReset ]    = useState("#fff");
 
 	useEffect(() => {
 		var bgc     = helper.themeColor(key, 'backgroundColor');
@@ -22,17 +23,19 @@ function Foundation(props) {
 		var neon    = helper.themeColor(key,"neon");
 		var buttons = helper.themeColor(key, 'buttons');
 		var cards   = helper.themeColor(key, 'cards');
+		var reset  = helper.themeColor(key, 'reset');
 		setButtons(buttons);
 		setTheme(bgc);
 		setCards(cards);
 		setNav(nav);
 		setSidebar(sidebar);
 		setNeon(neon);
+		setReset(reset)
 	});
 
 	return (
 		<div>
-			<Sidebar neon={neon} background={sidebar} />
+			<Sidebar reset={reset} neon={neon} background={sidebar} />
 			<Main neon={neon} navbar={nav} background={theme}>
 				{props.children}
 				<Footer background={theme} />

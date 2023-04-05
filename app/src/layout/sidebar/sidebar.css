@@ -6,6 +6,7 @@
 }
 
 .reset-button{
+    transition: 0.1s ease;
     width: 25px;
     height: 25px;
 }
@@ -30,12 +31,16 @@
 }
 
 
+
+
+
 @media  screen and (max-width: 776px){
     .nav-link{
         font-size: 1.5rem;
     }
 
     .reset-button{
+
         width: 30px;
         height: 30px;
     }

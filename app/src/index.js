@@ -49,12 +49,7 @@ if(theme !== "undecided"){
 }
 
 else{
-  root.render(
-<Theme />
-
-
-  );
-  
+  root.render(<Theme />);
 }
 
   
