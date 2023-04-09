@@ -45,7 +45,7 @@ function Sidebar(props) {
 				style={{
 					position: 'absolute',
 					left: '50%',
-					bottom: '10px',
+					bottom: '20px',
 					transform: 'translateX(-50%)',
 					cursor:'pointer'
 				}}
