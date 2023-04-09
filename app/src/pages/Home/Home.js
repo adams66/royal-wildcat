@@ -20,6 +20,7 @@ function Home(props) {
 
 	return (
 		<Foundation>
+			<h1>DaLTON</h1>
 			<HomeHeader />
 			<HomeGrid cards={props.cards}  />
 			<HomeIconGrid />
