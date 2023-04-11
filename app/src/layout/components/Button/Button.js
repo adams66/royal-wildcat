@@ -8,7 +8,7 @@ function Button(props){
 
 
     return(
-<Link style={{backgroundColor: "red", color: "#fff"}} className="btn" to={props.href}>{props.content}</Link>
+<Link style={{backgroundColor: props.color, color: "#fff"}} className="btn" to={props.href}>{props.content}</Link>
     );
 
  

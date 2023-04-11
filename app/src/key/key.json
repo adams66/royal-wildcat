@@ -35,8 +35,8 @@
       "sidebar": "black",
       "nav": "black",
       "neon"   :"#d99a26",
-      "color": "black",
-      "buttons": "black",
+      "color": "#d99a26",
+      "buttons": "rgb(102, 16, 242)",
       "cards": "grey",
       "shadow": "rgb(102, 16, 242)",
       "reset": "#d99a26"
@@ -47,11 +47,11 @@
       "sidebar": "#E31836",
       "nav": "blue",
       "neon"   :"red",
-      "color": "red",
+      "color": "blue",
       "buttons": "blue",
       "cards": "grey",
       "shadow": "rgb(102, 16, 242)",
-      "reset": "red"
+      "reset": "blue"
     }
   },
   "draft": [

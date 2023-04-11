@@ -1,3 +1,4 @@
+import * as helper from '../../helpers/helpers';
 import Key from '../../key/key.json';
 import "../Draft/draft.css";
 import Button  from '../../layout/components/Button/Button';
@@ -10,7 +11,7 @@ import Foundation from '../../layout/Foundation';
 
 
 const Draft = () => {
-	const [theme, setTheme] = useState([]);
+	const [theme, setTheme] = useState(["grey"]);
 
 	useEffect(() => {
 	  window.scrollTo(0,0);	
@@ -38,7 +39,7 @@ const Draft = () => {
 								<p className="card-text text-light">
 								  Come view the draft details from {r.year} season.
 								</p>
-								 <Button content={"View Draft"} href={"/draft/" + r.year}></Button>
+								 <Button color={helper.themeColor(Key, 'color')} content={"View Draft"} href={"/draft/" + r.year}></Button>
 							</div>
 						</div>
 					</div>

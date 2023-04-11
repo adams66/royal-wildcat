@@ -10,6 +10,8 @@ export function themeColor(key,themePart){
 
 
         switch(themePart){
+        case "color":
+        return key.theme[getTheme].color; 
         case "backgroundColor":
         return key.theme[getTheme].background; 
         case "buttons":

@@ -1,3 +1,5 @@
+import * as helper from "../../helpers/helpers";
+import Key from "../../key/key.json";
 import {NavLink} from "react-router-dom";
 
 
@@ -6,7 +8,7 @@ function NavLinks(props){
     let activeStyle = {
 
         fontWeight: "bolder",
-        color: "rgb(102 16 242)"
+        color: helper.themeColor(Key, "color")
       };
     let normalStyle = {
 
