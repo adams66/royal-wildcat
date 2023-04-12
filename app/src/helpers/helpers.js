@@ -27,7 +27,9 @@ export function themeColor(key,themePart){
         case "neon":
         return key.theme[getTheme].neon;       
         case "reset":
-        return key.theme[getTheme].reset;       
+        return key.theme[getTheme].reset;
+        case "paragraph":
+        return key.theme[getTheme].paragraph;         
         default:
 
         return "yellow";    

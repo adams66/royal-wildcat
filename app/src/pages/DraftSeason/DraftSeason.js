@@ -44,28 +44,6 @@ function Sdraft() {
     }
 
 
-    function getTheme(){
-        var value = localStorage.getItem("theme");
-    
-        switch(value){
-            case "wildcat": 
-            setTheme(value);
-            break;
-        
-            case "chief":
-            setTheme(value);
-            break;
-        
-            case "jayhawk": 
-            setTheme(value);
-            break;
-        
-            default:
-            setTheme("wildcat");
-            
-            
-          }
-    }
 
 
 
@@ -76,7 +54,7 @@ function Sdraft() {
         var url = window.location.href.split("/");
         var year = url[5];
         fetchData(year, url);
-        getTheme();
+
     }, [])
 
     function handleWindowSizeChange() {
@@ -85,8 +63,6 @@ function Sdraft() {
     }
 
     function page(draft, round,event) {
-    
-   
         if (event == "Next" && round != draft.rounds ) {
             setRound(round + 1);
         }
@@ -112,7 +88,7 @@ function Sdraft() {
             <Foundation>
 
                 <table className="table m-3 ">
-                    <thead className={theme}>
+                    <thead >
                         <tr className="text-light">
                             <th class="text-center d-none d-md-table-cell"  scope="col">Round</th>
                             <th class="text-center d-none d-md-table-cell"  scope="col">Round Number</th>
@@ -131,7 +107,7 @@ function Sdraft() {
                                 <div className="text-center ">{userObj.Round}</div>
                             </th>
                             <td className="align-middle d-none d-md-table-cell">
-                                <div className="text-center align-middle">
+                                <div  className="text-center align-middle">
                                     {
                                     userObj["Round Number"]
                                 }</div>
@@ -164,7 +140,6 @@ function Sdraft() {
                             <td 
                                 className="align-middle">
                                 <div className="text-center">
-                                    
                                         NFL
                                 </div>
                             </td>
