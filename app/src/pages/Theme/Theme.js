@@ -25,20 +25,17 @@ switch(direction){
     switch(rotate+1){
 
         case 1:
-
          setParticles(Key.theme.wildcat.particles);
         break;
         case 2:
-            setParticles(Key.theme.chief.particles); 
+        setParticles(Key.theme.chief.particles); 
         break;
         case 3:
-            setParticles(Key.theme.shocker.particles); 
+        setParticles(Key.theme.shocker.particles); 
         break;
         case 4:
-            setParticles(Key.theme.jayhawk.particles);
+        setParticles(Key.theme.jayhawk.particles);
         break;
-
-
     }
 
     break;
@@ -46,37 +43,26 @@ switch(direction){
         var countCheckdown = (theme > 1) ? setTheme(rotate - 1) : null;
 
         switch(rotate-1){
-
             case 1:
-    
-             setParticles(Key.theme.wildcat.particles);
+            setParticles(Key.theme.wildcat.particles);
             break;
             case 2:
-                setParticles(Key.theme.chief.particles); 
+            setParticles(Key.theme.chief.particles); 
             break;
             case 3:
-                setParticles(Key.theme.shocker.particles); 
+            setParticles(Key.theme.shocker.particles); 
             break;
             case 4:
-                setParticles(Key.theme.jayhawk.particles);
+            setParticles(Key.theme.jayhawk.particles);
             break;
     
     
         }
 
-
     console.log(theme);    
     break;
 
-           
-
-
 }
-
-
-
-
-
 }
 
 

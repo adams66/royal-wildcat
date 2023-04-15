@@ -4,16 +4,6 @@ import "./draftSeason.css";
 import Foundation from '../../layout/Foundation';
 import Circle from './componets/Circle';
 
-
-
-
-
-
-
-
-
-
-
 function Sdraft() {
     
     const [width, setWidth] = useState(window.innerWidth);
@@ -23,30 +13,14 @@ function Sdraft() {
     var url = window.location.href.split("/");
     var year = url[5];
 
-
-
     const fetchData = (year, url) => {
-
-
-        console.log(url);
-
-
-
 
             return fetch("https://adams66.github.io/api/draft/draft-" + year + ".json").then((response) => response.json()).then((data) => {
                 
                 setDraft(data)
 
             });
-
-
-        
     }
-
-
-
-
-
 
 
     useEffect((year, url) => {
@@ -89,7 +63,7 @@ function Sdraft() {
 
                 <table className="table m-3 ">
                     <thead >
-                        <tr className="text-light">
+                        <tr className="text-light bg-secondary">
                             <th class="text-center d-none d-md-table-cell"  scope="col">Round</th>
                             <th class="text-center d-none d-md-table-cell"  scope="col">Round Number</th>
                             <th class="text-center"                         scope="col">Overall</th>
@@ -100,7 +74,7 @@ function Sdraft() {
                             <th class="text-center"                         scope="col">College</th>
                         </tr>
                     </thead>
-                    <tbody className="text-light">
+                    <tbody className="text-light bg-dark">
                         {
                         draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (userObj.Round === round ? <tr className={theme}>
                             <th className="align-middle d-none d-md-table-cell" scope="row">

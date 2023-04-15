@@ -1,4 +1,4 @@
-import key from "./key/key.json";
+import Key from "./key/key.json";
 import  * as helper  from "../src/helpers/helpers.js";
 import ReactDOM from 'react-dom/client';
 import "./css/index.css";
@@ -13,18 +13,12 @@ import NflTeams from './pages/NflTeams/NflTeams';
 import NotFound from "./pages/NotFound/NotFound";
 import {HashRouter, Routes, Route} from "react-router-dom";
 
-
-
 var getTheme = localStorage.getItem("theme");
 console.log(getTheme);
-if(getTheme == null){
-  localStorage.setItem("theme", "undecided");
-}
+if(getTheme == null){localStorage.setItem("theme", "undecided");}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 var theme = localStorage.getItem("theme");
-
-
 if(theme !== "undecided"){
 
   root.render(
@@ -37,7 +31,7 @@ if(theme !== "undecided"){
   <Route path="/nflTeams" element={<NflTeams />}/> 
   <Route path="/*" element={<NotFound />}/> 
   {
-    key.draft.map((r) => {
+    Key.draft.map((r) => {
       return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason />}/>
     })
   }
@@ -51,11 +45,3 @@ if(theme !== "undecided"){
 else{
   root.render(<Theme />);
 }
-
-  
-
-
-
-
-
-
