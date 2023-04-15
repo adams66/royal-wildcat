@@ -1,4 +1,3 @@
-
 import '../Home/home.css';
 import  * as helper  from "../../helpers/helpers";
 import Foundation from '../../layout/Foundation';
@@ -8,12 +7,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import HomeIconGrid from './homeComponents/HomeIconGrid';
 
-
-
-
 function Home(props) {
-	const [ royal, SetRoyal ] = useState(1);
-
 	useEffect(() => {
 		helper.windowReset();
 	}, []);

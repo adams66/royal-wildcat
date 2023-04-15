@@ -13,28 +13,7 @@ function NflTeams(){
     }
 
 
-    function getTheme(){
-        var value = localStorage.getItem("theme");
-    
-        switch(value){
-            case "wildcat": 
-            setTheme(value);
-            break;
-        
-            case "chief":
-            setTheme(value);
-            break;
-        
-            case "jayhawk": 
-            setTheme(value);
-            break;
-        
-            default:
-            setTheme("wildcat");
-            
-            
-          }
-    }
+
 
     function handleWindowSizeChange() {
         setWidth(window.innerWidth);
@@ -53,12 +32,6 @@ function NflTeams(){
 
     const fetchData = () => {
 
-
-        
-
-
-
-
             return fetch("https://adams66.github.io/api/nflTeams/nfl_teams.json")
             .then((response) => response.json())
             .then((data) => {
@@ -75,7 +48,6 @@ function NflTeams(){
     useEffect(() => {
         window.scrollTo(0,0);
         fetchData();
-        getTheme();
     }, [])
 
 
