@@ -1,9 +1,8 @@
-import Key from "./key/key.json";
-import  * as helper  from "../src/helpers/helpers.js";
 import ReactDOM from 'react-dom/client';
+import React from 'react';
+import Key from "./key/key.json";
 import "./css/index.css";
 import "./css/override.css";
-import React from 'react';
 import Home from './pages/Home/Home';
 import Draft from './pages/Draft/Draft';
 import Theme from "./pages/Theme/Theme";
@@ -39,9 +38,5 @@ if(theme !== "undecided"){
     </HashRouter>
     </React.StrictMode>
   );
-
 }
-
-else{
-  root.render(<Theme />);
-}
+else{root.render(<Theme />);}
