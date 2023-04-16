@@ -41,13 +41,7 @@ export default function Svg(props) {
 		}
 	}
 
-	function hoveroff(color) {
-		document.documentElement.style.setProperty('--pColor', color);
-	}
 
-	function hover(color) {
-		document.documentElement.style.setProperty('--pColor', color);
-	}
 
 	switch (rotate) {
 		case 1:

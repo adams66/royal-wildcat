@@ -3,7 +3,16 @@
         height: 50px;
     }
     
-    
+
+
+
+
+    @media screen and (max-width: 640px) {
+        table svg, svg path{
+            width: 30px;
+            height: 30px;
+        }
+      }
     
 
     
