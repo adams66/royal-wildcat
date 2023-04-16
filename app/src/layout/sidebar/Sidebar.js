@@ -16,6 +16,7 @@ function Sidebar(props) {
 	console.log(currentPath);
 	function reset() {
 		localStorage.removeItem('theme');
+		localStorage.removeItem('theme-color');
 		window.location.replace("/")
 
 	}

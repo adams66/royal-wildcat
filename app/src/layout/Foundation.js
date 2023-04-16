@@ -17,20 +17,14 @@ function Foundation(props) {
 	const [ reset, setReset ]    = useState("#fff");
 
 	useEffect(() => {
-		var bgc     = helper.themeColor(key, 'backgroundColor');
-		var nav     = helper.themeColor(key, 'nav');
-		var sidebar = helper.themeColor(key, 'sidebar');
-		var neon    = helper.themeColor(key,"neon");
-		var buttons = helper.themeColor(key, 'buttons');
-		var cards   = helper.themeColor(key, 'cards');
-		var reset  = helper.themeColor(key, 'reset');
-		setButtons(buttons);
-		setTheme(bgc);
-		setCards(cards);
-		setNav(nav);
-		setSidebar(sidebar);
-		setNeon(neon);
-		setReset(reset)
+		var themeColors = JSON.parse(localStorage.getItem("theme-color"));
+		setButtons(themeColors.buttons);
+		setTheme(themeColors.background);
+		setCards(themeColors.cards);
+		setNav(themeColors.nav);
+		setSidebar(themeColors.sidebar);
+		setNeon(themeColors.neon);
+		setReset(themeColors.reset)
 	});
 
 	return (

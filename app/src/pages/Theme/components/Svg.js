@@ -1,3 +1,6 @@
+import Key from "../../../key/key.json";
+
+
 export default function Svg(props) {
 	var rotate = props.rotate;
 
@@ -12,22 +15,27 @@ export default function Svg(props) {
 		switch (theme) {
 			case 'wildcat':
 				localStorage.setItem('theme', 'wildcat');
+				localStorage.setItem('theme-color', JSON.stringify(Key.theme.wildcat));
 				opacity();
 				break;
 			case 'chief':
 				localStorage.setItem('theme', 'chief');
+				localStorage.setItem('theme-color', JSON.stringify(Key.theme.chief));
 				opacity();
 				break;
 			case 'shocker':
 				localStorage.setItem('theme', 'shocker');
+				localStorage.setItem('theme-color', JSON.stringify(Key.theme.shocker));
 				opacity();
 				break;
 			case 'jayhawk':
 				localStorage.setItem('theme', 'jayhawk');
+				localStorage.setItem('theme-color', JSON.stringify(Key.theme.jayhawk));
 				opacity();
 				break;
 			default:
-				localStorage.setItem('theme', 'jayhawk');
+				localStorage.setItem('theme', 'wildcat');
+				localStorage.setItem('theme-color', JSON.stringify(Key.theme.wildcat));
 				window.location.reload();
 				break;
 		}

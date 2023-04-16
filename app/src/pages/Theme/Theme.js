@@ -25,7 +25,7 @@ switch(direction){
     switch(rotate+1){
 
         case 1:
-         setParticles(Key.theme.wildcat.particles);
+        setParticles(Key.theme.wildcat.particles);
         break;
         case 2:
         setParticles(Key.theme.chief.particles); 
@@ -58,8 +58,7 @@ switch(direction){
     
     
         }
-
-    console.log(theme);    
+ 
     break;
 
 }

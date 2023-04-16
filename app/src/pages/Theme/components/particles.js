@@ -4,7 +4,7 @@ import "./particles.css";
 
 function Particles(props) {
 	document.documentElement.style.setProperty('--pColor', props.particleColor);
-
+    
 
 
 	return (

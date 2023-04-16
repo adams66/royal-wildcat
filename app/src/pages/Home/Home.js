@@ -10,6 +10,9 @@ import HomeIconGrid from './homeComponents/HomeIconGrid';
 function Home(props) {
 	useEffect(() => {
 		helper.windowReset();
+		var themeColor = localStorage.getItem("theme-color")
+		console.log(JSON.stringify(themeColor));
+
 	}, []);
 
 	return (

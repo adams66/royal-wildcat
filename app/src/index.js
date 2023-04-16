@@ -14,7 +14,12 @@ import {HashRouter, Routes, Route} from "react-router-dom";
 
 var getTheme = localStorage.getItem("theme");
 console.log(getTheme);
-if(getTheme == null){localStorage.setItem("theme", "undecided");}
+if(getTheme == null){
+  
+  localStorage.setItem("theme", "undecided");
+  localStorage.setItem("theme-color", "undecided");
+
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 var theme = localStorage.getItem("theme");
