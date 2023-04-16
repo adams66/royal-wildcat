@@ -21,6 +21,7 @@ sideBar.classList.add("justify-content-center");
 sideBar.style.width = "100%";
 sideBar.style.height ="100%";
 realHamburger.classList.add("clicked");
+document.body.style.overflow = "hidden";
 }
 
 else{
@@ -35,6 +36,7 @@ else{
 	sideBar.style.width = "init";
 	sideBar.style.height ="init";	
 	realHamburger.classList.remove("clicked");
+	document.body.style.overflow = "auto";
 }
 
 }

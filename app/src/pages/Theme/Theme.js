@@ -77,7 +77,7 @@ return(
 
 
 
-		<div style={{height:"100vh"}} className="row">
+		<div style={{height:"100vh", overflow: "hidden"}} className="row">
 			<Svg rotate={theme}  />
 
 		</div>
