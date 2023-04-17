@@ -8,12 +8,9 @@ import NavLinks from './Links';
 
 
 function Sidebar(props) {
-	const [ theme, setTheme ] = useState();
-	var bgc = key.background;
 
-	let navigate = useNavigate();
-	var currentPath = useLocation();
-	console.log(currentPath);
+
+
 	function reset() {
 		localStorage.removeItem('theme');
 		localStorage.removeItem('theme-color');

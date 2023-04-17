@@ -16,10 +16,8 @@ function Sdraft() {
 
     const fetchData = (year, url) => {
 
-            return fetch("https://adams66.github.io/api/draft/draft-" + year + ".json").then((response) => response.json()).then((data) => {
-                
+            return fetch("https://adams66.github.io/api/draft/draft-" + year + ".json").then((response) => response.json()).then((data) => {  
                 setDraft(data)
-
             });
     }
 
