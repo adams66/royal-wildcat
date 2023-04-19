@@ -12,13 +12,12 @@ function Foundation(props) {
 	const [sidebar, setSidebar]  = useState([0]);
 	const [nav, setNav]          = useState([0]);
 	const [neon, setNeon]        = useState([0]);
-	const [ button, setButtons]  = useState([0]);
 	const [ cards, setCards ]    = useState([0]);
 	const [ reset, setReset ]    = useState("#fff");
 
 	useEffect(() => {
 		var themeColors = JSON.parse(localStorage.getItem("theme-color"));
-		setButtons(themeColors.buttons);
+		// setButtons(themeColors.buttons);
 		setTheme(themeColors.background);
 		setCards(themeColors.cards);
 		setNav(themeColors.nav);
@@ -37,5 +36,7 @@ function Foundation(props) {
 		</div>
 	);
 }
+
+
 
 export default Foundation;

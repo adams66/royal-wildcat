@@ -9,8 +9,10 @@ import Theme from "./pages/Theme/Theme";
 import DraftSeason from "./pages/DraftSeason/DraftSeason";
 import HallOfFame from './pages/HallOfFame/HallOfFame';
 import NflTeams from './pages/NflTeams/NflTeams';
+
 import NotFound from "./pages/NotFound/NotFound";
 import {HashRouter, Routes, Route} from "react-router-dom";
+import Stats from './pages/Stats/Stats';
 
 var getTheme = localStorage.getItem("theme");
 console.log(getTheme);
@@ -32,6 +34,7 @@ if(theme !== "undecided"){
   <Route path="/" element={<Home/>} />
   <Route path="/draft" element={<Draft />}/>
   <Route path="/hall-of-fame" element={<HallOfFame />}/> 
+  <Route path="/Stats" element={<Stats />} /> 
   <Route path="/nflTeams" element={<NflTeams />}/> 
   <Route path="/*" element={<NotFound />}/> 
   {
