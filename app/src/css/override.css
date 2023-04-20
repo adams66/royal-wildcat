@@ -49,6 +49,7 @@ body.fadeout{
 
 body{
     font-family: 'Merriweather', serif;
+
     overflow-y: scroll;
     overflow-x: hidden;
 }

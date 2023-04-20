@@ -37,11 +37,7 @@ if(theme !== "undecided"){
   <Route path="/Stats" element={<Stats />} /> 
   <Route path="/nflTeams" element={<NflTeams />}/> 
   <Route path="/*" element={<NotFound />}/> 
-  {
-    Key.draft.map((r) => {
-      return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason />}/>
-    })
-  }
+  {Key.draft.map((r) => {return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason />}/>})}
   </Routes>
     </HashRouter>
     </React.StrictMode>
