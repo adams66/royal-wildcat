@@ -13,7 +13,30 @@ function Foundation(props) {
 	const [nav, setNav]          = useState([0]);
 	const [neon, setNeon]        = useState([0]);
 	const [ cards, setCards ]    = useState([0]);
-	const [ reset, setReset ]    = useState("#fff");
+	const [ reset, setReset ]    = useState(0);
+
+	const [hamburger, setHamburger] = useState(0);
+	const [hamburgerClass, setHamburgerClass] = useState("hamburger d-block d-lg-none");
+	const [sidebarSwitch, setSidebarSwitch] = useState("sidebar position-fixed d-none d-lg-block");
+	
+	
+	function hamburgerFunction(){
+		if(hamburger == 0){
+			setHamburger(1);
+			setHamburgerClass("hamburger d-block d-lg-none clicked");
+			setSidebarSwitch("sidebar position-fixed w-100 d-flex flex-column justify-content-center d-lg-block");
+		}
+		
+		else{
+			setHamburger(0);
+			setHamburgerClass("hamburger d-block d-lg-none");
+			setSidebarSwitch("sidebar position-fixed d-none d-lg-block");
+		}
+	}
+
+
+
+	
 
 	useEffect(() => {
 		var themeColors = JSON.parse(localStorage.getItem("theme-color"));
@@ -28,15 +51,13 @@ function Foundation(props) {
 
 	return (
 		<div>
-			<Sidebar reset={reset} neon={neon} background={sidebar} />
-			<Main neon={neon} navbar={nav} background={theme}>
+			<Sidebar  reset={reset} neon={neon} background={sidebar} classes={sidebarSwitch} />
+			<Main hamburgerFunction={hamburgerFunction} hamburgerClass={hamburgerClass} neon={neon} navbar={nav} background={theme}>
 				{props.children}
 				<Footer background={theme} />
 			</Main>
 		</div>
 	);
 }
-
-
 
 export default Foundation;

@@ -10,14 +10,12 @@ return(
 
   <div style={{backgroundColor: props.background}} className="container-fluid p-0 ">
   <div  className="main ">
-  <Navbar neon ={props.neon} background={props.navbar} />
+  <Navbar hamburgerFunction={props.hamburgerFunction} hamburgerClass={props.hamburgerClass} hamburger={props.hamburger} neon ={props.neon} background={props.navbar} />
      {props.children}
   </div>
   </div>
 
 );
-
-
 }
 
 

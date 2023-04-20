@@ -9,21 +9,16 @@ import NavLinks from './Links';
 
 function Sidebar(props) {
 
-
-
-	function reset() {
+	function resetButton() {
 		localStorage.removeItem('theme');
 		localStorage.removeItem('theme-color');
 		window.location.replace("/")
 
 	}
 
-	useEffect(() => {
-		
-	},[]);
 
 	return (
-		<div style={{backgroundColor: props.background, boxShadow: "1px 1px 23px 0px " + props.neon}}   className={'sidebar position-fixed d-none d-lg-block'}>
+		<div style={{backgroundColor: props.background, boxShadow: "1px 1px 23px 0px " + props.neon}}   className={props.classes}>
 			<div className="Logo p-3">
 				<a className="navbar-brand" href="/">
 					<h2 className="text-center text-light">{key.title}</h2>
@@ -39,8 +34,8 @@ function Sidebar(props) {
 				<NavLinks  path="/nflTeams" name="NFL TEAMS" />
 			</ul>
 
-			<a
-				onClick={reset}
+			<a onClick={resetButton}
+				
 				style={{
 					position: 'absolute',
 					left: '50%',
