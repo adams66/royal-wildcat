@@ -6,68 +6,37 @@ import "./navbar.css";
 
 
 
-function hamburgerFunction(event){
-var realHamburger = document.querySelector(".hamburger");
-var checkHam = realHamburger.classList.contains("clicked");
-var	sideBar = document.querySelector(".sidebar");
-var	sideBarH = document.querySelector(".sidebar h2");
-if(!checkHam){
-sideBarH.style.display = "none";
-sideBar.classList.remove("d-none");
-sideBar.classList.add("clicked");
-sideBar.classList.add("d-flex");
-sideBar.classList.add("flex-column");
-sideBar.classList.add("justify-content-center");
-sideBar.style.width = "100%";
-sideBar.style.height ="100%";
-realHamburger.classList.add("clicked");
-}
 
-else{
-
-	sideBarH.style.display = "block";
-	sideBar.classList.add("d-none");
-	sideBar.classList.remove("clicked");
-	sideBar.classList.remove("d-flex");
-    sideBar.classList.remove("flex-column");
-    sideBar.classList.remove("justify-content-center");
-	sideBar.style.background = "init";
-	sideBar.style.width = "init";
-	sideBar.style.height ="init";	
-	realHamburger.classList.remove("clicked");
-}
-}
 
 
 function Navbar(props){
+	const [hamburger, setHamburger] = useState(0);
+	const [hamburgerClass, setHamburgerClass] = useState("hamburger d-block d-lg-none")
 	const [theme, setTheme] = useState();
 	const [year,setYear] = useState();
 	var bgc = Key.background;
 
 
-	useEffect(() =>{
-		var hamburger = document.querySelector(".hamburger");
-		hamburger.addEventListener("click", hamburgerFunction);
-		var getTheme = localStorage.getItem("theme");
-		var url = window.location.href.split("/");
-        var year = url[5];
-		setYear(year);
+	function hamburgerFunction(){
+	if(hamburger == 0){
+		setHamburger(1);
+		setHamburgerClass("hamburger d-block d-lg-none clicked");
+	}
 	
-
-	
-	
-	
-	});
-
+	else{
+		setHamburger(0);
+		setHamburgerClass("hamburger d-block d-lg-none");
+	}
+}
 
 	return (
 
 		<div style={{position:"sticky",top:"0", left: "0",right:"0", zIndex:"1000", backgroundColor: props.background, boxShadow: "15px 0px 23px 0px " + props.neon}} className={"d-flex align-items-center navbar-top "}>
-			<div   className="hamburger d-block d-lg-none ">
+			<div onClick={hamburgerFunction}  className={hamburgerClass} >
 				<div className ="position-relative h-100">
-				<div className="line lineA"></div>
-				<div className="line lineB"></div>
-				<div className="line lineC"></div>
+				<div className="line lineA rounded"></div>
+				<div className="line lineB rounded"></div>
+				<div className="line lineC rounded"></div>
 				</div>
 			</div>
 
