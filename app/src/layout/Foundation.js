@@ -25,12 +25,14 @@ function Foundation(props) {
 			setHamburger(1);
 			setHamburgerClass("hamburger d-block d-lg-none clicked");
 			setSidebarSwitch("sidebar position-fixed w-100 d-flex flex-column justify-content-center d-lg-block");
+			document.body.style.overflow = "hidden";
 		}
 		
 		else{
 			setHamburger(0);
 			setHamburgerClass("hamburger d-block d-lg-none");
 			setSidebarSwitch("sidebar position-fixed d-none d-lg-block");
+			document.body.style.overflow = "auto";
 		}
 	}
 
