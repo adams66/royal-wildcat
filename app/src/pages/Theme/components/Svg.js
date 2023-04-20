@@ -173,7 +173,7 @@ export default function Svg(props) {
 								click('jayhawk');
 							}}
 							className="jayhawk-svg"
-							style={{ width: '100%', maxWidth: '40%' }}
+							style={{ width: '100%', maxWidth: '40%' ,cursor: 'pointer' }}
 							xmlns="http://www.w3.org/2000/svg"
 							version="1.0"
 							width="450.000000pt"
