@@ -8,10 +8,6 @@ import "./navbar.css";
 function Navbar(props){
 	const [sidebar,setSidebar] = useState();
 	const [year,setYear] = useState();
-	var bgc = Key.background;
-
-
-
 
 	return (
 

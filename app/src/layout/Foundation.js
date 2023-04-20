@@ -16,8 +16,8 @@ function Foundation(props) {
 	const [ reset, setReset ]    = useState(0);
 
 	const [hamburger, setHamburger] = useState(0);
-	const [hamburgerClass, setHamburgerClass] = useState("hamburger d-block d-lg-none");
-	const [sidebarSwitch, setSidebarSwitch] = useState("sidebar position-fixed d-none d-lg-block");
+	const [hamburgerClass, setHamburgerClass] = useState("hamburger d-block d-xl-none");
+	const [sidebarSwitch, setSidebarSwitch] = useState("sidebar position-fixed d-none d-xl-block");
 	
 	
 	function hamburgerFunction(){
