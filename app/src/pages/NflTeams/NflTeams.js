@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {NavLink} from "react-router-dom";
 import Foundation from '../../layout/Foundation';
 import "./NflTeams.css";
 
@@ -92,10 +93,12 @@ function NflTeams(){
                             </th>
                             <td 
                                 className="align-middle d-none d-md-table-cell">
+                                       
                                 <div className="text-center align-middle">
                                     {
-                                    userObj.team
+                                    <NavLink style={{textDecoration: "none"}} className="text-light"     to={"/nflTeams/" +userObj.teamUrl}>{userObj.team}</NavLink>
                                 }</div>
+          
                             </td>
                             <td 
                                 className="align-middle ">
