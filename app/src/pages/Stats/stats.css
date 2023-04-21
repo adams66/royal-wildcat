@@ -35,3 +35,13 @@
     background-color: grey;
     
 }
+
+.grid-layout div:nth-child(6){
+    background-color: grey;
+    
+}
+
+.grid-layout div:nth-child(7){
+    background-color: grey;
+    
+}
