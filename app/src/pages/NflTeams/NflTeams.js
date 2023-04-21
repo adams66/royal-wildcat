@@ -64,9 +64,7 @@ function NflTeams(){
                         <table className="table m-3 ">
                     <thead className={theme}>
                         <tr className="text-light">
-                            <th 
-                                class="text-center d-none d-md-table-cell"
-                                scope="col">id</th>
+      
                             <th 
                                 class="text-center d-none d-md-table-cell"
                                 scope="col">Team</th>
@@ -82,14 +80,8 @@ function NflTeams(){
         <tbody>
 
   {teams && teams.length > 0 && teams.map((userObj, index) => (<tr style={{color:"white"}} className={theme}>
-                            <th  
-                                className="align-middle d-none d-md-table-cell"
-                                scope="row">
-                                <div className="text-center ">
-                                    {
-                                    userObj.id
-                                }</div>
-                            </th>
+       
+                           
                             <td 
                                 className="align-middle d-none d-md-table-cell">
                                        
@@ -128,9 +120,9 @@ return(
                {
                
                teams && teams.length > 0 && teams.map((userObj, index) => (
-                   <div style={{borderWidth: "2px", borderColor: "grey", borderStyle: "solid", color:"white"}} className="row pt-2 m-2 rounded" >
-                       <div className="col-9 d-flex flex-column ">
-                       <div className='text-light'>id: {userObj.id}</div>
+                   <div style={{borderWidth: "2px", borderColor: "grey", borderStyle: "solid", color:"white"}} className="row pt-3 pb-3 m-2 rounded" >
+                       <div className="col-9 d-flex flex-column">
+                
                    
                          <h6 className='text-light'>{userObj.team}</h6>
                          <h2>{userObj.established_year}</h2>
