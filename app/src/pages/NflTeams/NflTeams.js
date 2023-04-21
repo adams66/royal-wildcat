@@ -7,14 +7,12 @@ import "./NflTeams.css";
 function NflTeams(){
     const [width, setWidth] = useState(window.innerWidth);
     const [teams,setTeams] = useState([0]);
+    const [nfl,setNfl] = useState(0);
     const [theme,setTheme] = useState([0]);
 
     function createMarkup(svg){
         return{__html:svg}
     }
-
-
-
 
     function handleWindowSizeChange() {
         setWidth(window.innerWidth);
@@ -26,6 +24,7 @@ function NflTeams(){
     }
 
     componentWillMount();
+
 
 
 

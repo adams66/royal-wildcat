@@ -32,7 +32,7 @@ function Foundation(props) {
 			setHamburger(0);
 			setHamburgerClass("hamburger d-block d-lg-none");
 			setSidebarSwitch("sidebar position-fixed d-none d-lg-block");
-			document.body.style.overflow = "auto";
+			document.body.style.overflow = "visible";
 		}
 	}
 

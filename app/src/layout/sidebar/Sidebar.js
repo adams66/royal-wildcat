@@ -21,7 +21,7 @@ function Sidebar(props) {
 		<div style={{backgroundColor: props.background, boxShadow: "1px 1px 23px 0px " + props.neon}}   className={props.classes}>
 			<div className="Logo p-3">
 				<a className="navbar-brand" href="/">
-					<h2 className="text-center text-light">{key.title}</h2>
+					<h2 className="text-center text-light d-none d-xl-block">{key.title}</h2>
 				</a>
 			</div>
 
