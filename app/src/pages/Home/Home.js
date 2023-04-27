@@ -12,12 +12,14 @@ function Home(props) {
 		helper.windowReset();
 		var themeColor = localStorage.getItem("theme-color")
 		console.log(JSON.stringify(themeColor));
+		
+
 
 	}, []);
 
 	return (
 		<Foundation>
-			<HomeHeader />
+			<HomeHeader cards={props.cards} />
 			<HomeGrid cards={props.cards}  />
 			<HomeIconGrid />
 		</Foundation>

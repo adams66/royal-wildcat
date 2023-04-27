@@ -13,7 +13,7 @@
       "nav": "rgb(3, 3, 3)",
       "color": "rgb(102, 16, 242)",
       "buttons": "rgb(102, 16, 242)",
-      "cards": "grey",
+      "cards": "#040402",
       "shadow": "rgb(102, 16, 242)",
       "reset": "white",
       "paragraph" :"#fff"
