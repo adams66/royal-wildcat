@@ -18,14 +18,14 @@ function HallOfFame(){
 return(
 
     <Foundation>
-    <div className="row m-3 m-md-4 m-lg-5">
+    <div className="row m-3 m-md-4 m-lg-3">
 
 
         {Key.champions.map((champions) =>{
             return(
                        <div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
-                       <div style={{backgroundColor: Key.component}} className="card p-0 rounded m-2">
-                           <img src="football.jpg" className="card-img-top" alt="" />
+                       <div style={{backgroundColor: helper.themeColor(Key, 'cards')}} className="card p-0 rounded m-3">
+    
                            <div className="card-body">
                                <h5 className="card-title text-light">{champions.name}</h5>
                                <h5 className="card-title text-light">{champions.season}</h5>

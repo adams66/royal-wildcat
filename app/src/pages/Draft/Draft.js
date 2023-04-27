@@ -24,10 +24,10 @@ const Draft = () => {
 			{Key.draft.map((r) => {
 				return (
 					<div className="col-12 col-md-6 col-lg-3 mb-3">
-						<div className="card" style={{backgroundColor: helper.themeColor(Key, 'cards')}}>
+						<div className="card p-2" style={{backgroundColor: helper.themeColor(Key, 'cards')}}>
 							<div className="card-body p-2">
-							   <img style={{height: "200px"}} className="card-img-top mb-3" src={r.card} alt="null" />
-							   <h5 className="card-title text-light">{r.year}</h5>
+							   {/* <img style={{height: "200px"}} className="card-img-top mb-3" src={r.card} alt="null" /> */}
+							   <h5 className="card-title text-light">Season {r.year}</h5>
 								<p style={{color: helper.themeColor(Key,'paragraph')}} className="card-text">
 								  View the draft details from {r.year} season.
 								</p>
