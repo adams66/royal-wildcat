@@ -5,9 +5,8 @@ import './NflTeams.css';
 
 function NflTeams() {
 	const [ width, setWidth ] = useState(window.innerWidth);
-	const [ teams, setTeams ] = useState([0]);
+	const [ teams, setTeams ] = useState([ 0 ]);
 	const [ nfl, setNfl ] = useState(0);
-
 
 	function createMarkup(svg) {
 		return { __html: svg };
@@ -34,39 +33,29 @@ function NflTeams() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 		fetchData();
-        
 	}, []);
 
 	if (width >= 700) {
 		return (
 			<Foundation>
-
 				<table className="table m-3 ">
 					<thead className="">
 						<tr className="text-light">
-							<th class="text-center d-none d-md-table-cell" scope="col">
-								Team
-							</th>
-							<th class="text-center" scope="col">
-								Year Established
-							</th>
-							<th class="text-center" scope="col">
-								Logo
-							</th>
-						</tr>
+							<th class="text-center d-none d-md-table-cell" scope="col">Team</th>
+							<th class="text-center" scope="col"                       >Year Established</th>
+							<th class="text-center" scope="col"                       >Logo</th></tr>
 					</thead>
 					<tbody>
-						{teams &&
-							teams.length > 0 &&
+						{teams && teams.length > 0 &&
 							teams.map((userObj, index) => (
-								<tr style={{ color: 'white' }} className ="">
+								<tr style={{ color: 'white' }} className="">
 									<td className="align-middle d-none d-md-table-cell">
 										<div className="text-center align-middle">
 											{
 												<NavLink
 													style={{ textDecoration: 'none' }}
 													className="text-light"
-													to={'/nflTeams/' }
+													to={'/nflTeams/'}
 												>
 													{userObj.team}
 												</NavLink>
