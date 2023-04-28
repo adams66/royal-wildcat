@@ -25,7 +25,7 @@ return(
         {Key.champions.map((champions) =>{
             return(
                        <div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
-                       <div style={{backgroundColor: "#101116"}} className="card p-0 rounded m-3">
+                       <div style={{backgroundColor: "#101116"}} className="card p-2 rounded m-3">
                        <svg
 											xmlns="http://www.w3.org/2000/svg"
 							
