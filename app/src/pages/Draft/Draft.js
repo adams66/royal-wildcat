@@ -15,7 +15,7 @@ const Draft = () => {
 	return (
 		<Foundation>
 			<div className="container-fluid mt-3 draft-container">
-				<div className="row">
+				<div className="row m-3 m-md-4 m-lg-3">
 					{Key.draft.map((r) => {
 						return (
 							<div className="col-12 col-md-6 col-lg-3 mb-3">

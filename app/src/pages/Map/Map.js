@@ -4,8 +4,11 @@ import './map.css';
 function Map() {
 	return (
 		<Foundation>
+            <div className='row d-flex justify-content-center'>
+
+           
 			<h1 className='text-light text-center'>Map</h1>
-			<svg className='dot' height='100' width='100'>
+			<svg className='dot' height='100' width='50'>
 
 			//1	
 			<circle cx="25" cy="300" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -83,7 +86,7 @@ function Map() {
 			<circle cx="150" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
 
-			//9
+			//7
 			<circle cx="175" cy="200" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="175" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="175" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -99,7 +102,7 @@ function Map() {
             <circle cx="175" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
 
-			//10
+			//8
 	
             <circle cx="200" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="200" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -114,7 +117,7 @@ function Map() {
             <circle cx="200" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="200" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//11
+			//9
 	
             <circle cx="225" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="225" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -129,7 +132,7 @@ function Map() {
             <circle cx="225" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="225" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//12
+			//10
 
             <circle cx="250" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="250" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -144,7 +147,7 @@ function Map() {
             <circle cx="250" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="250" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//13
+			//11
 
             <circle cx="275" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="275" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -159,7 +162,7 @@ function Map() {
             <circle cx="275" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="275" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//14
+			//12
 
             <circle cx="300" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="300" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -174,7 +177,7 @@ function Map() {
             <circle cx="300" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="300" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//15
+			//13
 
             <circle cx="325" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="325" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -189,7 +192,7 @@ function Map() {
             <circle cx="325" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="325" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//16
+			//14
 
             <circle cx="350" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="350" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -204,7 +207,7 @@ function Map() {
             <circle cx="350" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="350" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//17
+			//15
 
             <circle cx="375" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="375" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -219,7 +222,7 @@ function Map() {
             <circle cx="375" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="375" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//18
+			//16
 			<circle cx="400" cy="200" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="400" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="400" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -234,7 +237,7 @@ function Map() {
             <circle cx="400" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="400" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//19
+			//17
 
             <circle cx="425" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="425" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -249,7 +252,7 @@ function Map() {
             <circle cx="425" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="425" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//20
+			//18
 
             <circle cx="450" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="450" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -264,7 +267,7 @@ function Map() {
             <circle cx="450" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="450" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//21
+			//19
 
             <circle cx="475" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="475" cy="275" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -278,7 +281,7 @@ function Map() {
             <circle cx="475" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="475" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//22
+			//20
 
             <circle cx="500" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="500" cy="275" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -292,7 +295,7 @@ function Map() {
             <circle cx="500" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="500" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//23
+			//21
 
             <circle cx="525" cy="275" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="525" cy="300" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -305,7 +308,7 @@ function Map() {
             <circle cx="525" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="525" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//24
+			//22
 
             <circle cx="550" cy="300" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="550" cy="325" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -317,7 +320,7 @@ function Map() {
             <circle cx="550" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="550" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//25
+			//23
 			<circle cx="575" cy="200" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="575" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="575" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -332,7 +335,7 @@ function Map() {
             <circle cx="575" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="575" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//26
+			//24
 			<circle cx="600" cy="200" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="600" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="600" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -347,7 +350,7 @@ function Map() {
             <circle cx="600" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="600" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//27
+			//25
 			<circle cx="625" cy="200" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="625" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="625" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -362,7 +365,7 @@ function Map() {
             <circle cx="625" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="625" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
-			//28
+			//26
 			<circle cx="650" cy="200" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="650" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="650" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -377,6 +380,8 @@ function Map() {
             <circle cx="650" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="650" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 
+
+            //27
 			<circle cx="675" cy="200" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="675" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="675" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
@@ -390,10 +395,25 @@ function Map() {
             <circle cx="675" cy="450" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="675" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
             <circle cx="675" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+
+            //28
+            <circle cx="700" cy="200" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="225" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="250" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="275" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="300" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="325" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="350" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="375" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="400" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="425" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="450" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
+            <circle cx="700" cy="475" r="8" stroke="rgb(102, 16, 242)" stroke-width="3" fill="rgb(102, 16, 242)" />
 			</svg>
 
 
-
+            </div>
 		</Foundation>
 	);
 }

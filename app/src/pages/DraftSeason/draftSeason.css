@@ -1,17 +1,4 @@
 
-:root{
---qb: #ff3131;
---rb: #0137B7; 
---rb: #B026FF; 
---te: #1F51FF;
---wr: #39ff14;
---d:  #250096;
---k:  #d1fe49;
---oc: #a61e22;
-
-
-
-}
 
 svg,svg path{
     width: 100%;
@@ -33,10 +20,4 @@ svg,svg path{
 
 }
 
-.qb-square{border-color: var(--qb);}
-.rb-square{border-color: var(--rb);}
-.te-square{border-color: var(--te);}
-.wr-square{border-color: var(--te);}
-.k-square{border-color: var(--k);}
-.d-square{border-color: var(--d);}
-.other-square{border-color: var(--wr);}
+
