@@ -5,7 +5,7 @@ function Square(props) {
     switch (position.Position) {
 
         case "QB":
-        return "qb-square";
+        return "qb-square rounded rb-square";
         break;
    
         case "RB":

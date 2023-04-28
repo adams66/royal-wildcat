@@ -24,7 +24,7 @@ return(
         {Key.champions.map((champions) =>{
             return(
                        <div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
-                       <div style={{backgroundColor: helper.themeColor(Key, 'cards')}} className="card p-0 rounded m-3">
+                       <div style={{backgroundColor: "#101116"}} className="card p-0 rounded m-3">
     
                            <div className="card-body">
                                <h5 className="card-title text-light">{champions.name}</h5>

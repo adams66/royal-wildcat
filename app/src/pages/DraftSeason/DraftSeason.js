@@ -63,8 +63,8 @@ function Sdraft() {
             <Foundation>
 
                 <table className="table m-3 ">
-                    <thead >
-                        <tr className="text-light bg-secondary">
+                    <thead style={{background: "rgb(16, 17, 22)"}} >
+                        <tr className="text-light">
                             <th class="text-center d-none d-md-table-cell"  scope="col">Round</th>
                             <th class="text-center d-none d-md-table-cell"  scope="col">Round Number</th>
                             <th class="text-center"                         scope="col">Overall</th>
@@ -75,7 +75,7 @@ function Sdraft() {
                             <th class="text-center"                         scope="col">College</th>
                         </tr>
                     </thead>
-                    <tbody className="text-light bg-dark">
+                    <tbody style={{background: "rgb(16, 17, 22)"}} className="text-light">
                         {
                         draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (userObj.Round === round ? <tr className={theme}>
                             <th className="align-middle d-none d-md-table-cell" scope="row">
