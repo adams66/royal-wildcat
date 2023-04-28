@@ -40,7 +40,7 @@ function NflTeams() {
 	if (width >= 700) {
 		return (
 			<Foundation>
-				<a href="/nflteams/map">Map</a>
+
 				<table className="table m-3 ">
 					<thead className="">
 						<tr className="text-light">
