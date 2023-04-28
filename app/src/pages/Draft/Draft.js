@@ -44,7 +44,7 @@ const Draft = () => {
 												</g>
 											</g>
 										</svg>
-										<h5 className="card-title text-light">Season {r.year}</h5>
+										<h5 className="card-title text-light font-bold">Season {r.year}</h5>
 										<p style={{ color: helper.themeColor(Key, 'paragraph') }} className="card-text">
 											View the draft details from {r.year} season.
 										</p>
