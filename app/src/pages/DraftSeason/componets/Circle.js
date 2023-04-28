@@ -1,3 +1,5 @@
+import Key from "../../../key/key.json";
+
 
 function Circle(props) {
     var position = props.position;
