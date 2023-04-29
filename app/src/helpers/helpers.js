@@ -6,9 +6,6 @@ export function themeColor(key,themePart){
     var getTheme = localStorage.getItem("theme");
 
     if(getTheme in key.theme){
-        console.log("This theme exists");
-
-
         switch(themePart){
         case "color":
         return key.theme[getTheme].color; 
@@ -31,25 +28,10 @@ export function themeColor(key,themePart){
         case "paragraph":
         return key.theme[getTheme].paragraph;         
         default:
-
         return "yellow";    
         }
-
-
-
-
     }
-
-
-
     else{
         console.log("No theme found");
     }
-    
-
-
-
-
-  
-
 }
