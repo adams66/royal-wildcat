@@ -19,7 +19,7 @@ function HallOfFame(){
 return(
 
     <Foundation>
-    <div className="row m-3 m-md-4 m-lg-3 hof">
+    <div className="row m-0 m-md-4 m-lg-3 hof">
 
 
         {Key.champions.map((champions) =>{

@@ -92,7 +92,7 @@ function NflTeams() {
 				{teams &&
 					teams.length > 0 &&
 					teams.map((userObj, index) => (
-						<div key={userObj.id}
+						<div 
 							style={{ borderWidth: '2px', borderColor: 'grey', borderStyle: 'solid', color: 'white' }}
 							className="row pt-3 pb-3 m-2 rounded"
 						>
