@@ -6,6 +6,7 @@ import NavBar from './navbar/Navbar';
 import Main from './main/Main';
 import Footer from './Footer/Footer';
 import { useEffect } from 'react';
+import userEvent from '@testing-library/user-event';
 
 function Foundation(props) {
 	const [ theme, setTheme]     = useState([0]);
@@ -18,6 +19,11 @@ function Foundation(props) {
 	const [hamburger, setHamburger] = useState(0);
 	const [hamburgerClass, setHamburgerClass] = useState("hamburger d-block d-xl-none");
 	const [sidebarSwitch, setSidebarSwitch] = useState("sidebar position-fixed d-none d-xl-block");
+
+
+	useEffect(()=>{
+		helper.windowReset();
+	},[])
 
 
 

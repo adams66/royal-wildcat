@@ -1,23 +1,14 @@
 import Key from "../../key/key.json";
 import  * as helper  from "../../helpers/helpers";
 import Foundation from "../../layout/Foundation";
-import { useEffect } from "react";
 import "./hallOfFame.css"
 
 
 
 
 function HallOfFame(){
-
-    useEffect(() => {
-		helper.windowReset();	
-	}, []);
-
-
-
-
 return(
-
+  
     <Foundation>
     <div className="row m-0 m-md-4 m-lg-3 hof">
 
