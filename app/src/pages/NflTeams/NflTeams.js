@@ -41,12 +41,20 @@ function NflTeams() {
 				<table className="table m-3 ">
 					<thead className="">
 						<tr className="text-light">
-							<th class="text-center d-none d-md-table-cell" scope="col">Team</th>
-							<th class="text-center" scope="col"                       >Year Established</th>
-							<th class="text-center" scope="col"                       >Logo</th></tr>
+							<th class="text-center d-none d-md-table-cell" scope="col">
+								Team
+							</th>
+							<th class="text-center" scope="col">
+								Year Established
+							</th>
+							<th class="text-center" scope="col">
+								Logo
+							</th>
+						</tr>
 					</thead>
 					<tbody>
-						{teams && teams.length > 0 &&
+						{teams &&
+							teams.length > 0 &&
 							teams.map((userObj, index) => (
 								<tr style={{ color: 'white' }} className="">
 									<td className="align-middle d-none d-md-table-cell">
@@ -73,7 +81,7 @@ function NflTeams() {
 										/>
 									</td>
 								</tr>
-							))}{' '}
+							))}
 					</tbody>
 				</table>
 			</Foundation>
@@ -84,7 +92,7 @@ function NflTeams() {
 				{teams &&
 					teams.length > 0 &&
 					teams.map((userObj, index) => (
-						<div
+						<div key={userObj.id}
 							style={{ borderWidth: '2px', borderColor: 'grey', borderStyle: 'solid', color: 'white' }}
 							className="row pt-3 pb-3 m-2 rounded"
 						>
