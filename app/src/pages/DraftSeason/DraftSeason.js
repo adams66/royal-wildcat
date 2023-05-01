@@ -5,20 +5,14 @@ import "./draftSeason.css";
 import Foundation from '../../layout/Foundation';
 import Circle from './componets/Circle';
 
-function Sdraft() {
-    
+function DraftSeason(props) {
     const [width, setWidth] = useState(window.innerWidth);
     const [draft, setDraft] = useState([]);
     const [round, setRound] = useState(1);
     const [theme, setTheme] = useState();
-    var url = window.location.href.split("/");
-    var year = url[5];
-
-
-
-    const fetchData = (year, url) => {
-
-            return fetch("https://adams66.github.io/api/draft/draft-" + year + ".json").then((response) => response.json()).then((data) => {  
+    
+    const fetchData = () => {
+            return fetch("https://adams66.github.io/api/draft/draft-" + props.year + ".json").then((response) => response.json()).then((data) => {  
                 setDraft(data)
             });
     }
@@ -183,4 +177,4 @@ function Sdraft() {
 
 }
 
-export default Sdraft;
+export default DraftSeason;
