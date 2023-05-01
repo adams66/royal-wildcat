@@ -75,7 +75,7 @@ function Theme() {
 				style={{ right: '5%', top: '50%', transform: 'translateY(-50%)', cursor: 'pointer' }}
 				className="position-fixed"
 			>
-				<Icon color={particles} icon="bi bi-chevron-right" size="40px" />
+				<Icon color={particles} icon="bi bi-arrow-right-square" size="40px" />
 			</div>
 			<div
 				onClick={() => {
@@ -84,7 +84,7 @@ function Theme() {
 				style={{ left: '5%', top: '50%', transform: 'translateY(-50%)', cursor: 'pointer' }}
 				className="position-fixed"
 			>
-				<Icon color={particles} icon="bi bi-chevron-left" size="40px" />
+				<Icon color={particles} icon="bi bi-arrow-left-square" size="40px" />
 			</div>
 
 			<Particles particleColor={particles} />
