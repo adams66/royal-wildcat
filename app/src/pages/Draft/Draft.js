@@ -14,7 +14,7 @@ const Draft = () => {
 					{Key.draft.map((r) => {
 						return (
 							<div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
-								<div className="card p-2 round m-2" style={{ backgroundColor: '#101116' }}>
+								<div className="card p-2 round m-3 m-md-2" style={{ backgroundColor: '#101116' }}>
 									<div className="card-body">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"

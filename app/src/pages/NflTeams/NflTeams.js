@@ -38,7 +38,7 @@ function NflTeams() {
 		return (
 			<Foundation>
 				<table className="table m-3 ">
-					<thead className="">
+					<thead style={{background: "rgb(16, 17, 22)"}} className="">
 						<tr className="text-light">
 							<th class="text-center d-none d-md-table-cell" scope="col">
 								Team
@@ -51,7 +51,7 @@ function NflTeams() {
 							</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody style={{background: "rgb(16, 17, 22)"}}>
 						{teams &&
 							teams.length > 0 &&
 							teams.map((userObj, index) => (
