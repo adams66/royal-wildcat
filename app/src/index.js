@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import * as helper from './helpers/helpers';
 import React from 'react';
 import Key from "./key/key.json";
 import "./css/index.css";
@@ -15,15 +16,9 @@ import NotFound from "./pages/NotFound/NotFound";
 import {HashRouter, Routes, Route} from "react-router-dom";
 import Stats from './pages/Stats/Stats';
 
-var getTheme = localStorage.getItem("theme");
-console.log(getTheme);
-if(getTheme == null){
 
-  localStorage.setItem("theme", "undecided");
-  localStorage.setItem("theme-color", "undecided");
 
-}
-
+helper.themeInit();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 var theme = localStorage.getItem("theme");
 if(theme !== "undecided"){
