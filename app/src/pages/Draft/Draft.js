@@ -10,13 +10,12 @@ import Foundation from '../../layout/Foundation';
 const Draft = () => {
 	return (
 		<Foundation>
-			<div className="container-fluid mt-3 draft-container">
-				<div className="row m-0  m-lg-3">
+				<div className="row m-0 m-md-4 m-lg-3 draft-container">
 					{Key.draft.map((r) => {
 						return (
-							<div className="col-12 col-md-6 col-lg-3 mb-3">
-								<div className="card p-2 round m-3" style={{ backgroundColor: '#101116' }}>
-									<div className="card-body p-2">
+							<div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
+								<div className="card p-2 round m-2" style={{ backgroundColor: '#101116' }}>
+									<div className="card-body">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 							
@@ -55,7 +54,7 @@ const Draft = () => {
 						);
 					})}
 				</div>
-			</div>
+	
 		</Foundation>
 	);
 };
