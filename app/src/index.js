@@ -33,7 +33,6 @@ if(theme !== "undecided"){
   <Route path="/Stats" element={<Stats />} /> 
   <Route path="/nflTeams" element={<NflTeams />}/> 
   <Route path="/map" element={<Map />}/> 
-  <Route path="/*" element={<NotFound />}/> 
   {Key.draft.map((r) => {return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason year={r.year} />}/>})}
   {Key.nflTeams.map((r) => {return <Route path={"/nflTeams" + "/" + r.teamUrl }  element={<NflTeamsSingle />}/>})}
   </Routes>

@@ -1,18 +1,27 @@
 import * as helper from '../../helpers/helpers';
 import Key from '../../key/key.json';
 import React, {useEffect, useState} from "react";
+import { useLocation } from 'react-router-dom';
 import "./draftSeason.css";
 import Foundation from '../../layout/Foundation';
 import Circle from './componets/Circle';
 
 function DraftSeason(props) {
+
     const [width, setWidth] = useState(window.innerWidth);
     const [draft, setDraft] = useState([]);
     const [round, setRound] = useState(1);
     const [theme, setTheme] = useState();
-    
-    const fetchData = () => {
-            return fetch("https://adams66.github.io/api/draft/draft-" + props.year + ".json").then((response) => response.json()).then((data) => {  
+    var url = window.location.href.split("/");
+    var year = url[5];
+
+        
+
+    const fetchData = (year, url) => {
+
+            
+
+            return fetch("https://adams66.github.io/api/draft/draft-" + year + ".json").then((response) => response.json()).then((data) => {  
                 setDraft(data)
             });
     }
