@@ -5,8 +5,8 @@ import './main.css';
 
 function Main(props) {
 	return (
-		<div style={{ backgroundColor: props.background, height: "100vh" }} className="container-fluid p-0 ">
-			<div className="main ">
+		<div style={{ backgroundColor: props.background, height: "100%" }} className="container-fluid p-0 ">
+			<div className="main">
 				<Navbar
 					hamburgerFunction={props.hamburgerFunction}
 					hamburgerClass={props.hamburgerClass}

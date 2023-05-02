@@ -24,6 +24,10 @@
     border-radius: 10px;
 }
 
+body{
+    height:100vh;
+}
+
 
 body:not([class]){
     background-color: black;

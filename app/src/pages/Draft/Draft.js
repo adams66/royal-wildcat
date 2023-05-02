@@ -10,7 +10,7 @@ import Foundation from '../../layout/Foundation';
 const Draft = () => {
 	return (
 		<Foundation>
-				<div className="row m-0 m-md-4 m-lg-3 draft-container">
+				<div style={{height: "100%"}} className="row m-0 m-md-4 m-lg-3 draft-container">
 					{Key.draft.map((r) => {
 						return (
 							<div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">

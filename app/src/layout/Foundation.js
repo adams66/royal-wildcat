@@ -60,7 +60,7 @@ function Foundation(props) {
 	});
 
 	return (
-		<div>
+		<div style={{height: "100vh"}}>
 			<Sidebar  reset={reset} neon={neon} background={sidebar} classes={sidebarSwitch} />
 			<Main hamburgerFunction={hamburgerFunction} hamburgerClass={hamburgerClass} neon={neon} navbar={nav} background={theme}>
 				{props.children}

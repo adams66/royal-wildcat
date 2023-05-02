@@ -14,12 +14,7 @@
 	--p5h: 0.3px;
 }
 
-.wildcat-svg g,
-.shocker-svg g,
-.jayhawk-svg g,
-.chief-svg g {
-	transition: 0.2s ease-in-out;
-}
+
 
 .wrapper {
 	z-index: -1;
