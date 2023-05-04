@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.07f00fcf.css",
-    "main.js": "/static/js/main.87ab485d.js",
-    "static/media/splash.gif": "/static/media/splash.b66b13644bcc2611835a.gif",
-    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
-    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
-    "index.html": "/index.html",
-    "main.07f00fcf.css.map": "/static/css/main.07f00fcf.css.map",
-    "main.87ab485d.js.map": "/static/js/main.87ab485d.js.map"
+    "main.css": "/royal-wilcat/static/css/main.37519747.css",
+    "main.js": "/royal-wilcat/static/js/main.111b0188.js",
+    "static/media/splash.gif": "/royal-wilcat/static/media/splash.b66b13644bcc2611835a.gif",
+    "static/media/bootstrap-icons.woff?": "/royal-wilcat/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/royal-wilcat/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
+    "index.html": "/royal-wilcat/index.html",
+    "main.37519747.css.map": "/royal-wilcat/static/css/main.37519747.css.map",
+    "main.111b0188.js.map": "/royal-wilcat/static/js/main.111b0188.js.map"
   },
   "entrypoints": [
-    "static/css/main.07f00fcf.css",
-    "static/js/main.87ab485d.js"
+    "static/css/main.37519747.css",
+    "static/js/main.111b0188.js"
   ]
 }
