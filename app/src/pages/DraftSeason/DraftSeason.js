@@ -12,8 +12,8 @@ function DraftSeason(props) {
     const [draft, setDraft] = useState([]);
     const [round, setRound] = useState(1);
     const [theme, setTheme] = useState();
-    var url = window.location.href.split("/");
-    var year = url[5];
+
+  
 
         
 

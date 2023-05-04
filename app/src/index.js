@@ -13,7 +13,7 @@ import NflTeams from './pages/NflTeams/NflTeams';
 import Map from './pages/Map/Map';
 import NflTeamsSingle from './pages/NflTeamsSingle/NflTeamsSingle';
 import NotFound from "./pages/NotFound/NotFound";
-import {HashRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter,HashRouter, Routes, Route} from "react-router-dom";
 import Stats from './pages/Stats/Stats';
 
 
@@ -25,18 +25,19 @@ if(theme !== "undecided"){
 
   root.render(
     <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
   <Routes>
-  <Route path="/" element={<Home/>} />
-  <Route path="/draft" element={<Draft />}/>
-  <Route path="/hall-of-fame" element={<HallOfFame />}/> 
-  <Route path="/Stats" element={<Stats />} /> 
-  <Route path="/nflTeams" element={<NflTeams />}/> 
-  <Route path="/map" element={<Map />}/> 
-  {Key.draft.map((r) => {return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason  />}/>})}
-  {Key.nflTeams.map((r) => {return <Route path={"/nflTeams" + "/" + r.teamUrl }  element={<NflTeamsSingle />}/>})}
+  <Route path="/royal-wildcat" element={<Home/>} />
+  <Route path="/royal-wildcat/draft" element={<Draft />}/>
+  <Route path="/royal-wildcat/hall-of-fame" element={<HallOfFame />}/> 
+  <Route path="/royal-wildcat/Stats" element={<Stats />} /> 
+  <Route path="/royal-wildcat/nflTeams" element={<NflTeams />}/> 
+  <Route path="/royal-wildcat/map" element={<Map />}/> 
+  {Key.draft.map((r) => {return <Route path={"/royal-wildcat/draft" + "/" + r.year }  element={<DraftSeason  />}/>})}
+  {Key.nflTeams.map((r) => {return <Route path={"/royal-wildcat/nflTeams" + "/" + r.teamUrl }  element={<NflTeamsSingle />}/>})}
+  <Route path="/royal-wildcat/*" element={<NotFound />}/> 
   </Routes>
-    </HashRouter>
+    </BrowserRouter>
     </React.StrictMode>
   );
 }
