@@ -28,7 +28,7 @@ function Sidebar(props) {
 			<ul class="nav flex-column navbar-dark">
 				<NavLinks  path="/" name="HOME" />
 				<NavLinks  path="/draft" name="DRAFT HISTORY" />
-				<NavLinks  path="/royal-wildcat/overall" name="OVERALL" />
+				<NavLinks  path="/overall" name="OVERALL" />
 				{/* <NavLinks  path="/stats" name="STATS" /> */}
 				<NavLinks  path="/hall-of-fame" name="HALL OF FAME" />
 				<NavLinks  path="/nflTeams" name="NFL TEAMS" />

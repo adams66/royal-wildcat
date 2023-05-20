@@ -46,7 +46,7 @@ const Draft = () => {
 										<Button
 											color={helper.themeColor(Key, 'color')}
 											content={'View Draft'}
-											href={'/royal-wildcat/draft/' + r.year}
+											href={'/draft/' + r.year}
 										/>
 									</div>
 								</div>

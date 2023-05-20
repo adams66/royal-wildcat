@@ -1,7 +1,6 @@
 import * as helper from '../../helpers/helpers';
 import Key from '../../key/key.json';
 import React, {useEffect, useState} from "react";
-import { useLocation } from 'react-router-dom';
 import "./draftSeason.css";
 import Foundation from '../../layout/Foundation';
 import Circle from './componets/Circle';
@@ -21,15 +20,15 @@ function DraftSeason(props) {
 
             
 
-            return fetch("https://adams66.github.io/api/draft/draft-" + year + ".json").then((response) => response.json()).then((data) => {  
-                setDraft(data)
-            });
+            return fetch("https://homebase.dal-10.com/public/draft/season/" + year )
+            .then((response) => response.json())
+            .then((data) => { console.log(data); setDraft(data)});
     }
 
 
     useEffect((year, url) => {
         var url = window.location.href.split("/");
-        var year = url[5];
+        var year = url[4];
         fetchData(year, url);
 
     }, [])
@@ -71,7 +70,7 @@ function DraftSeason(props) {
                             <th class="text-center d-none d-md-table-cell"  scope="col">Round Number</th>
                             <th class="text-center"                         scope="col">Overall</th>
                             <th class="text-center"                         scope="col">Player Id</th>
-                            <th class="text-center"                         scope="col">Owner</th>
+                            <th class="text-center"                         scope="col">Fantasy Player</th>
                             <th class="text-center"                         scope="col">Position</th>
                             <th class="text-center"                         scope="col">NFL</th>
                             <th class="text-center"                         scope="col">College</th>
@@ -79,40 +78,33 @@ function DraftSeason(props) {
                     </thead>
                     <tbody style={{background: "rgb(16, 17, 22)"}} className="text-light">
                         {
-                        draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (userObj.Round === round ? <tr className={theme}>
+                        draft && draft.length > 0 && draft.map((userObj, index) => ( <tr className={theme}>
                             <th className="align-middle d-none d-md-table-cell" scope="row">
-                                <div className="text-center ">{userObj.Round}</div>
+                                <div className="text-center ">{userObj.overall_round}</div>
                             </th>
                             <td className="align-middle d-none d-md-table-cell">
-                                <div  className="text-center align-middle">
-                                    {
-                                    userObj["Round Number"]
-                                }</div>
+                                <div  className="text-center align-middle">{userObj.round_pick}</div>
+                            </td>
+                            <td className="align-middle ">
+                                <div className="text-center">{ userObj.overall_pick }</div>
                             </td>
                             <td 
-                                className="align-middle ">
+                                className="align-middle">
                                 <div className="text-center">
                                     {
-                                    userObj.Overall
+                                    userObj.player_name
                                 }</div>
                             </td>
                             <td 
                                 className="align-middle">
                                 <div className="text-center">
                                     {
-                                    userObj.Player_id
+                                    userObj.fantasy_player
                                 }</div>
                             </td>
                             <td 
                                 className="align-middle">
-                                <div className="text-center">
-                                    {
-                                    userObj.Owner
-                                }</div>
-                            </td>
-                            <td 
-                                className="align-middle">
-                                <div className="text-center"><Circle position={userObj}/></div>
+                                <div className="text-center"><Circle position={userObj.position}/></div>
                             </td>
                             <td 
                                 className="align-middle">
@@ -126,10 +118,10 @@ function DraftSeason(props) {
                                 className="align-middle">
                                 <div className="text-center">
                                     {
-                                    userObj.College
+                                    userObj.college
                                 }</div>
                             </td>
-                        </tr> : null))
+                        </tr> ))
                     } </tbody>
                 </table>
                 <nav aria-label="Page navigation example ">
@@ -163,16 +155,16 @@ function DraftSeason(props) {
             <Foundation>
                     {
                     
-                    draft.draft && draft.draft.length > 0 && draft.draft.map((userObj, index) => (
+                    draft && draft.length > 0 && draft.map((userObj, index) => (
                         <div style={{borderWidth: "2px", borderColor: "grey", borderStyle: "solid"}} className="row pt-2 m-2 rounded" >
                             <div className="col-9 d-flex flex-column ">
-                            <div className='text-light'>Round: {userObj.Round}</div>
-                            <div className='text-light'>Overall: {userObj.Overall}</div>
-                              <h6 className='text-light'>{userObj.Player_id}</h6>
-                              <h6 className="text-light">{userObj.Owner}</h6>
+                            <div className='text-light'>Round: {userObj.overall_round}</div>
+                            <div className='text-light'>Overall: {userObj.overall_pick}</div>
+                              <h6 className='text-light'>{userObj.player_name}</h6>
+                              <h6 className="text-light">{userObj.fantasy_player}</h6>
                             </div>
                             <div className="col-3 d-flex align-items-center justify-content-end">
-                                <Circle position={userObj}></Circle>
+                                <Circle position={userObj.position}></Circle>
                                 </div>
 
                           </div>
