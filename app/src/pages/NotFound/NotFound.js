@@ -6,7 +6,7 @@ function NotFound(){
 
     document.querySelector(".fixthat").style.opacity = 1;
 
-    setTimeout(()=>{window.location.replace("/royal-wildcat")}, 2000)
+    setTimeout(()=>{window.location.replace("/")}, 2000)
    }
 
     useEffect(() => {

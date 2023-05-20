@@ -23,10 +23,10 @@ function NflTeams() {
 	componentWillMount();
 
 	const fetchData = () => {
-		return fetch('https://adams66.github.io/api/nflTeams/nfl_teams.json')
+		return fetch('https://homebase.dal-10.com/nfl')
 			.then((response) => response.json())
 			.then((data) => {
-				setTeams(data[2].data);
+				setTeams(data);
 			});
 	};
 

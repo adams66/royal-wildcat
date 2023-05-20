@@ -27,12 +27,12 @@ if(theme !== "undecided"){
     <React.StrictMode>
     <BrowserRouter>
   <Routes>
-  <Route path="/royal-wildcat" element={<Home/>} />
-  <Route path="/royal-wildcat/draft" element={<Draft />}/>
-  <Route path="/royal-wildcat/hall-of-fame" element={<HallOfFame />}/> 
-  <Route path="/royal-wildcat/Stats" element={<Stats />} /> 
-  <Route path="/royal-wildcat/nflTeams" element={<NflTeams />}/> 
-  <Route path="/royal-wildcat/map" element={<Map />}/> 
+  <Route path="/" element={<Home/>} />
+  <Route path="/draft" element={<Draft />}/>
+  <Route path="/hall-of-fame" element={<HallOfFame />}/> 
+  <Route path="/Stats" element={<Stats />} /> 
+  <Route path="/nflTeams" element={<NflTeams />}/> 
+  <Route path="/map" element={<Map />}/> 
   {Key.draft.map((r) => {return <Route path={"/royal-wildcat/draft" + "/" + r.year }  element={<DraftSeason  />}/>})}
   {Key.nflTeams.map((r) => {return <Route path={"/royal-wildcat/nflTeams" + "/" + r.teamUrl }  element={<NflTeamsSingle />}/>})}
   <Route path="/royal-wildcat/*" element={<NotFound />}/> 

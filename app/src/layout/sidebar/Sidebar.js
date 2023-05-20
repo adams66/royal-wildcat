@@ -12,7 +12,7 @@ function Sidebar(props) {
 	function resetButton() {
 		localStorage.removeItem('theme');
 		localStorage.removeItem('theme-color');
-		window.location.replace("/royal-wildcat")
+		window.location.replace("/")
 
 	}
 
@@ -20,19 +20,19 @@ function Sidebar(props) {
 	return (
 		<div style={{backgroundColor: props.background, boxShadow: "1px 1px 23px 0px " + props.neon}}   className={props.classes}>
 			<div className="Logo p-3">
-				<a className="navbar-brand" href="/royal-wildcat/">
+				<a className="navbar-brand" href="/">
 					<h2 className="text-center text-light d-none d-xl-block">{key.title}</h2>
 				</a>
 			</div>
 
 			<ul class="nav flex-column navbar-dark">
-				<NavLinks  path="/royal-wildcat" name="HOME" />
-				<NavLinks  path="/royal-wildcat/draft" name="DRAFT HISTORY" />
+				<NavLinks  path="/" name="HOME" />
+				<NavLinks  path="/draft" name="DRAFT HISTORY" />
 				<NavLinks  path="/royal-wildcat/overall" name="OVERALL" />
 				{/* <NavLinks  path="/stats" name="STATS" /> */}
-				<NavLinks  path="/royal-wildcat/hall-of-fame" name="HALL OF FAME" />
-				<NavLinks  path="/royal-wildcat/nflTeams" name="NFL TEAMS" />
-				<NavLinks  path="/royal-wildcat/map" name="MAP" />
+				<NavLinks  path="/hall-of-fame" name="HALL OF FAME" />
+				<NavLinks  path="/nflTeams" name="NFL TEAMS" />
+				<NavLinks  path="/map" name="MAP" />
 			</ul>
 
 			<a onClick={resetButton}
