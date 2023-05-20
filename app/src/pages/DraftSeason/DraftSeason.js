@@ -11,27 +11,23 @@ function DraftSeason(props) {
     const [draft, setDraft] = useState([]);
     const [round, setRound] = useState(1);
     const [theme, setTheme] = useState();
+    
 
-  
+    const fetchData = (year,round) => {
 
         
-
-    const fetchData = (year, url) => {
-
-            
-
-            return fetch("https://homebase.dal-10.com/public/draft/season/" + year )
+            return fetch("https://homebase.dal-10.com/public/draft/season/" + year + "/" + round)
             .then((response) => response.json())
-            .then((data) => { console.log(data); setDraft(data)});
+            .then((data) => {setDraft(data)});
     }
 
 
-    useEffect((year, url) => {
+    useEffect((year) => {
         var url = window.location.href.split("/");
         var year = url[4];
-        fetchData(year, url);
+        fetchData(year,round);
 
-    }, [])
+    },[])
 
     function handleWindowSizeChange() {
         setWidth(window.innerWidth);
@@ -39,11 +35,19 @@ function DraftSeason(props) {
     }
 
     function page(draft, round,event) {
-        if (event == "Next" && round != draft.rounds ) {
-            setRound(round + 1);
+        if (event == "Next") {
+            
+            var url = window.location.href.split("/");
+            var year = url[4];
+            setRound(round  + 1);
+            fetchData(year,round + 1);
         }
-         else if (event =="Previous" && round != 1) {
+         else if (event =="Previous") {
+            var url = window.location.href.split("/");
+            var year = url[4];
+            
             setRound(round - 1);
+            fetchData(year,round - 1);
         }
         else{
             
@@ -171,6 +175,25 @@ function DraftSeason(props) {
 
                     ))
                 } 
+
+<nav aria-label="Page navigation example ">
+                    <ul className="pagination d-flex justify-content-center">
+                        <li className="page-item m-1">
+                            <a  onClick={(event) => page(draft, round,"Previous")}  style={round == 1 ? {background:"red"} : {background:helper.themeColor(Key,'color')}} className= {theme + " pageChanger btn  text-light"}
+                                ><svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                              </svg></a>
+                        </li>
+                        <li  className="page-item m-1">
+                            <a  onClick={(event) => page(draft, round,"Next")}  style={round == draft.rounds ? {background:"red"} : {background:helper.themeColor(Key,'color')}} className={theme + " pageChanger btn text-light"}
+                                ><svg id="Next" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                              </svg></a>
+                        </li>
+
+
+                    </ul>
+                </nav>
             </Foundation>
 
         )
