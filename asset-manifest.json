@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/royal-wildcat/static/css/main.e6efb1a4.css",
-    "main.js": "/royal-wildcat/static/js/main.938870f6.js",
-    "static/media/splash.gif": "/royal-wildcat/static/media/splash.b66b13644bcc2611835a.gif",
-    "static/media/bootstrap-icons.woff?": "/royal-wildcat/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
-    "static/media/bootstrap-icons.woff2?": "/royal-wildcat/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
-    "index.html": "/royal-wildcat/index.html",
-    "main.e6efb1a4.css.map": "/royal-wildcat/static/css/main.e6efb1a4.css.map",
-    "main.938870f6.js.map": "/royal-wildcat/static/js/main.938870f6.js.map"
+    "main.css": "/static/css/main.07f00fcf.css",
+    "main.js": "/static/js/main.3dcd5e64.js",
+    "static/media/splash.gif": "/static/media/splash.b66b13644bcc2611835a.gif",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
+    "index.html": "/index.html",
+    "main.07f00fcf.css.map": "/static/css/main.07f00fcf.css.map",
+    "main.3dcd5e64.js.map": "/static/js/main.3dcd5e64.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6efb1a4.css",
-    "static/js/main.938870f6.js"
+    "static/css/main.07f00fcf.css",
+    "static/js/main.3dcd5e64.js"
   ]
 }
