@@ -62,7 +62,7 @@ function NflTeams() {
 												<NavLink
 													style={{ textDecoration: 'none' }}
 													className="text-light"
-													to={'/nflTeams/' + 'arizona-cardinals'}
+													to={'/nflTeams/' + userObj.team_url}
 												>
 													{userObj.team}
 												</NavLink>
