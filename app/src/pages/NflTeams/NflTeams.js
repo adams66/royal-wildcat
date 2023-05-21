@@ -5,7 +5,7 @@ import './NflTeams.css';
 
 function NflTeams() {
 	const [ width, setWidth ] = useState(window.innerWidth);
-	const [ teams, setTeams ] = useState([ 0 ]);
+	const [ teams, setTeams ] = useState([]);
 	const [ nfl, setNfl ] = useState(0);
 
 	function createMarkup(svg) {
@@ -34,7 +34,7 @@ function NflTeams() {
 		fetchData();
 	}, []);
 
-	if (width >= 700) {
+	if (width >= 700 && teams !== []) {
 		return (
 			<Foundation>
 				<table className="table m-3 ">
@@ -62,7 +62,7 @@ function NflTeams() {
 												<NavLink
 													style={{ textDecoration: 'none' }}
 													className="text-light"
-													to={'/nflTeams/'}
+													to={'/nflTeams/' + 'arizona-cardinals'}
 												>
 													{userObj.team}
 												</NavLink>
@@ -85,7 +85,7 @@ function NflTeams() {
 				</table>
 			</Foundation>
 		);
-	} else {
+	} else if(width <= 700 && teams !==[]) {
 		return (
 			<Foundation>
 				{teams &&
@@ -107,6 +107,17 @@ function NflTeams() {
 					))}
 			</Foundation>
 		);
+	}
+
+
+	else{
+		return(
+		<Foundation>
+			<h1>Loading</h1>
+
+
+		</Foundation>
+		)
 	}
 }
 

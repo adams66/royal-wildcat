@@ -11,7 +11,7 @@ function NflTeamsSingle(props) {
 
 	return (
 		<Foundation>
-                <h1 className='text-light text-center'>NFL TEAM</h1>
+                <h1 className='text-light text-center'>Arizona cardinals</h1>
 		</Foundation>
 	);
 }

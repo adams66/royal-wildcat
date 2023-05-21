@@ -133,190 +133,192 @@
     {
       "id": "1",
       "team": "Arizona Cardinals",
-      "teamUrl": "Arizona-Cardinals",
+      "teamUrl": "arizona-cardinals",
       "established_year": "1965"
     },
     {
       "id": "2",
       "team": "Atlanta Falcons",
-      "teamUrl": "Atlanta-Falcons",
+      "teamUrl": "atlanta-falcons",
       "established_year": "1965"
     },
     {
       "id": "3",
       "team": "Carolina Panthers",
-      "teamUrl": "Carolina-Panthers",
+      "teamUrl": "carolina-panthers",
       "established_year": "1993"
     },
     {
       "id": "9",
       "team": "Chicago Bears",
-      "teamUrl": "Chicago-Bears",
+      "teamUrl": "chicago-bears",
       "established_year": "1920"
     },
     {
       "id": "10",
       "team": "Dallas Cowboys",
+      "teamUrl": "dallas-cowboys",
       "established_year": "1960"
     },
     {
       "id": "11",
       "team": "Detroit Lions",
-      "teamUrl": "Detroit-Lions",
+      "teamUrl": "detroit-lions",
       "established_year": "1929"
     },
     {
       "id": "12",
       "team": "Green Bay Packers",
-      "teamUrl": "Green-Bay-Packers",
+      "teamUrl": "green-bay-packers",
       "established_year": "1919"
     },
     {
       "id": "13",
       "team": "Los Angeles Rams",
-      "teamUrl": "Los-Angeles-Rams",
+      "teamUrl": "los-angeles-rams",
       "established_year": "1936"
     },
     {
       "id": "14",
       "team": "Minnesota Vikings",
-      "teamUrl": "Minnesota-Vikings",
+      "teamUrl": "minnesota-vikings",
       "established_year": "1960"
     },
     {
       "id": "16",
       "team": "New Orleans Saints",
-      "teamUrl": "New-Orleans-Saints",
+      "teamUrl": "new-orleans-saints",
       "established_year": "1967"
     },
     {
       "id": "17",
       "team": "New York Giants",
-      "teamUrl": "New-York-Giants",
+      "teamUrl": "new-york-giants",
       "established_year": "1925"
     },
     {
       "id": "18",
       "team": "Philadelphia Eagles",
-      "teamUrl": "Philadelphia-Eagles",
+      "teamUrl": "philadelphia-eagles",
       "established_year": "1933"
     },
     {
       "id": "19",
       "team": "San Francisco 49ers",
-      "teamUrl": "San-Francisco-49ers",
+      "teamUrl": "san-francisco-49ers",
       "established_year": "1946"
     },
     {
       "id": "20",
       "team": "Seattle Seahawks",
-      "teamUrl": "Seattle-Seahawks",
+      "teamUrl": "seattle-seahawks",
       "established_year": "1974"
     },
     {
       "id": "21",
       "team": "Tampa Bay Buccaneers",
-      "teamUrl": "Tampa-Bay-Buccaneers"
+      "teamUrl": "tampa-bay-buccaneers"
     },
     {
       "id": "22",
       "team": "Washington Commanders",
-      "teamUrl": "Washington-Commanders",
+      "teamUrl": "washington-commanders",
       "established_year": "1932"
     },
     {
       "id": "23",
       "team": "Baltimore Ravens",
-      "teamUrl": "Baltimore-Ravens",
+      "teamUrl": "baltimore-ravens",
       "established_year": "1996"
     },
     {
       "id": "24",
       "team": "Buffalo Bills",
-      "teamUrl": "Buffalo-Bills",
+      "teamUrl": "buffalo-bills",
       "established_year": "1960"
     },
     {
       "id": "25",
       "team": "Cincinnati Bengals",
-      "teamUrl": "Cincinnati-Bengals",
+      "teamUrl": "cincinnati-bengals",
       "established_year": "1967"
     },
     {
       "id": "26",
       "team": "Cleveland Browns",
-      "teamUrl": "Cleveland-Browns",
+      "teamUrl": "cleveland-browns",
       "established_year": "1946"
     },
     {
       "id": "27",
       "team": "Denver Broncos",
-      "teamUrl": "Denver-Broncos",
+      "teamUrl": "denver-broncos",
       "established_year": "1960"
     },
     {
       "id": "28",
       "team": "Houston Texans",
-      "teamUrl": "Houston-Texans",
+      "teamUrl": "houston-texans",
       "established_year": "1960"
     },
     {
       "id": "29",
       "team": "Indianapolis Colts",
-      "teamUrl": "Indianapolis-Colts",
+      "teamUrl": "indianapolis-colts",
       "established_year": "1953"
     },
     {
       "id": "30",
       "team": "Jacksonville Jaguars",
-      "teamUrl": "Jacksonville-Jaguars",
+      "teamUrl": "jacksonville-jaguars",
       "established_year": "1993"
     },
     {
       "id": "31",
       "team": "Kansas City Chiefs",
-      "teamUrl": "Kansas-City-Chiefs",
+      "teamUrl": "kansas-city-chiefs",
       "established_year": "1960"
     },
     {
       "id": "32",
       "team": "Las Vegas Raiders",
-      "teamUrl": "Las-Vegas-Raiders",
+      "teamUrl": "las-vegas-raiders",
       "established_year": "1960"
     },
     {
       "id": "35",
       "team": "Miami Dolphins",
-      "teamUrl": "Miami-Dolphins",
+      "teamUrl": "miami-dolphins",
       "established_year": "1966"
     },
     {
       "id": "37",
       "team": "New England Patriots",
+      "teamUrl": "new-england-patriots",
       "established_year": "1960"
     },
     {
       "id": "38",
       "team": "New York Jets",
-      "teamUrl": "New-York-Jets",
+      "teamUrl": "new-york-jets",
       "established_year": "1960"
     },
     {
       "id": "39",
       "team": "Pittsburgh Steelers",
-      "teamUrl": "Pittsburgh-Steelers",
+      "teamUrl": "pittsburgh-steelers",
       "established_year": "1933"
     },
     {
       "id": "40",
       "team": "Tennessee Titans",
-      "teamUrl": "Tennessee-Titans",
+      "teamUrl": "tennessee-titans",
       "established_year": "1959"
     },
     {
       "id": "41",
       "team": "Los Angeles Chargers",
-      "teamUrl": "Los-Angeles-Chargers",
+      "teamUrl": "los-angeles-chargers",
       "established_year": "1960"
     }
   ]

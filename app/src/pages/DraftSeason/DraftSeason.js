@@ -35,14 +35,14 @@ function DraftSeason(props) {
     }
 
     function page(draft, round,event) {
-        if (event == "Next") {
+        if (event == "Next" &&  round < 16) {
             
             var url = window.location.href.split("/");
             var year = url[4];
             setRound(round  + 1);
             fetchData(year,round + 1);
         }
-         else if (event =="Previous") {
+         else if (event =="Previous" && round > 1) {
             var url = window.location.href.split("/");
             var year = url[4];
             
