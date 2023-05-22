@@ -96,10 +96,8 @@ function NflTeams() {
 								<h6 className="text-light">{userObj.team}</h6>
 								<h2>{userObj.established_year}</h2>
 							</div>
-							<div
-								dangerouslySetInnerHTML={createMarkup(userObj.logo)}
-								className="col-3 d-flex align-items-center justify-content-end"
-							/>
+							<img style={{display: "block",opacity: 1, width: "70px", marginLeft: "auto", marginRight: "auto"}} src={"https://homebase.dal-10.com/nfl_logos/" + userObj.logo} />
+
 						</div>
 					))}
 			</Foundation>
