@@ -8,10 +8,15 @@ import Foundation from '../../layout/Foundation';
 
 function NflTeamsSingle(props) {
 
+	var url = window.location.pathname.split("/");
+
+	console.log(url);
+	
+
 
 	return (
 		<Foundation>
-                <h1 className='text-light text-center'>Arizona cardinals</h1>
+                <h1 className='text-light text-center'>{url[2]}</h1>
 		</Foundation>
 	);
 }
