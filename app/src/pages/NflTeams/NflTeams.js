@@ -92,8 +92,15 @@ function NflTeams() {
 							style={{ borderWidth: '2px', borderColor: 'grey', borderStyle: 'solid', color: 'white' }}
 							className="row pt-3 pb-3 m-2 rounded"
 						>
+							
 							<div className="col-9 d-flex flex-column">
+							<NavLink
+													style={{ textDecoration: 'none' }}
+													className="text-light"
+													to={'/nflTeams/' + userObj.team_url}
+												>
 								<h6 className="text-light">{userObj.team}</h6>
+								</NavLink>
 								<h2>{userObj.established_year}</h2>
 							</div>
 							<img style={{display: "block",opacity: 1, width: "70px", marginLeft: "auto", marginRight: "auto"}} src={"https://homebase.dal-10.com/nfl_logos/" + userObj.logo} />
