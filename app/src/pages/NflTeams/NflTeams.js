@@ -6,7 +6,6 @@ import './NflTeams.css';
 function NflTeams() {
 	const [ width, setWidth ] = useState(window.innerWidth);
 	const [ teams, setTeams ] = useState([]);
-	const [ nfl, setNfl ] = useState(0);
 
 	function createMarkup(svg) {
 		return { __html: svg };
@@ -73,11 +72,9 @@ function NflTeams() {
 										<div className="text-center">{userObj.established_year}</div>
 									</td>
 
-									<td className="align-middle ">
-										<div
-											dangerouslySetInnerHTML={createMarkup(userObj.logo)}
-											className="text-center"
-										/>
+									<td className="align-middle">
+										<img style={{display: "block",opacity: 1, width: "50px", marginLeft: "auto", marginRight: "auto"}} src={"https://homebase.dal-10.com/nfl_logos/" + userObj.logo} />
+					
 									</td>
 								</tr>
 							))}

@@ -84,13 +84,13 @@ function DraftSeason(props) {
                         {
                         draft && draft.length > 0 && draft.map((userObj, index) => ( <tr className={theme}>
                             <th className="align-middle d-none d-md-table-cell" scope="row">
-                                <div className="text-center ">{userObj.overall_round}</div>
+                                <div className="text-center fw-bold">{userObj.overall_round}</div>
                             </th>
                             <td className="align-middle d-none d-md-table-cell">
-                                <div  className="text-center align-middle">{userObj.round_pick}</div>
+                                <div  className="text-center align-middle fw-bold">{userObj.round_pick}</div>
                             </td>
                             <td className="align-middle ">
-                                <div className="text-center">{ userObj.overall_pick }</div>
+                                <div className="text-center fw-bold">{ userObj.overall_pick }</div>
                             </td>
                             <td 
                                 className="align-middle">
