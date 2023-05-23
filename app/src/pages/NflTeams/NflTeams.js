@@ -46,8 +46,8 @@ function NflTeams() {
 							teams.map((userObj, index) => (
 								<div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
 								<div className="card p-0 p-md-2 round m-2 m-md-3 " style={{ backgroundColor: '#101116', border:userObj.conference == "1" ? "2px solid red" : "2px solid blue"}}>
-									<div className="card-body d-flex d-md-block">
-										<img className='mb-4' style={{marginLeft:"auto", marginRight:"auto", display:"block"}} width="150px" height="150px" src={"https://homebase.dal-10.com/nfl_logos/" + userObj.logo} />
+									<div className="card-body d-flex flex-column align-items-center">
+										<img className=" mb-4 d-block"  style={{display:"block"}} width="100px" height="100px" src={"https://homebase.dal-10.com/nfl_logos/" + userObj.logo} />
 										
 												<NavLink
 													style={{ textDecoration: 'none' }}
