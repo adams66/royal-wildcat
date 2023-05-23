@@ -25,57 +25,8 @@
 }
 
 body{
-    height:100vh;
-}
-
-
-body:not([class]){
-    background-color: black;
-    opacity: 1;
-    animation-name: fadein;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    animation-iteration-count: 1;
-
-
-}
-
-
-body.fadeout{
-    background-color: black;
-    opacity: 0;
-    animation-name: fadeout;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    animation-iteration-count: 1;
-}
-
-
-
-body{
     font-family: 'Merriweather', serif;
-
+    background-color: rgb(3, 3, 3);
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-.neon{
-    border: 2px solid purple;
-}
-
-
-
-
-@keyframes fadeout {
-
-    0%{opacity: 1;}
-    100%{opacity: 0;}
-    
-}
-
-@keyframes fadein {
-    0%{opacity: 0;}
-    100%{opacity: 1;} 
 }
