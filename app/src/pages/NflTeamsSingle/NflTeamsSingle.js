@@ -33,8 +33,12 @@ if(nflTeam){
 				<img style={{opacity: "1", display: "block", marginLeft: "auto", marginRight:"auto"}} src={"https://homebase.dal-10.com/nfl_logos/" + nflTeam[0].logo}  />
 				<h1 className='text-light text-center'>{"id " + nflTeam[0].id}</h1>
 				<h1 className='text-light text-center'>{"Conference " + nflTeam[0].conference}</h1>
+				<h1 className='text-light text-center'>{"Year Established " + nflTeam[0].established_year}</h1>
 				<h1 className='text-light text-center'>{"Team " + nflTeam[0].team}</h1>
 				<h1 className='text-light text-center'><a href={nflTeam[0].website} target="_blank" rel="noopener noreferrer">{nflTeam[0].team}</a></h1>
+				<h1 className='text-light text-center'>{"Stadium Name " + nflTeam[0].stadium_name }</h1>
+				<h1 className='text-light text-center'>{"Stadium Capacity " + nflTeam[0].stadium_capacity }</h1>
+				<h1 className='text-light text-center'>{"Stadium Grass Type " + nflTeam[0].stadium_grass }</h1>
 		</Foundation>
 	);
 
