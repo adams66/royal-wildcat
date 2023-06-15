@@ -41,6 +41,7 @@ function DraftSeason(props) {
             var year = url[4];
             setRound(round  + 1);
             fetchData(year,round + 1);
+            helper.windowReset();
         }
          else if (event =="Previous" && round > 1) {
             var url = window.location.href.split("/");
@@ -48,6 +49,7 @@ function DraftSeason(props) {
             
             setRound(round - 1);
             fetchData(year,round - 1);
+            helper.windowReset();
         }
         else{
             
