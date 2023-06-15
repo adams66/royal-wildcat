@@ -11,11 +11,9 @@ function Home(props) {
 	useEffect(() => {
 		helper.windowReset();
 		var themeColor = JSON.parse(localStorage.getItem("theme-color"));
-
-		
-
-
 	}, []);
+
+	
 
 	return (
 		<Foundation>

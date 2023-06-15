@@ -68,19 +68,14 @@ function Theme() {
 				<Svg rotate={theme} />
 			</div>
 
-			<div
-				onClick={() => {
-					rotate(theme, countTheme, 'up');
+			<div onClick={() => { rotate(theme, countTheme, 'up');
 				}}
 				style={{ right: '5%', top: '50%', transform: 'translateY(-50%)', cursor: 'pointer' }}
 				className="position-fixed"
 			>
 				<Icon color={particles} icon="bi bi-arrow-right-square" size="40px" />
 			</div>
-			<div
-				onClick={() => {
-					rotate(theme, countTheme, 'down');
-				}}
+			<div onClick={() => { rotate(theme, countTheme, 'down'); }}
 				style={{ left: '5%', top: '50%', transform: 'translateY(-50%)', cursor: 'pointer' }}
 				className="position-fixed"
 			>
