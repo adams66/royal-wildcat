@@ -2,8 +2,9 @@ import ReactDOM from 'react-dom/client';
 import * as helper from './helpers/helpers';
 import React from 'react';
 import Key from "./key/key.json";
-import "./css/index.css";
+import "./css/bootstrap.css";
 import "./css/override.css";
+import "./css/theme.css";
 import Home from './pages/Home/Home';
 import Draft from './pages/Draft/Draft';
 import Theme from "./pages/Theme/Theme";
@@ -32,7 +33,7 @@ if(theme !== "undecided"){
   <Route path="/hall-of-fame" element={<HallOfFame />}/> 
   <Route path="/Stats" element={<Stats />} /> 
   <Route path="/nflTeams" element={<NflTeams />}/> 
-  <Route path="/map" element={<Map />}/> 
+  {/* <Route path="/map" element={<Map />}/>  */}
   {Key.draft.map((r) => {return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason  />}/>})}
   {Key.nflTeams.map((r) => {return <Route path={"/nflTeams" + "/" + r.teamUrl }  element={<NflTeamsSingle />}/>})}
   <Route path="/*" element={<NotFound />}/> 

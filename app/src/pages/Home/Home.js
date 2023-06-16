@@ -4,8 +4,10 @@ import Foundation from '../../layout/Foundation';
 import HomeHeader from './homeComponents/HomeHeader';
 import HomeGrid from './homeComponents/HomeGrid';
 import { useEffect } from 'react';
-import { useState } from 'react';
 import HomeIconGrid from './homeComponents/HomeIconGrid';
+
+
+
 
 function Home(props) {
 	useEffect(() => {

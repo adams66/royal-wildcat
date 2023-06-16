@@ -5,9 +5,7 @@ function Map() {
 	return (
 		<Foundation>
             <div className='row d-flex justify-content-center'>
-
-           
-			<h1 className='text-light text-center'>Map</h1>
+                
 			<svg className='dot' height='100' width='50'>
 
 			//1	

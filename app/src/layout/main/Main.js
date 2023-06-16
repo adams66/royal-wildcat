@@ -5,7 +5,7 @@ import './main.css';
 
 function Main(props) {
 	return (
-		<div style={{ backgroundColor: props.background, height: "100%" }} className="container-fluid p-0 ">
+		<div style={{height: "100%" }} className="container-fluid p-0 background">
 			<div className="main">
 				<Navbar
 					hamburgerFunction={props.hamburgerFunction}

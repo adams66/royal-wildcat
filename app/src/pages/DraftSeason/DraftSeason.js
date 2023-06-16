@@ -165,7 +165,7 @@ function DraftSeason(props) {
 		return (
 			<Foundation>
 				<table className="table m-3 ">
-					<thead style={{ background: 'rgb(16, 17, 22)' }}>
+					<thead>
 						<tr className="text-light">
 							<th class="text-center d-none d-md-table-cell" scope="col">Round</th>
 							<th class="text-center d-none d-md-table-cell" scope="col">Round Number</th>
@@ -177,7 +177,7 @@ function DraftSeason(props) {
 							<th class="text-center" scope="col">College</th>
 						</tr>
 					</thead>
-					<tbody style={{ background: 'rgb(16, 17, 22)' }} className="text-light">
+					<tbody  className="text-light">
 						{draft &&
 							draft.length > 0 &&
 							draft.map((userObj, index) => (

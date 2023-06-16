@@ -19,7 +19,6 @@ function NavLinks(props){
         if(event.target.style.color !=="white"){
             document.querySelector(".hamburger").classList.remove("clicked");
             document.querySelector(".sidebar").classList.add("d-none");
-            console.log("checking")
         }
     }
 
