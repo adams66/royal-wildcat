@@ -11,14 +11,6 @@
     animation-iteration-count: infinite;
 }
 
-
-
-
-
-
-
-
-
 .hamburger{
     z-index: 100;
     position: fixed;
@@ -32,8 +24,9 @@
 }
 
 .line{
+    position: absolute;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 30px !important;
     width: 25px;
     height: 2px;
     background-color:white;
@@ -41,32 +34,23 @@
     transition: 0.2s ease-in-out;
 }
 
-
 .lineA{
-
-    position: absolute;
     top: 36%;
     left: 50%;
-
 }
 
 .lineB{
-
-    position: absolute;
     top: 50%;
     left: 50%;
-    
 }
 
 .lineC{
-    position: absolute;
     top: 66%;
     left: 50%;
 }
 
 
 .hamburger.clicked .lineA{
-
     background-color: rgb(102, 16, 242);
     top: 50%;
     transform: translate(-50%) rotate(-45deg);
@@ -75,11 +59,9 @@
 }
 
 .hamburger.clicked .lineB{
-
     opacity: 0;
     left: 50%;
 }
-
 
 .hamburger.clicked .lineC{
 
@@ -90,19 +72,12 @@
 }
 
 
-
-
-
-
 @media screen and (max-width: 768px){
     .navbar-top{
         margin-left: 0;
     }
-
-
-
 }
 
-/*Neon keyframes in sidebar*/
+
 
 

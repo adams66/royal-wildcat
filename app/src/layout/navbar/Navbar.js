@@ -19,9 +19,6 @@ function Navbar(props){
 				<div className="line lineC rounded"></div>
 				</div>
 			</div>
-
-		<div className="text-light" style={{position:"absolute", right: "20px", top:"20px"}}><h4>{year}</h4></div>
-
 		</div>
 	);
 };

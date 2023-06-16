@@ -1,7 +1,5 @@
 import Key from '../../../key/key.json';
-
 import Button from '../../../layout/components/Button/Button';
-
 
 function HomeGrid(props) {
 	return (

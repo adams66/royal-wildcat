@@ -6,7 +6,6 @@ import NavBar from './navbar/Navbar';
 import Main from './main/Main';
 import Footer from './Footer/Footer';
 import { useEffect } from 'react';
-import userEvent from '@testing-library/user-event';
 
 function Foundation(props) {
 	const [ theme, setTheme]     = useState([0]);
@@ -34,9 +33,7 @@ function Foundation(props) {
 			setHamburger(1);
 			setHamburgerClass("hamburger d-block d-lg-none clicked");
 			setSidebarSwitch("sidebar position-fixed w-100 d-flex flex-column justify-content-center d-lg-block");
-
 		}
-		
 		else{
 			setHamburger(0);
 			setHamburgerClass("hamburger d-block d-lg-none");
@@ -50,7 +47,6 @@ function Foundation(props) {
 
 	useEffect(() => {
 		var themeColors = JSON.parse(localStorage.getItem("theme-color"));
-		// setButtons(themeColors.buttons);
 		setTheme(themeColors.background);
 		setCards(themeColors.cards);
 		setNav(themeColors.nav);
