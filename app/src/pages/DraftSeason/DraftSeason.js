@@ -3,18 +3,22 @@ import Key from '../../key/key.json';
 import React, { useEffect, useState } from 'react';
 import './draftSeason.css';
 import Foundation from '../../layout/Foundation';
-import Circle from './componets/Circle';
+import Circle from './componets/Circle/Circle';
+import Draft_Table from './componets/Table/Draft_Table';
+
 
 function DraftSeason(props) {
 	const [ width, setWidth ] = useState(window.innerWidth);
 	const [ draft, setDraft ] = useState([]);
 	const [ round, setRound ] = useState(1);
 	const [ theme, setTheme ] = useState();
-
+	const [ Load,  SetLoad  ] = useState(false);
+ 
 	const fetchData = (year, round) => {
 		return fetch('https://homebase.dal-10.com/public/draft/season/' + year + '/' + round)
 			.then((response) => response.json())
 			.then((data) => {
+				SetLoad(true);
 				setDraft(data);
 			});
 	};
@@ -54,7 +58,6 @@ function DraftSeason(props) {
 	componentWillMount();
 
 	function nflTeam(team) {
-        console.log(team)
 		switch (team) {
             case "0" :
             return "";
@@ -161,60 +164,14 @@ function DraftSeason(props) {
 		}
 	}
 
+
+
+
+
 	if (width >= 700) {
 		return (
 			<Foundation>
-				<table className="table m-3 ">
-					<thead>
-						<tr className="text-light">
-							<th class="text-center d-none d-md-table-cell" scope="col">Round</th>
-							<th class="text-center d-none d-md-table-cell" scope="col">Round Number</th>
-							<th class="text-center" scope="col">Overall</th>
-							<th class="text-center" scope="col">Player Name</th>
-							<th class="text-center" scope="col">Fantasy Player</th>
-							<th class="text-center" scope="col">Position</th>
-							<th class="text-center" scope="col">NFL</th>
-							<th class="text-center" scope="col">College</th>
-						</tr>
-					</thead>
-					<tbody  className="text-light">
-						{draft &&
-							draft.length > 0 &&
-							draft.map((userObj, index) => (
-								<tr className={theme}>
-									<th className="align-middle d-none d-md-table-cell" scope="row">
-										<div className="text-center fw-bold">{userObj.overall_round}</div>
-									</th>
-									<td className="align-middle d-none d-md-table-cell">
-										<div className="text-center align-middle fw-bold">{userObj.round_pick}</div>
-									</td>
-									<td className="align-middle ">
-										<div className="text-center fw-bold">{userObj.overall_pick}</div>
-									</td>
-									<td className="align-middle">
-										<div className="text-center">{userObj.player_name}</div>
-									</td>
-									<td className="align-middle">
-										<div className="text-center">{userObj.fantasy_player}</div>
-									</td>
-									<td className="align-middle">
-										<div className="text-center">
-											<Circle position={userObj.position} />
-										</div>
-									</td>
-									<td className="align-middle">
-										<div className="text-center">
-											<img style={{width: "50px"}} src={nflTeam(userObj.nfl)} />
-										</div>
-									</td>
-
-									<td className="align-middle">
-										<div className="text-center">{userObj.college}</div>
-									</td>
-								</tr>
-							))}{' '}
-					</tbody>
-				</table>
+				<Draft_Table data={draft} />
 				<nav aria-label="Page navigation example ">
 					<ul className="pagination d-flex justify-content-center">
 						<li className="page-item m-1">
