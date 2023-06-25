@@ -5,7 +5,7 @@ function Table_Body(props) {
 	function nflTeam(team) {
 		switch (team) {
 			case '0':
-				return '';
+				return 'https://homebase.dal-10.com/nfl_logos/kansas_city_chiefs.svg';
 			case '1':
 				return 'https://homebase.dal-10.com/nfl_logos/arizona_cardinals.svg';
 
@@ -86,6 +86,10 @@ function Table_Body(props) {
 
 			case '32':
 				return 'https://homebase.dal-10.com/nfl_logos/los_angeles_chargers.svg';
+
+				
+
+
 		}
 	}
 
