@@ -32,7 +32,7 @@ if(nflTeam){
 		<Foundation>
 						<div style={{border: "2px solid blue",height:"100px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
 				<div className='col'>
-				<h1>{"Team " + nflTeam[0].team}</h1>
+				<h1>{nflTeam[0].team}</h1>
 				</div>
 				</div>
 
@@ -42,7 +42,7 @@ if(nflTeam){
 
 			<div  className='col-12 col-md-6 d-flex justify-content-center align-items-center position-relative'>
 
-				<div className='d-flex justify-content-center align-items-center' style={{background:"white", borderRadius: "50%", width: "100%", maxWidth:"500px", height:"100%", maxHeight: "500px"}}>
+				<div className='d-flex justify-content-center align-items-center' style={{background:"white", borderRadius: "50%", width: "100%", maxWidth:"300px", height:"300px",}}>
 			<img style={{opacity: "1", display: "block", marginLeft: "auto", marginRight:"auto"}} src={"https://homebase.dal-10.com/nfl_logos/" + nflTeam[0].logo}  />
 			</div>
 			</div>

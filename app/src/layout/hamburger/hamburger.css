@@ -1,0 +1,59 @@
+.hamburger{
+    z-index: 100;
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    transform: translate(-25%);
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.line{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 30px !important;
+    width: 25px;
+    height: 2px;
+    background-color:white;
+    transform: translate(-50%) rotate(0);
+    transition: 0.2s ease-in-out;
+}
+
+.lineA{
+    top: 36%;
+    left: 50%;
+}
+
+.lineB{
+    top: 50%;
+    left: 50%;
+}
+
+.lineC{
+    top: 66%;
+    left: 50%;
+}
+
+
+.hamburger.clicked .lineA{
+    background-color: rgb(102, 16, 242);
+    top: 50%;
+    transform: translate(-50%) rotate(-45deg);
+    left: 50%;
+
+}
+
+.hamburger.clicked .lineB{
+    opacity: 0;
+    left: 50%;
+}
+
+.hamburger.clicked .lineC{
+
+    background-color: rgb(102, 16, 242);
+    top: 50%;
+    transform: translate(-50%) rotate(45deg);
+    left: 50%;
+}
