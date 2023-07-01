@@ -173,7 +173,7 @@ function DraftSeason(props) {
 			<Foundation>
 				<Draft_Table data={draft} />
 				<nav aria-label="Page navigation example ">
-					<ul className="pagination d-flex justify-content-center">
+					<ul className="pagination">
 						<li className="page-item m-1">
 							<a
 								onClick={(event) => page(draft, round, 'Previous')}
@@ -253,13 +253,13 @@ function DraftSeason(props) {
 						</div>
 					))}
 
-				<nav aria-label="Page navigation example ">
-					<ul className="pagination d-flex justify-content-center">
+				<nav aria-label="Page navigation">
+					<ul className="pagination">
 						<li className="page-item m-1">
 							<a
 								onClick={(event) => page(draft, round, 'Previous')}
 								style={
-									round == 1 ? { background: 'red' } : { background: helper.themeColor(Key, 'color') }
+									round == 1 ? { background: 'red' } : { background: helper.themeColor(Key, 'color')}
 								}
 								className={theme + ' pageChanger btn  text-light'}
 							>

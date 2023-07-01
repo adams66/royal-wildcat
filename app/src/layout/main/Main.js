@@ -14,6 +14,8 @@ function Main(props) {
 					neon={props.neon}
 					background={props.navbar}
 				/>
+
+
 				{props.children}
 			</div>
 		</div>
