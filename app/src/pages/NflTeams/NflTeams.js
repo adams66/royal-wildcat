@@ -39,6 +39,12 @@ function NflTeams() {
 
 	return (
 		<Foundation>
+
+			<div style={{border: "2px solid blue",height:"300px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
+				<div className='col'>
+				<h1>NFL TEAMS</h1>
+				</div>
+				</div>
 			<div className="row m-1 m-md-3">
 				{teams &&
 					teams.length > 0 &&
@@ -51,8 +57,15 @@ function NflTeams() {
 									border: userObj.conference == '1' ? '2px solid red' : '2px solid blue'
 								}}
 							>
+
+<NavLink
+										style={{ textDecoration: 'none' }}
+										className="text-light"
+										to={'/nflTeams/' + userObj.team_url}
+									>
 								<div className="card-body d-flex flex-column align-items-center">
-									<img
+			
+									<img 
 										className=" mb-4 d-block"
 										style={{ display: 'block' }}
 										width="100px"
@@ -60,14 +73,11 @@ function NflTeams() {
 										src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}
 									/>
 
-									<NavLink
-										style={{ textDecoration: 'none' }}
-										className="text-light"
-										to={'/nflTeams/' + userObj.team_url}
-									>
+
 										<h5 className="card-title text-light font-bold text-center">{userObj.team}</h5>
-									</NavLink>
+								
 								</div>
+								</NavLink>
 							</div>
 						</div>
 					))}

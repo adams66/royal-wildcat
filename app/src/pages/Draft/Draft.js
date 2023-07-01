@@ -7,6 +7,14 @@ import Foundation from '../../layout/Foundation';
 function Draft() {
 	return (
 		<Foundation>
+						<div style={{border: "2px solid blue",height:"300px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
+				<div className='col'>
+				<h1>Draft Seasons</h1>
+				</div>
+				</div>
+
+
+
 				<div style={{height: "100%"}} className="row m-0 m-md-4 m-lg-3 draft-container">
 					{Key.draft.map((r) => {
 						return (
