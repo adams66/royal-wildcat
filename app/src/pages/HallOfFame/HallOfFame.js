@@ -7,7 +7,7 @@ function HallOfFame(){
 return(
   
     <Foundation>
-						<div style={{border: "2px solid blue",height:"300px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
+						<div style={{border: "2px solid blue",height:"100px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
 				<div className='col'>
 				<h1>Hall of Fame</h1>
 				</div>
