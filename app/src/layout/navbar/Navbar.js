@@ -6,9 +6,6 @@ import './navbar.css';
 import Hamburger from '../hamburger/Hamburger';
 
 function Navbar(props) {
-	const [ sidebar, setSidebar ] = useState();
-	const [ year, setYear ] = useState();
-
 	return (
 		<div
 			style={{

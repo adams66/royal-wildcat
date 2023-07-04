@@ -7,9 +7,7 @@
     -moz-user-select: none; /*Firefox*/
 }
 
-.nav-item:nth-child(6){
-    display: none;
-}
+
 
 ::-webkit-scrollbar {
     width: 7px;
