@@ -57,8 +57,8 @@ function Foundation(props) {
 
 	return (
 		<div>
-			<Sidebar  reset={reset} neon={neon} background={sidebar} classes={sidebarSwitch} />
-			<Main hamburgerFunction={hamburgerFunction} hamburgerClass={hamburgerClass} neon={neon} navbar={nav} background={theme}>
+			<Sidebar  reset={reset}  background={sidebar} classes={sidebarSwitch} />
+			<Main hamburgerFunction={hamburgerFunction} hamburgerClass={hamburgerClass}  navbar={nav} background={theme}>
 				{props.children}
 				<Footer background={theme} />
 			</Main>

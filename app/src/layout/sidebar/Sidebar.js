@@ -18,7 +18,7 @@ function Sidebar(props) {
 
 
 	return (
-		<div style={{boxShadow: "1px 1px 23px 0px " + props.neon}}   className={props.classes + " background"}>
+		<div  className={props.classes + " background"}>
 			<div className="Logo p-3">
 				<a className="navbar-brand" href="/">
 					<h2 className="text-center d-none d-xl-block logo">{key.title}</h2>

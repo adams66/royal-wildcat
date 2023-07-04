@@ -41,15 +41,6 @@ function Theme() {
 					case 1:
 						setParticles(Key.theme.wildcat.particles);
 						break;
-					case 2:
-						setParticles(Key.theme.chief.particles);
-						break;
-					case 3:
-						setParticles(Key.theme.shocker.particles);
-						break;
-					case 4:
-						setParticles(Key.theme.jayhawk.particles);
-						break;
 				}
 
 				break;
@@ -67,6 +58,10 @@ function Theme() {
 			<div style={{ height: '100vh', overflow: 'hidden' }} className="row">
 				<Svg rotate={theme} />
 			</div>
+
+
+
+
 
 			<div onClick={() => { rotate(theme, countTheme, 'up');
 				}}

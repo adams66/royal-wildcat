@@ -185,7 +185,6 @@ export default function Svg(props) {
 				</div>
 			);
 
-		default:
-			return <h1>Does not Exist</h1>;
+
 	}
 }
