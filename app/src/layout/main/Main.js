@@ -11,7 +11,6 @@ function Main(props) {
 					hamburgerFunction={props.hamburgerFunction}
 					hamburgerClass={props.hamburgerClass}
 					hamburger={props.hamburger}
-			
 					background={props.navbar}
 				/>
 

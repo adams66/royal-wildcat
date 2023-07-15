@@ -1,6 +1,6 @@
 
 .navbar-top{
-    border: 2px solid blue;
+    background-color: rgb(16, 17, 22);
     overflow-y: hidden;
     height: 100%;
     min-height: 70px;

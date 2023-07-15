@@ -15,8 +15,7 @@
     width: 256px;
     height: 100vh;
     z-index: 600;
-    border: 2px solid white;
-
+    background-color: rgb(16, 17, 22);;
 }
 
 

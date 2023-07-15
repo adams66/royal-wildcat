@@ -40,7 +40,7 @@ function NflTeams() {
 	return (
 		<Foundation>
 
-			<div style={{border: "2px solid blue",height:"100px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
+			<div style={{height:"100px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
 				<div className='col'>
 				<h1>NFL TEAMS</h1>
 				</div>
@@ -54,7 +54,6 @@ function NflTeams() {
 								className="card p-0 p-md-2 round m-2 m-md-3 "
 								style={{
 									backgroundColor: '#101116',
-									border: userObj.conference == '1' ? '2px solid red' : '2px solid blue'
 								}}
 							>
 

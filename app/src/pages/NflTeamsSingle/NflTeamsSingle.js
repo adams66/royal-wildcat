@@ -30,7 +30,7 @@ if(nflTeam){
 
 	return (
 		<Foundation>
-						<div style={{border: "2px solid blue",height:"100px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
+						<div style={{height:"100px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
 				<div className='col'>
 				<h1>{nflTeam[0].team}</h1>
 				</div>
