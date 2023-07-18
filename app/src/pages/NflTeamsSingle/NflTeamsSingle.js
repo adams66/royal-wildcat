@@ -12,6 +12,7 @@ function NflTeamsSingle(props) {
 
 
 	useEffect(()=>{
+	document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000000');
 	var url = window.location.pathname.split("/");
 	var team = url[2];
 

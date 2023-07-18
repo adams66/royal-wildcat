@@ -3,8 +3,18 @@ import Key from '../../key/key.json';
 import '../Draft/draft.css';
 import Button from '../../layout/components/Button/Button';
 import Foundation from '../../layout/Foundation';
+import { useEffect } from 'react';
 
 function Draft() {
+
+
+	useEffect(()=>{
+		document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000000');
+
+
+	},[])
+
+
 	return (
 		<Foundation>
 						<div style={{height:"100px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>

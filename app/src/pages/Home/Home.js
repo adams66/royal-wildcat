@@ -13,6 +13,7 @@ function Home(props) {
 	useEffect(() => {
 		helper.windowReset();
 		var themeColor = JSON.parse(localStorage.getItem("theme-color"));
+		document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000000');
 	}, []);
 
 	
