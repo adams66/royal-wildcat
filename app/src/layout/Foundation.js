@@ -38,7 +38,7 @@ function Foundation(props) {
 		}
 		else{
 			setHamburger(0);
-			document.querySelector('meta[name="theme-color"]').setAttribute('content',  'black');
+			document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000000');
 
 			setHamburgerClass("hamburger d-block d-lg-none");
 			setSidebarSwitch("sidebar position-fixed d-none d-lg-block");
