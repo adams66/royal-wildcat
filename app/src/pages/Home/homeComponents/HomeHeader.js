@@ -5,7 +5,7 @@ import  Key from "../../../key/key.json";
 function HomeHeader(props){
 
     return(
-        <div style={{height: "500px", overflow:"hidden"}} className="row m-5 p-0 rounded">
+        <div style={{height: "500px", overflow:"hidden"}} className="row m-3 m-md-5 p-0 rounded">
             <div style={{height: "100%",position: "relative" }}  className="col p-0 m-0  rounded">
                 <div className="videoOverlay"></div>
                 <video className="video" style={{width: "100%"}} autoPlay muted loop playsInline src="./video.mp4" />
