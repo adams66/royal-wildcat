@@ -67,8 +67,8 @@ function NflTeams() {
 									<img 
 										className=" mb-4 d-block"
 										style={{ display: 'block' }}
-										width="100px"
-										height="100px"
+										width="50px"
+										height="50px"
 										src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}
 									/>
 

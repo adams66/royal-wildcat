@@ -5,8 +5,11 @@ import  Key from "../../../key/key.json";
 function HomeHeader(props){
 
     return(
-        <div className="row m-4 m-md-3">
-            <div style={{height: "700px", backgroundColor: "#101116"}}  className="col p-0 m-0 m-md-5 rounded d-flex justify-content-center align-items-center">
+        <div style={{height: "500px", overflow:"hidden"}} className="row m-5 p-0 rounded">
+            <div style={{height: "100%",position: "relative" }}  className="col p-0 m-0  rounded">
+                <div className="videoOverlay"></div>
+                <video className="video" style={{width: "100%"}} autoPlay muted loop src="./video.mp4" />
+                <img style={{position:"absolute", left:"50%", top:"50%", transform:"translate(-50%, -50%)",zIndex: 5, opacity:"0.9", width:"250px"}}  src="./logo.png" />
             </div>
         </div>
     );
