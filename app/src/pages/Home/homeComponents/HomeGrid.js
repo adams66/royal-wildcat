@@ -11,15 +11,11 @@ function HomeGrid(props) {
 
 			{Key.homeCards.map((r) => {
 				return (
-					<div className="col-12 col-md-6 col-lg-3 mb-3">
+					<div className="col-6 col-md-6 col-lg-3 mb-3">
 						<div className="card" style={{ height: '100%', backgroundColor: '#101116' }}>
-							<div className="card-body p-3">
-								<img  style={{ height: '250px' }} className="card-img-top" src={r.card} />
-								<Button
-											color={helper.themeColor(Key, 'color')}
-											content={'Click'}
-											href=""
-										/>
+							<div style={{height:"250px"}} className="card-body p-3">
+				
+			
 							</div>
 						</div>
 					</div>
