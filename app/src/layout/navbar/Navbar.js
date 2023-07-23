@@ -12,12 +12,10 @@ function Navbar(props) {
 				position: 'sticky',
 				top: '0',
 				left: '0',
-				right:'0',
-		
+				right: '0',
 				zIndex: '1000',
-				marginLeft: '10px',
-				marginRight: '10px',
-				marginTop:'10px'
+				border:"10px solid black",
+				height: "80px"
 			}}
 			className={'d-flex align-items-center justify-content-end navbar-top background'}
 		>
