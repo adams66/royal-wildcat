@@ -21,7 +21,7 @@ function Draft() {
             <div style={{height: "100%",position: "relative" }}  className="col p-0 m-0  rounded">
                 <div className="videoOverlay"></div>
                 <video className="video" style={{width: "100%"}} autoPlay muted loop playsInline src="./video.mp4" />
-				<h1 className='text-white' style={{position: "absolute", left:"50%", top: "50%", transform: "translate(-50%)",zIndex: "1000"}}>Draft History</h1>
+				<h1 className='text-white' style={{position: "absolute", left:"50%", top: "50%", transform: "translate(-50%)"}}>Draft History</h1>
             </div>
         </div>
 
