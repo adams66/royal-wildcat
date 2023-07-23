@@ -12,17 +12,17 @@ function Navbar(props) {
 				position: 'sticky',
 				top: '0',
 				left: '0',
-				right: '0',
+				right:'0',
+		
 				zIndex: '1000',
-				boxShadow: '15px 0px 23px 0px ' + props.neon
+				marginLeft: '10px',
+				marginRight: '10px',
+				marginTop:'10px'
 			}}
-			className={'d-flex align-items-center justify-content-end navbar-top background '}
+			className={'d-flex align-items-center justify-content-end navbar-top background'}
 		>
 			<Hamburger hamburgerFunction={props.hamburgerFunction} hamburgerClass={props.hamburgerClass} />
-			<div>
-				<a>Next </a>
-				<a>Previous</a>
-			</div>
+
 		</div>
 	);
 }
