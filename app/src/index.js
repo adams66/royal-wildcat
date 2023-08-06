@@ -10,6 +10,7 @@ import Draft from './pages/Draft/Draft';
 import Theme from "./pages/Theme/Theme";
 import DraftSeason from "./pages/DraftSeason/DraftSeason";
 import HallOfFame from './pages/HallOfFame/HallOfFame';
+import Trophy from './pages/Trophy/Trophy';
 import NflTeams from './pages/NflTeams/NflTeams';
 import Map from './pages/Map/Map';
 import NflTeamsSingle from './pages/NflTeamsSingle/NflTeamsSingle';
@@ -31,6 +32,7 @@ if(theme !== "undecided"){
   <Route path="/" element={<Home/>} />
   <Route path="/draft" element={<Draft />}/>
   <Route path="/hall-of-fame" element={<HallOfFame />}/> 
+  <Route path='/trophy' element={<Trophy />} />
   <Route path="/Stats" element={<Stats />} /> 
   <Route path="/nflTeams" element={<NflTeams />}/> 
   <Route path="/map" element={<Map />}/> 

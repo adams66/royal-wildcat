@@ -6,6 +6,8 @@ import './navbar.css';
 import Hamburger from '../hamburger/Hamburger';
 
 function Navbar(props) {
+
+
 	return (
 		<div
 			style={{
