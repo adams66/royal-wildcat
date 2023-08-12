@@ -17,6 +17,7 @@ import NflTeamsSingle from './pages/NflTeamsSingle/NflTeamsSingle';
 import NotFound from "./pages/NotFound/NotFound";
 import {BrowserRouter,HashRouter, Routes, Route} from "react-router-dom";
 import Stats from './pages/Stats/Stats';
+import Loser_Trophy from './pages/Loser_Trophy/Loser_Trophy';
 
 
 
@@ -33,6 +34,7 @@ if(theme !== "undecided"){
   <Route path="/draft" element={<Draft />}/>
   <Route path="/hall-of-fame" element={<HallOfFame />}/> 
   <Route path='/trophy' element={<Trophy />} />
+  <Route path='/loser_trophy' element={<Loser_Trophy />} />
   <Route path="/Stats" element={<Stats />} /> 
   <Route path="/nflTeams" element={<NflTeams />}/> 
   <Route path="/map" element={<Map />}/> 

@@ -32,6 +32,7 @@ function Sidebar(props) {
 				{/* <NavLinks  path="/stats" name="STATS" /> */}
 				<NavLinks  path="/hall-of-fame" name="HALL OF FAME" />
 				<NavLinks  path="/trophy" name="TROPHY" />
+				<NavLinks  path="/loser_trophy" name="LOSER TROPHY" />
 				<NavLinks  path="/nflTeams" name="NFL TEAMS" />
 				{/* <NavLinks  path="/map" name="MAP" /> */}
 			</ul>
