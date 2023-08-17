@@ -265,9 +265,6 @@ function DraftSeason(props) {
 						<li className="page-item m-1">
 							<a
 								onClick={(event) => page(draft, round, 'Previous')}
-								style={
-									round == 1 ? { background: 'red' } : { background: "red"}
-								}
 								className={theme + ' pageChanger btn  text-light'}
 							>
 								<svg
@@ -286,15 +283,9 @@ function DraftSeason(props) {
 							</a>
 						</li>
 						<li className="page-item m-1">
-							<a
+							<a 
 								onClick={(event) => page(draft, round, 'Next')}
-								style={
-									round == draft.rounds ? (
-										{ background: 'red' }
-									) : (
-										{ background: "red"}
-									)
-								}
+								style={{}}
 								className={theme + ' pageChanger btn text-light'}
 							>
 								<svg
