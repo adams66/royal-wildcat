@@ -43,7 +43,7 @@ if(nflTeam){
 
 			<div  className='col-12 col-md-6 d-flex justify-content-center align-items-center position-relative'>
 
-				<div className='d-flex justify-content-center align-items-center' style={{background:"grey", borderRadius: "50%", width: "100%", maxWidth:"300px", height:"300px",}}>
+				<div className='d-flex justify-content-center align-items-center' style={{borderRadius: "50%", width: "100%", maxWidth:"300px", height:"300px",}}>
 			<img style={{opacity: "1", display: "block", marginLeft: "auto", marginRight:"auto"}} src={"https://homebase.dal-10.com/nfl_logos/" + nflTeam[0].logo}  />
 			</div>
 			</div>

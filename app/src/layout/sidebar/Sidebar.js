@@ -9,6 +9,8 @@ import NavLinks from './Links';
 
 function Sidebar(props) {
 
+	
+
 	function resetButton() {
 		localStorage.removeItem('theme');
 		localStorage.removeItem('theme-color');

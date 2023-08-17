@@ -51,7 +51,7 @@ function Foundation(props) {
 
 	useEffect(() => {
 		var themeColors = JSON.parse(localStorage.getItem("theme-color"));
-		setTheme(themeColors.background);
+
 		setCards(themeColors.cards);
 		setNav(themeColors.nav);
 		setSidebar(themeColors.sidebar);
@@ -61,10 +61,10 @@ function Foundation(props) {
 
 	return (
 		<div>
-			<Sidebar  reset={reset}  background={sidebar} classes={sidebarSwitch} />
-			<Main hamburgerFunction={hamburgerFunction} hamburgerClass={hamburgerClass}  navbar={nav} background={theme}>
+			<Sidebar  reset={reset}   classes={sidebarSwitch} />
+			<Main hamburgerFunction={hamburgerFunction} hamburgerClass={hamburgerClass}  navbar={nav}>
 				{props.children}
-				<Footer background={theme} />
+				<Footer />
 			</Main>
 		</div>
 	);

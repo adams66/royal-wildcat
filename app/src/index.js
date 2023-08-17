@@ -1,6 +1,7 @@
-import ReactDOM from 'react-dom/client';
-import * as helper from './helpers/helpers';
 import React from 'react';
+import ReactDOM from 'react-dom/client';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import * as helper from './helpers/helpers';
 import Key from "./key/key.json";
 import "./css/bootstrap.css";
 import "./css/override.css";
@@ -15,7 +16,7 @@ import NflTeams from './pages/NflTeams/NflTeams';
 import Map from './pages/Map/Map';
 import NflTeamsSingle from './pages/NflTeamsSingle/NflTeamsSingle';
 import NotFound from "./pages/NotFound/NotFound";
-import {BrowserRouter,HashRouter, Routes, Route} from "react-router-dom";
+
 import Stats from './pages/Stats/Stats';
 import Loser_Trophy from './pages/Loser_Trophy/Loser_Trophy';
 

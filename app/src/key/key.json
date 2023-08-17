@@ -4,6 +4,7 @@
   "text": "white",
   "component": "#201e26",
   "buttons": "#6610f2",
+  "root":"https://homebase.dal-10.com",
   "theme": {
     "wildcat": {
       "particles": "rgb(102, 16, 242)",

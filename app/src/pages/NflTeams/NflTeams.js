@@ -74,7 +74,8 @@ function NflTeams() {
 
 
 										<h5 className="card-title text-light font-bold text-center">{userObj.team}</h5>
-								
+										
+										<p> {userObj.conference == 1 ? "NFC" : "AFC"}</p>
 								</div>
 								</NavLink>
 							</div>
@@ -94,7 +95,7 @@ if(view == 1){
 		return (
 			<Foundation>
 				<table className="table m-3 ">
-					<thead style={{background: "rgb(16, 17, 22)"}} className="">
+					<thead  className="">
 						<tr className="text-light">
 							<th class="text-center d-none d-md-table-cell" scope="col">
 								Team
@@ -107,7 +108,7 @@ if(view == 1){
 							</th>
 						</tr>
 					</thead>
-					<tbody style={{background: "rgb(16, 17, 22)"}}>
+					<tbody>
 						{teams &&
 							teams.length > 0 &&
 							teams.map((userObj, index) => (
