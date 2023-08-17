@@ -260,8 +260,8 @@ function DraftSeason(props) {
 						</div>
 					))}
 
-				<nav aria-label="Page navigation">
-					<ul className="pagination">
+				<nav className='mobile'>
+					<ul className="pagination d-flex justify-content-between align-items-center m-0 h-100 ">
 						<li className="page-item m-1">
 							<a
 								onClick={(event) => page(draft, round, 'Previous')}

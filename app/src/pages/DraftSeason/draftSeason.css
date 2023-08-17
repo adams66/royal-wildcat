@@ -20,4 +20,14 @@ svg,svg path{
 
 }
 
+.mobile{
+    background-color: rgb(16, 17, 22);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+
+}
+
 
