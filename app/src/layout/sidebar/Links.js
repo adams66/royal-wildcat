@@ -8,7 +8,7 @@ function NavLinks(props){
     let activeStyle = {
 
         fontWeight: "bolder",
-        color: helper.themeColor(Key, "color")
+        color: "rgb(102, 16, 242)"
       };
     let normalStyle = {
 

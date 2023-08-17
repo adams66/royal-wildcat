@@ -34,11 +34,11 @@ function Draft() {
 									<div className="card-body">
 	
 										<h5 className="card-title text-light font-bold">Season {r.year}</h5>
-										<p style={{ color: helper.themeColor(Key, 'paragraph') }} className="card-text">
+										<p  className="card-text text-light">
 											View the draft details from {r.year} season.
 										</p>
 										<Button
-											color={helper.themeColor(Key, 'color')}
+											color="rgb(102, 16, 242)"
 											content={'View Draft'}
 											href={'/draft/' + r.year}
 										/>

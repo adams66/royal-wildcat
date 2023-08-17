@@ -181,7 +181,7 @@ function DraftSeason(props) {
 							<a
 								onClick={(event) => page(draft, round, 'Previous')}
 								style={
-									round == 1 ? { background: 'red' } : { background: helper.themeColor(Key, 'color') }
+									round == 1 ? { background: 'red' } : { background: "red"}
 								}
 								className={theme + ' pageChanger btn  text-light'}
 							>
@@ -207,7 +207,7 @@ function DraftSeason(props) {
 									round == draft.rounds ? (
 										{ background: 'red' }
 									) : (
-										{ background: helper.themeColor(Key, 'color') }
+										{ background: "red" }
 									)
 								}
 								className={theme + ' pageChanger btn text-light'}
@@ -266,7 +266,7 @@ function DraftSeason(props) {
 							<a
 								onClick={(event) => page(draft, round, 'Previous')}
 								style={
-									round == 1 ? { background: 'red' } : { background: helper.themeColor(Key, 'color')}
+									round == 1 ? { background: 'red' } : { background: "red"}
 								}
 								className={theme + ' pageChanger btn  text-light'}
 							>
@@ -292,7 +292,7 @@ function DraftSeason(props) {
 									round == draft.rounds ? (
 										{ background: 'red' }
 									) : (
-										{ background: helper.themeColor(Key, 'color') }
+										{ background: "red"}
 									)
 								}
 								className={theme + ' pageChanger btn text-light'}

@@ -8,13 +8,6 @@ import Footer from './Footer/Footer';
 import { useEffect } from 'react';
 
 function Foundation(props) {
-	const [ theme, setTheme]     = useState([0]);
-	const [sidebar, setSidebar]  = useState([0]);
-	const [nav, setNav]          = useState([0]);
-	const [neon, setNeon]        = useState([0]);
-	const [ cards, setCards ]    = useState([0]);
-	const [ reset, setReset ]    = useState(0);
-
 	const [hamburger, setHamburger] = useState(0);
 	const [hamburgerClass, setHamburgerClass] = useState("hamburger d-block d-xl-none");
 	const [sidebarSwitch, setSidebarSwitch] = useState("sidebar position-fixed d-none d-xl-block");
@@ -24,10 +17,6 @@ function Foundation(props) {
 		helper.windowReset();
 	},[])
 
-
-
-	
-	
 	function hamburgerFunction(){
 		if(hamburger == 0){
 			setHamburger(1);
@@ -52,17 +41,13 @@ function Foundation(props) {
 	useEffect(() => {
 		var themeColors = JSON.parse(localStorage.getItem("theme-color"));
 
-		setCards(themeColors.cards);
-		setNav(themeColors.nav);
-		setSidebar(themeColors.sidebar);
-		setNeon(themeColors.neon);
-		setReset(themeColors.reset)
+	
 	});
 
 	return (
 		<div>
-			<Sidebar  reset={reset}   classes={sidebarSwitch} />
-			<Main hamburgerFunction={hamburgerFunction} hamburgerClass={hamburgerClass}  navbar={nav}>
+			<Sidebar classes={sidebarSwitch} />
+			<Main hamburgerFunction={hamburgerFunction} hamburgerClass={hamburgerClass}>
 				{props.children}
 				<Footer />
 			</Main>
