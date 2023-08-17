@@ -41,6 +41,8 @@ function Draft() {
 											color="rgb(102, 16, 242)"
 											content={'View Draft'}
 											href={'/draft/' + r.year}
+
+											
 										/>
 									</div>
 								</div>
