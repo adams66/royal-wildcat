@@ -269,8 +269,8 @@ function DraftSeason(props) {
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									width="30"
-									height="30"
+									width="20px"
+									height="20px"
 									fill="currentColor"
 									class="bi bi-arrow-left-short"
 									viewBox="0 0 16 16"
@@ -291,8 +291,8 @@ function DraftSeason(props) {
 								<svg
 									id="Next"
 									xmlns="http://www.w3.org/2000/svg"
-									width="30"
-									height="30"
+									width="20px"
+									height="20px"
 									fill="currentColor"
 									class="bi bi-arrow-right-short"
 									viewBox="0 0 16 16"
