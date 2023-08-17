@@ -49,7 +49,6 @@ function Foundation(props) {
 			<Sidebar classes={sidebarSwitch} />
 			<Main hamburgerFunction={hamburgerFunction} hamburgerClass={hamburgerClass}>
 				{props.children}
-				<Footer />
 			</Main>
 		</div>
 	);
