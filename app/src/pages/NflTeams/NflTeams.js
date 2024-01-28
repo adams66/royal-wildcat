@@ -51,7 +51,7 @@ function NflTeams() {
 					teams.map((userObj, index) => (
 						<div className="col-12 col-md-6 col-lg-3 p-0">
 							<div
-								className="card p-0 p-md-2 round m-2 m-md-3 "
+								className="card p-0 p-md-2 round m-2 m-md-3"
 								style={{
 									backgroundColor: '#101116',
 								}}

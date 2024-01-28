@@ -1,22 +1,60 @@
-:root{
---background: #010001;
---logo:white;
---sidebar_links: white;
+:root {
+    --pColor: transparent;
+    --pw: 0.8px;
+    --ph: 0.8px;
+    --p1w: 2px;
+    --p1h: 2px;
+    --p2w: 2.2px;
+    --p2h: 2.2px;
+    --p3w: 2.8px;
+    --p3h: 2.8px;
+    --p4w: 0.8px;
+    --p4h: 0.8px;
+    --p5w: 0.3px;
+    --p5h: 0.3px;
+
+    
+
+    --background: #010001;
+    --logo: white;
+    --sidebar_links: white;
 
 
 }
 
-body{background-color:var(--background) ;}
+body {
+    background-color: var(--background);
+}
+
+
+.particles {}
+
+.background {
+    background-color: var(--background);
+}
+
+.logo {
+    color: var(--logo);
+}
+
+.sidebar_links {
+    color: var(--sidebar_links)
+}
 
 
 
 
 
 
+::-webkit-scrollbar {
+    width: 7px;
+}
 
-.background{background-color: var(--background);}
-.logo{color: var(--logo);}
-.sidebar_links{color: var(--sidebar_links)}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
 
-
-
+::-webkit-scrollbar-thumb {
+    background-color: rgb(16, 17, 22);
+    border-radius: 10px;
+}

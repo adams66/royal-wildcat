@@ -4,7 +4,7 @@ export function themeInit(){
 if(getTheme == null){
 
   localStorage.setItem("theme", "undecided");
-  localStorage.setItem("theme-color", "undecided");
+
 
 };
 
