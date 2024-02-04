@@ -36,25 +36,20 @@ if(theme !== "undecided"){
     <React.StrictMode>
     <BrowserRouter>
   <Routes>
+
   <Route path="/" element={<Home/>} />
-
   <Route path="/draft" element={<Draft />}/>
-
   <Route path="/hall-of-fame" element={<HallOfFame />}/> 
-
   <Route path='/trophy' element={<Trophy />} />
-
   <Route path='/loser_trophy' element={<Loser_Trophy />} />
-
   <Route path="/Stats" element={<Stats />} /> 
-
   <Route path="/nflTeams" element={<NflTeams />}/> 
-
   <Route path="/map" element={<Map />}/> 
 
   {Key.draft.map((r) => {return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason  />}/>})}
   
   {Key.nflTeams.map((r) => {return <Route path={"/nflTeams" + "/" + r.teamUrl }  element={<NflTeamsSingle />}/>})}
+  
   <Route path="/*" element={<NotFound />}/> 
   </Routes>
     </BrowserRouter>

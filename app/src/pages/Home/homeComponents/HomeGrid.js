@@ -1,6 +1,6 @@
 import Key from '../../../key/key.json';
-import Button from '../../../layout/components/Button/Button';
-import * as helper from "../../../helpers/helpers"
+
+
 
 function HomeGrid(props) {
 	return (
