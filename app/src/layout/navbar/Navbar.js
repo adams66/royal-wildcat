@@ -9,18 +9,7 @@ function Navbar(props) {
 
 
 	return (
-		<div
-			style={{
-				position: 'sticky',
-				top: '0',
-				left: '0',
-				right: '0',
-				zIndex: '1000',
-				border:"10px solid black",
-				height: "80px"
-			}}
-			className={'d-flex align-items-center justify-content-end navbar-top background'}
-		>
+		<div className={'d-flex align-items-center justify-content-end navbar-top background'} >
 			<Hamburger hamburgerFunction={props.hamburgerFunction} hamburgerClass={props.hamburgerClass} />
 
 		</div>

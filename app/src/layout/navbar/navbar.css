@@ -3,12 +3,21 @@
     background-color: rgb(16, 17, 22);
     overflow-y: hidden;
     height: 100%;
-    min-height: 70px;
+    min-height: 60px;
     animation-name: neon;
     animation-duration:16s;
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
+    position: sticky;
+    top: 20px;
+    left: 0;
+    z-index: 1000;
+    height: 80px;
+    border-radius: 20px;
+
+
+
 }
 
 .hamburger{
@@ -74,6 +83,8 @@
 
 @media screen and (max-width: 768px){
     .navbar-top{
+        border-radius: 0px;
+        top:0;
         margin-left: 0;
     }
 }

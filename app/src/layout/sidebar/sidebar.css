@@ -10,12 +10,13 @@
 
 
 .sidebar{
-    top:0;
-    left:0;
+    top:20px;
+    left:20px;
     width: 256px;
-    height: 100vh;
+    height: 96vh;
     z-index: 600;
-    background-color: rgb(16, 17, 22);;
+    background-color: rgb(16, 17, 22);
+    border-radius: 20px;
 }
 
 
@@ -35,6 +36,27 @@
         width: 30px;
         height: 30px;
     }
+
+
+    .sidebar{
+        top: 0px;
+        left:0px;
+        width: 256px;
+        height: 95vh;
+        z-index: 600;
+        background-color: rgb(16, 17, 22);
+        border-radius: 0px;
+    }
+    
+
+    
+    
+
+
+
+
+
+
 }
 
 
