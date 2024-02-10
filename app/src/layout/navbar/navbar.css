@@ -85,6 +85,7 @@
     .navbar-top{
         border-radius: 0px;
         top:0;
+        right:0;
         margin-left: 0;
     }
 }
