@@ -51,8 +51,8 @@ export default function Svg(props) {
 
 						className="col-12 d-flex justify-content-center logo"
 					>
-						<svg onClick={() => {click('wildcat');}}
-							className="wildcat-svg"
+						<svg  onClick={() => {click('wildcat');}}
+							className="wildcat-svg hover"
 							style={{ width: '100%', maxWidth: '30%', cursor: 'pointer' }}
 							version="1.0"
 							viewBox="0 0 300.000000 223.000000"
@@ -82,7 +82,7 @@ export default function Svg(props) {
 						className="col-12 d-flex justify-content-center logo"
 					>
 						<svg onClick={() => {click('chief'); }}
-							className="chief-svg"
+							className="chief-svg hover"
 							style={{ width: '100%', maxWidth: '40%', cursor: 'pointer' }}
 							xmlns="http://www.w3.org/2000/svg"
 							version="1.0"
@@ -117,7 +117,7 @@ export default function Svg(props) {
 							onClick={() => {
 								click('shocker');
 							}}
-							className="shocker-svg"
+							className="shocker-svg hover"
 							style={{ width: '100%', maxWidth: '40%', cursor: 'pointer' }}
 							xmlns="http://www.w3.org/2000/svg"
 							version="1.0"
@@ -164,7 +164,7 @@ export default function Svg(props) {
 					>
 						<svg
 							onClick={() => {click('jayhawk'); }}
-							className="jayhawk-svg"
+							className="jayhawk-svg hover"
 							style={{ width: '100%', maxWidth: '40%' ,cursor: 'pointer' }}
 							xmlns="http://www.w3.org/2000/svg"
 							version="1.0"

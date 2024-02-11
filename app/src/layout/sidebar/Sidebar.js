@@ -28,14 +28,14 @@ function Sidebar(props) {
 			</div>
 
 			<ul class="nav flex-column navbar-dark">
-				<NavLinks  path="/" name="HOME" />
-				<NavLinks  path="/draft" name="DRAFT HISTORY" />
+				<NavLinks  path="/" name="HOME" icon="bi bi-cloud" />
+				<NavLinks  path="/draft" name="DRAFT HISTORY" icon="bi bi-cloud" />
 				{/* <NavLinks  path="/overall" name="OVERALL" /> */}
 				{/* <NavLinks  path="/stats" name="STATS" /> */}
-				<NavLinks  path="/hall-of-fame" name="HALL OF FAME" />
+				<NavLinks  path="/hall-of-fame" name="HALL OF FAME" icon="bi bi-cloud"/>
 				<NavLinks  path="/trophy" name="TROPHY" />
-				<NavLinks  path="/loser_trophy" name="LOSER TROPHY" />
-				<NavLinks  path="/nflTeams" name="NFL TEAMS" />
+				<NavLinks  path="/loser_trophy" name="LOSER TROPHY" icon="bi bi-cloud" />
+				<NavLinks  path="/nflTeams" name="NFL TEAMS" icon="bi bi-cloud" />
 				{/* <NavLinks  path="/map" name="MAP" /> */}
 			</ul>
 

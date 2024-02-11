@@ -56,7 +56,7 @@ function Theme() {
 			</div>
 
 			<div style={{ height: '100vh', overflow: 'hidden' }} className="row">
-				<Svg rotate={theme} />
+				<Svg  rotate={theme} />
 			</div>
 
 
