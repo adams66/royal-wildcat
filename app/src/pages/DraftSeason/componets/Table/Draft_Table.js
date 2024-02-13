@@ -6,7 +6,7 @@ function Draft_Table(props) {
 
 
 	return (
-		<table className="table m-3 ">
+		<table className="table m-3 m-3 m-md-5 ">
             <Table_Head />
             <Table_Body data={props.data} />
 

@@ -104,7 +104,7 @@ function DraftSeason(props) {
 	if (width >= 700) {
 		return (
 			<Foundation>
-						<div style={{color:"white"}}>Round {round}</div>
+			
 
 				<Draft_Table data={draft} />
 				<nav aria-label="Page navigation example ">
