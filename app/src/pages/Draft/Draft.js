@@ -17,9 +17,6 @@ function Draft() {
 
 	return (
 		<Foundation>
-
-
-
 				<div style={{height: "100%"}} className="row m-3 m-md-4 draft-container">
 					{Key.draft.map((r) => {
 						return (

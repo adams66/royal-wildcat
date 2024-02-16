@@ -41,15 +41,6 @@ body {
     color: var(--sidebar_links)
 }
 
-.hover{
-    transition: 0.5s ease-in-out;;
-}
-
-.hover:hover{
-    transform: scale(0.90);
-
-}
-
 
 
 
