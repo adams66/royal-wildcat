@@ -4,6 +4,7 @@ import '../Draft/draft.css';
 import Button from '../../layout/components/Button/Button';
 import Foundation from '../../layout/Foundation';
 import React, { useEffect, useState } from 'react';
+import { TypeH1 } from 'react-bootstrap-icons';
 
 function Draft() {
 
@@ -29,6 +30,23 @@ function Draft() {
 		var season = fetchData();
 
 	},[])
+
+	if(Load == false){
+		return (
+<Foundation>
+	<div style={{"height":"100vh"}} className='d-flex justify-content-center align-items-center'>
+	<svg style={{"width": "30px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle fill="#2001FF" stroke="#2001FF" stroke-width="15" r="15" cx="40" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.4"></animate></circle><circle fill="#2001FF" stroke="#2001FF" stroke-width="15" r="15" cx="100" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.2"></animate></circle><circle fill="#2001FF" stroke="#2001FF" stroke-width="15" r="15" cx="160" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="0"></animate></circle></svg>
+
+	</div>
+
+</Foundation>
+
+		)
+	}
+
+	else{
+
+
 
 
 	return (
@@ -59,6 +77,8 @@ function Draft() {
 				</div>
 		</Foundation>
 	);
+
+}
 };
 
 export default Draft;
