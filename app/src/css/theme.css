@@ -12,14 +12,9 @@
     --p4h: 0.8px;
     --p5w: 0.3px;
     --p5h: 0.3px;
-
-    
-
     --background: #010001;
     --logo: white;
     --sidebar_links: white;
-
-
 }
 
 body {
@@ -40,10 +35,6 @@ body {
 .sidebar_links {
     color: var(--sidebar_links)
 }
-
-
-
-
 
 ::-webkit-scrollbar {
     width: 7px;

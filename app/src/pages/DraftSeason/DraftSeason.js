@@ -20,6 +20,8 @@ function DraftSeason(props) {
 			.then((response) => response.json())
 			.then((data) => {
 				SetLoad(true);
+
+				
 				setDraft(data);
 			});
 	};

@@ -8,16 +8,8 @@ function Trophy() {
     <div class="col d-flex justify-content-center ">
     <video style={{width:"500px"}} autoPlay loop muted playsinline  src="https://homebase.dal-10.com/public/trophies/winner_trophy.mp4" />
     </div>
-
-
 </div>
-
-
-
 </Foundation>
-
-
-
     );
 }
 
