@@ -35,22 +35,14 @@ function NflTeams() {
 	}, []);
 
 	if(load == false){
-
 		return(
 			<Foundation>
 				<Loading />
 			</Foundation>
 		)
-
-
 	}
 
 	else{
-
-	
-
-
-
 	return (
 		<Foundation>
 			<div style={{height:"100px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
@@ -61,22 +53,13 @@ function NflTeams() {
 			<div className="row m-1 m-md-3">
 				{teams && teams.length > 0 && teams.map((userObj, index) => (
 						<div className="col-12 col-md-6 col-lg-3 p-0">
-							<div className="card p-0 p-md-2 round m-2 m-md-3" style={{backgroundColor: '#101116' }} ><NavLink
-										style={{ textDecoration: 'none' }}
-										className="text-light"
-										to={'/nflTeams/' + userObj.team_url}
-									>
+							<div className="card p-0 p-md-2 round m-2 m-md-3" style={{backgroundColor: '#101116' }} >
 								<div className="card-body d-flex flex-column align-items-center">
-			
-									<img className=" mb-4 d-block" style={{ display: 'block' }}  width="80px" height="80px" src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}
-									/>
-
-
-										<h5 className="card-title text-light font-bold text-center">{userObj.team}</h5>
-										
-										<p> {userObj.conference == 1 ? "NFC" : "AFC"}</p>
+								<img className=" mb-4 d-block" style={{ display: 'block' }}  width="80px" height="80px" src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}/>
+								<h5 className="card-title text-light font-bold text-center">{userObj.team}</h5>
+								<p className='text-light'> {userObj.conference == 1 ? "NFC" : "AFC"}</p>
 								</div>
-								</NavLink>
+								<NavLink className="text-light text-center" to={'/nflTeams/' + userObj.team_url}>View</NavLink>
 							</div>
 						</div>
 					))}
@@ -86,12 +69,6 @@ function NflTeams() {
 	);
 				}
 }
-
-
-
-
-
-
 
 
 export default NflTeams;

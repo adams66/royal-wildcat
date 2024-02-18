@@ -3,8 +3,6 @@
         height: 80px;
     }
 
-
-
     @media screen and (max-width: 640px) {
         table svg, svg path{
             width: 30px;
