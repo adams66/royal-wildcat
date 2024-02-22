@@ -11,7 +11,7 @@ function HomeGrid(props) {
 
 			{Key.homeCards.map((r) => {
 				return (
-					<div className="col-6 col-md-6 col-lg-3 mb-3">
+					<div className="col-12 col-md-6 col-lg-3 mb-3">
 						<div className="card" style={{ height: '100%', backgroundColor: '#101116' }}>
 							<div style={{height:"250px"}} className="card-body p-3">
 				
