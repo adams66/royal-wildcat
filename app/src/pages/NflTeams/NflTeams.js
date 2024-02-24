@@ -53,7 +53,7 @@ function NflTeams() {
 			<div className="row m-1 m-md-3">
 				{teams && teams.length > 0 && teams.map((userObj, index) => (
 						<div className="col-12 col-md-6 col-lg-3 p-0">
-							<div className="card p-0 p-md-2 round m-2 m-md-3" style={{backgroundColor: '#101116' }} >
+							<div className="card p-0 p-md-2 round m-2 m-md-3" style={{backgroundColor: userObj.color}} >
 								<div className="card-body d-flex flex-column align-items-center">
 								<img className=" mb-4 d-block" style={{ display: 'block' }}  width="80px" height="80px" src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}/>
 								<h5 className="card-title text-light font-bold text-center">{userObj.team}</h5>

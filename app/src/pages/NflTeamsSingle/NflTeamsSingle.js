@@ -37,7 +37,7 @@ if(nflTeam){
 			<div className='row'>
 				<div  className='col-12 col-md-6 d-flex justify-content-center align-items-center position-relative'>
 					<div className='d-flex justify-content-center align-items-center' style={{borderRadius: "50%", width: "100%", maxWidth:"300px", height:"300px",}}>
-						<img style={{opacity: "1", display: "block", marginLeft: "auto", marginRight:"auto"}} src={"https://homebase.dal-10.com/nfl_logos/" + nflTeam[0].logo}  />
+						<img style={{opacity: "1", display: "block", marginLeft: "auto", marginRight:"auto", width:"200px"}} src={"https://homebase.dal-10.com/nfl_logos/" + nflTeam[0].logo}  />
 					</div>
 				</div>
 			<div className='col-12 col-md-6'>

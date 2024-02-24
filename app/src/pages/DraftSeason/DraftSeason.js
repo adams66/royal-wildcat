@@ -180,13 +180,13 @@ function DraftSeason(props) {
 							style={{ borderWidth: '2px', borderColor: 'grey', borderStyle: 'solid' }}
 							className="row pt-2 m-2 rounded"
 						>
-							<div className="col-8 d-flex flex-column ">
+							<div className="col-7 d-flex flex-column ">
 								<div className="text-light">Round: {userObj.overall_round}</div>
 								<div className="text-light">Overall: {userObj.overall_pick}</div>
 								<h6 className="text-light">{userObj.player_name}</h6>
 								<h6 className="text-light">{userObj.fantasy_player}</h6>
 							</div>
-							<div className="col-4 d-flex align-items-center">
+							<div className="col-5 d-flex align-items-center">
 							<img style={{width: "50px"}} src={nflTeam(userObj.nfl)} />
 								<Circle position={userObj.position} />
             
