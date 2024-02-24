@@ -22,9 +22,6 @@ function Draft() {
 			});
 	};
 
-
-
-
 	useEffect(()=>{
 		document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000000');
 		var season = fetchData();
@@ -36,10 +33,8 @@ function Draft() {
 <Foundation>
 <Loading />
 </Foundation>
-
 		)
 	}
-
 	else{
 	return (
 		<Foundation>
@@ -50,6 +45,7 @@ function Draft() {
 								<div className="card p-2 round m-3 m-md-2" style={{ backgroundColor: '#101116' }}>
 									<div className="card-body">
 										<h5 className="card-title text-light font-bold">Season {r.year}</h5>
+										<h5 className="card-title text-light font-bold">Players - {r.players}</h5>
 										<p  className="card-text text-light">View the draft details from {r.year} season.</p>
 										<Button color="rgb(102, 16, 242)" content={'View Draft'} href={'/draft/' + r.year} />
 									</div>
