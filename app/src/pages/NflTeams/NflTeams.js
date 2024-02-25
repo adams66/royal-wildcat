@@ -56,7 +56,7 @@ function NflTeams() {
 							<div style={{overflow:"hidden", position:"relative",backgroundColor: userObj.color}} className="card p-0 p-md-2 round m-2 m-md-3"  >
 								<div  className="card-body d-flex flex-column align-items-center">
 								<img className=" mb-4 d-block" style={{ display: 'block' }}  width="100px" height="100px" src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}/>
-								<img className=" mb-4 d-block" style={{position:"absolute", left:"10%",top:"5%",opacity:"0.15", zIndex:"-1" }}  width="400px" height="400px" src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}/>
+								<img className=" mb-4 d-block" style={{position:"absolute", left:"-5%",top:"-10%",opacity:"0.15", zIndex:"-1" }}  width="400px" height="400px" src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}/>
 								<h5 className="card-title text-light font-bold text-center">{userObj.team}</h5>
 								<p className='text-light'> {userObj.conference == 1 ? "NFC" : "AFC"}</p>
 								</div>
