@@ -115,9 +115,9 @@ function DraftSeason(props) {
 							<a
 								onClick={(event) => page(draft, round, 'Previous')}
 								style={
-									round == 1 ? { background: 'red' } : { background: "red"}
+									round == 1 ? { background: 'rgb(102, 16, 242)' } : { background: "rgb(102, 16, 242)"}
 								}
-								className={theme + ' pageChanger btn  text-light'}
+								className='pageChanger btn  text-light'
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -139,9 +139,9 @@ function DraftSeason(props) {
 								onClick={(event) => page(draft, round, 'Next')}
 								style={
 									round == draft.rounds ? (
-										{ background: 'red' }
+										{ background: 'rgb(102, 16, 242)' }
 									) : (
-										{ background: "red" }
+										{ background: "rgb(102, 16, 242)" }
 									)
 								}
 								className={theme + ' pageChanger btn text-light'}
