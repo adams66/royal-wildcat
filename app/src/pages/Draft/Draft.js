@@ -43,11 +43,15 @@ function Draft() {
 						return (
 							<div className="col-12 col-md-6 col-lg-6 col-xl-3 p-0">
 								<div className="card p-2 round m-3 m-md-2" style={{ backgroundColor: '#101116' }}>
-									<div className="card-body">
+									<div className="card-body d-flex justify-content-between align-items-center">
+										<div>
+
 										<h5 className="card-title text-light font-bold">Season {r.year}</h5>
 										<h5 className="card-title text-light font-bold">Players - {r.players}</h5>
-										<p  className="card-text text-light">View the draft details from {r.year} season.</p>
+										</div>
+										<div>
 										<Button color="rgb(102, 16, 242)" content={'View Draft'} href={'/draft/' + r.year} />
+										</div>
 									</div>
 								</div>
 							</div>

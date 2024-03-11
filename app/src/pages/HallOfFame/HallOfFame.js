@@ -1,5 +1,6 @@
 import Key from "../../key/key.json";
 import Foundation from "../../layout/Foundation";
+import React, { useEffect, useState } from 'react';
 import "./hallOfFame.css"
 
 
