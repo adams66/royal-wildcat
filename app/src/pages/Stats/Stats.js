@@ -53,20 +53,14 @@ export default function YearSummary() {
     <Foundation>
       <div style={{height: "100vh"}} className="row d-flex justify-content-center align-items-center">
       <div className="col-12 h-100 grid-layout">
-    <div><h1 className="text-light">Total Points</h1></div>
-    <div><h1 className="text-light">Highest Score</h1></div>
-    <div><h1 className="text-light">Lowest Scorre</h1></div>
-    <div><h1 className="text-light">Win Streak</h1></div>
-    <div><h1 className="text-light">Lose Streak</h1></div>
-    <div><h1 className="text-light">Trades</h1></div>
-    <div><h1 className="text-light">SEASONS</h1></div>
-    <div></div>
-
+    <div style={{backgroundColor: "#101116"}}><h2 className="text-light">Total Points</h2></div>
+    <div style={{backgroundColor: "#101116"}}><h2 className="text-light">Highest Score</h2></div>
+    <div style={{backgroundColor: "#101116"}}><h2 className="text-light">Lowest Scorre</h2></div>
+    <div style={{backgroundColor: "#101116"}}><h2 className="text-light">Win Streak</h2></div>
+    <div style={{backgroundColor: "#101116"}}><h2 className="text-light">Lose Streak</h2></div>
+    <div style={{backgroundColor: "#101116"}}><h2 className="text-light">Trades</h2></div>
+    <div style={{backgroundColor: "#101116"}}><h2 className="text-light">SEASONS</h2></div>
       </div>
-
-
-
-
     </div>
     </Foundation>
   );

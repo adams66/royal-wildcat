@@ -17,7 +17,7 @@ function NotFound() {
 		<div style={{ height: '100vh' }} className="container-fluid">
 			<div style={{ height: '100%' }} className="row d-flex justify-content-center align-items-center">
 				<div className="col">
-					<h1 className="text-center text-light m-0">The Power of the dark side will lead you no where</h1>
+					<h1 className="text-center text-light m-0">This place doesn't exist.</h1>
 					<h3 style={{ opacity: '0', transition: '0.3s ease-in-out' }} className="fixthat text-center text-light m-0">I can fix that...</h3>
 				</div>
 			</div>

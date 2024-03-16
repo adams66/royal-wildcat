@@ -60,8 +60,9 @@ function NflTeams() {
 								<h5 className="card-title text-light font-bold text-center">{userObj.team}</h5>
 								<p className='text-light'> {userObj.conference == 1 ? "NFC" : "AFC"}</p>
 								</div>
-								<NavLink className="text-light text-center" to={'/nflTeams/' + userObj.team_url}>View</NavLink>
+							
 							</div>
+							
 						</div>
 					))}
 			</div>

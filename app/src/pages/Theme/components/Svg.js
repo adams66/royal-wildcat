@@ -162,6 +162,8 @@ export default function Svg(props) {
 					<div
 						className="col-12 d-flex justify-content-center logo"
 					>
+						
+
 						<svg
 							onClick={() => {click('jayhawk'); }}
 							className="jayhawk-svg hover"

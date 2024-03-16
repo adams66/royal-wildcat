@@ -45,7 +45,6 @@ function Draft() {
 								<div className="card p-2 round m-3 m-md-2" style={{ backgroundColor: '#101116' }}>
 									<div className="card-body d-flex justify-content-between align-items-center">
 										<div>
-
 										<h5 className="card-title text-light font-bold">Season {r.year}</h5>
 										<h5 className="card-title text-light font-bold">Players - {r.players}</h5>
 										</div>
