@@ -11,6 +11,7 @@ import Home from './pages/Home/Home';
 import Draft from './pages/Draft/Draft';
 import Theme from "./pages/Theme/Theme";
 import DraftSeason from "./pages/DraftSeason/DraftSeason";
+import DraftSeasonAll from './pages/DraftSeason/DraftSeasonAll';
 import HallOfFame from './pages/HallOfFame/HallOfFame';
 import Trophy from './pages/Trophy/Trophy';
 import NflTeams from './pages/NflTeams/NflTeams';
@@ -42,6 +43,7 @@ if(theme !== "undecided"){
   <Route path="/nflTeams" element={<NflTeams />}/> 
   <Route path="/map" element={<Map />}/> 
   {Key.draft.map((r) => {return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason  />}/>})}
+  {Key.draft.map((r) => {return <Route path={"/draft-all" + "/" + r.year }  element={<DraftSeasonAll  />}/>})}
   {Key.nflTeams.map((r) => {return <Route path={"/nflTeams" + "/" + r.teamUrl }  element={<NflTeamsSingle />}/>})}
   <Route path="/*" element={<NotFound />}/> 
   </Routes>

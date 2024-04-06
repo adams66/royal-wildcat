@@ -8,7 +8,6 @@ function Table_Body(props) {
 				return 'https://homebase.dal-10.com/nfl_logos/kansas_city_chiefs.svg';
 			case '1':
 				return 'https://homebase.dal-10.com/nfl_logos/arizona_cardinals.svg';
-
 			case '2':
 				return 'https://homebase.dal-10.com/nfl_logos/atlanta_falcons.svg';
 			case '3':
