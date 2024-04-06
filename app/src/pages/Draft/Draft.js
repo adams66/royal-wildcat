@@ -49,8 +49,8 @@ function Draft() {
 										<h5 className="card-title text-light font-bold">Players - {r.players}</h5>
 										</div>
 										<div>
-										<Button color="rgb(102, 16, 242)" content={'Page'} href={'/draft/' + r.year} />
-										<Button color="grey" content={'All'} href={'/draft-all/' + r.year} />
+									{/* <Button color="rgb(102, 16, 242)" content={'Page'} href={'/draft/' + r.year} /> */}
+										<Button color="rgb(102, 16, 242)" content={'View Draft'} href={'/draft/all/' + r.year} />
 
 										</div>
 									</div>

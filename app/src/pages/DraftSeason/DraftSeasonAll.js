@@ -32,7 +32,7 @@ function DraftSeasonAll(props) {
 	useEffect((year) => {
 		document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000000');
 		var url = window.location.href.split('/');
-		var year = url[4];
+		var year = url[5];
         console.log(year)
 		componentWillMount();
 		fetchData(year);

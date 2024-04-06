@@ -183,7 +183,7 @@ function DraftSeason(props) {
 								<h6 className="text-light">{userObj.fantasy_player}</h6>
 							</div>
 							<div className="col-5 d-flex align-items-center">
-							<img style={{width: "50px"}} src={nflTeam(userObj.nfl)} />
+							<img style={{width: "50px", height:"50px"}} src={nflTeam(userObj.nfl)} />
 								<Circle position={userObj.position} />
             
 							</div>

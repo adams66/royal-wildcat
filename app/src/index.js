@@ -43,7 +43,7 @@ if(theme !== "undecided"){
   <Route path="/nflTeams" element={<NflTeams />}/> 
   <Route path="/map" element={<Map />}/> 
   {Key.draft.map((r) => {return <Route path={"/draft" + "/" + r.year }  element={<DraftSeason  />}/>})}
-  {Key.draft.map((r) => {return <Route path={"/draft-all" + "/" + r.year }  element={<DraftSeasonAll  />}/>})}
+  {Key.draft.map((r) => {return <Route path={"/draft/all" + "/" + r.year }  element={<DraftSeasonAll  />}/>})}
   {Key.nflTeams.map((r) => {return <Route path={"/nflTeams" + "/" + r.teamUrl }  element={<NflTeamsSingle />}/>})}
   <Route path="/*" element={<NotFound />}/> 
   </Routes>
