@@ -1,5 +1,4 @@
-import * as helper from '../../helpers/helpers';
-import Key from '../../key/key.json';
+
 import React, { useEffect, useState } from 'react';
 
 import './draftSeason.css';
@@ -11,8 +10,6 @@ import Draft_Table from './componets/Table/Draft_Table';
 function DraftSeasonAll(props) {
 	const [ width, setWidth ] = useState(window.innerWidth);
 	const [ draft, setDraft ] = useState([]);
-
-	const [ theme, setTheme ] = useState();
 	const [ Load,  SetLoad  ] = useState(false);
  
 	const fetchData = (year) => {
@@ -86,14 +83,27 @@ function DraftSeasonAll(props) {
 		}
 	}
 
-	if(width >= 700) {
+	if(width >= 700 && draft.length > 0) {
 		return (
 			<Foundation>
 				<Draft_Table data={draft} />
-				
 			</Foundation>
 		);
-	} else {
+	}else if(width >= 700 && draft.length == 0){
+
+		return(
+			<Foundation>
+		
+			</Foundation>
+		)
+
+
+
+	}
+	
+	
+	
+	else {
 		return (
 			<Foundation>
 			
@@ -113,9 +123,8 @@ function DraftSeasonAll(props) {
 								<h6 className="text-light">{userObj.fantasy_player}</h6>
 							</div>
 							<div className="col-5 d-flex align-items-center">
-							<img style={{width: "50px"}} src={nflTeam(userObj.nfl)} />
+							<img alt="nfl" style={{width: "50px"}} src={nflTeam(userObj.nfl)} />
 								<Circle position={userObj.position} />
-            
 							</div>
 						</div>
 					))}

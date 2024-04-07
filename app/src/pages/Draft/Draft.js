@@ -1,11 +1,10 @@
-import * as helper from '../../helpers/helpers';
 
 import '../Draft/draft.css';
 import Button from '../../layout/components/Button/Button';
 import Foundation from '../../layout/Foundation';
 import Loading from '../../layout/loading/Loading';
 import React, { useEffect, useState } from 'react';
-import { TypeH1 } from 'react-bootstrap-icons';
+
 
 function Draft() {
 	const [ season, setSeason ] = useState([]);
@@ -28,7 +27,7 @@ function Draft() {
 
 	},[])
 
-	if(Load == false){
+	if(Load === false){
 		return (
 <Foundation>
 <Loading />
@@ -49,8 +48,8 @@ function Draft() {
 										<h5 className="card-title text-light font-bold">Players - {r.players}</h5>
 										</div>
 										<div>
-									{/* <Button color="rgb(102, 16, 242)" content={'Page'} href={'/draft/' + r.year} /> */}
-										<Button color="rgb(102, 16, 242)" content={'View Draft'} href={'/draft/all/' + r.year} />
+									<Button color="rgb(102, 16, 242)" content={'Pages'} href={'/draft/' + r.year} />
+										<Button color="rgb(102, 16, 242)" content={'All'} href={'/draft/all/' + r.year} />
 
 										</div>
 									</div>
