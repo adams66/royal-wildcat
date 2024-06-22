@@ -1,21 +1,47 @@
 import Foundation from "../../layout/Foundation";
+import Icon from "../../icons/Icon";
+import React, { useEffect, useState } from 'react';
+import TrophySingle from "./TrophySingle";
 
 function Trophy() {
+
+   const [ trophy, setTrophy] = useState(1);
+
+   function uno(){
+    setTrophy(1)
+    console.log("uno")
+
+   }
+
+   function dos(){
+    console.log("dos")
+    setTrophy(2)
+   }
+
     return (  
 
 <Foundation >
-<div class="row">
-    <div class="col d-flex justify-content-center ">
-    <video style={{width:"500px"}} autoPlay loop muted playsinline  src="https://homebase.dal-10.com/public/trophies/winner_trophy.mp4" />
-
+<div class="row position-relative vh-100 ">
+    <div class="col d-flex justify-content-center align-items-center">
+        <TrophySingle trophy={trophy} />
     </div>
 
-    <div class="col d-flex justify-content-center ">
+    <div>
+    <div onClick={()=>{uno()}} style={{"position": "absolute", "left": "30px","top":"50%"}}>
+    <Icon color={'red'} icon="bi bi-arrow-left-square" size="40px" />
+    </div>
+    <div onClick={()=>{dos()}} style={{"position": "absolute", "right": "30px", "top":"50%"}} >
+    <Icon  color={'red'} icon="bi bi-arrow-right-square" size="40px" />
+    </div>
 
-    <video style={{width:"300px"}} autoPlay loop muted playsinline  src="https://homebase.dal-10.com/public/trophies/loser_trophy.mp4" />
     </div>
 
 </div>
+
+
+
+ 
+
 </Foundation>
     );
 }
