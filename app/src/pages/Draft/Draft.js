@@ -48,8 +48,8 @@ function Draft() {
 										<h5 className="card-title text-light font-bold">Players - {r.players}</h5>
 										</div>
 										<div>
-									<Button color="rgb(102, 16, 242)" content={'Pages'} href={'/draft/' + r.year} />
-										<Button color="rgb(102, 16, 242)" content={'All'} href={'/draft/all/' + r.year} />
+									{/* <Button color="rgb(102, 16, 242)" content={'Pages'} href={'/draft/' + r.year} /> */}
+										<Button color="rgb(102, 16, 242)" content={'>'} href={'/draft/all/' + r.year} />
 
 										</div>
 									</div>
