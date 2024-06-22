@@ -45,7 +45,7 @@ function NflTeams() {
 	else{
 	return (
 		<Foundation>
-			<div style={{height:"100px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
+			<div style={{height:"80px", }} className='row m-1 m-md-3 text-light text-center d-flex justify-content-center align-items-center'>
 				<div className='col'>
 				<h1>NFL TEAMS</h1>
 				</div>
@@ -54,11 +54,11 @@ function NflTeams() {
 				{teams && teams.length > 0 && teams.map((userObj, index) => (
 						<div className="col-12 col-md-6 col-lg-3 p-0">
 							<div style={{overflow:"hidden", position:"relative",backgroundColor: userObj.color}} className="card p-0 p-md-2 round m-2 m-md-3"  >
-								<div  className="card-body d-flex flex-column align-items-center">
-								<img className=" mb-4 d-block" style={{ display: 'block' }}  width="100px" height="100px" src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}/>
-								<img className=" mb-4 d-block" style={{position:"absolute", left:"-5%",top:"-10%",opacity:"0.15", zIndex:"-1" }}  width="400px" height="400px" src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}/>
-								<h5 className="card-title text-light font-bold text-center">{userObj.team}</h5>
-								<p className='text-light'> {userObj.conference == 1 ? "NFC" : "AFC"}</p>
+								<div  className="card-body d-flex align-items-center justify-content-between">
+								<img className="d-block" style={{ display: 'block' }}  width="70px" height="70px" src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}/>
+								<img className=" d-block" style={{position:"absolute", left:"-%",top:"-70%",opacity:"0.15", zIndex:"-1" }}  width="400px" height="400px" src={'https://homebase.dal-10.com/nfl_logos/' + userObj.logo}/>
+								<h5 className="card-title text-light font-bold text-center m-0">{userObj.team}</h5>
+								{/* <p className='text-light'> {userObj.conference == 1 ? "NFC" : "AFC"}</p> */}
 								</div>
 							
 							</div>

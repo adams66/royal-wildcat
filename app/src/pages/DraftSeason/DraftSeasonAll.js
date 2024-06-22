@@ -119,8 +119,8 @@ function DraftSeasonAll(props) {
 							<div className="col-7 d-flex flex-column ">
 								<div className="text-light">Round: {userObj.overall_round}</div>
 								<div className="text-light">Overall: {userObj.overall_pick}</div>
-								<h6 className="text-light">{userObj.player_name}</h6>
-								<h6 className="text-light">{userObj.fantasy_player}</h6>
+								<h6 className="text-light" >{userObj.player_name}</h6>
+								<h6 className="text-light" >{userObj.fantasy_player}</h6>
 							</div>
 							<div className="col-5 d-flex align-items-center">
 							<img alt="nfl" style={{width: "50px"}} src={nflTeam(userObj.nfl)} />
