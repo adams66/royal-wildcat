@@ -51,6 +51,8 @@ if(theme !== "undecided"){
     </React.StrictMode>
   );
 }
+
+
 else{root.render(<Theme />);}
 
 
