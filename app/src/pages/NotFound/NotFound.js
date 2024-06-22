@@ -10,7 +10,7 @@ function NotFound() {
 	}
 
 	useEffect(() => {
-		document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000000');
+		document.querySelector('meta[name="theme-color"]').setAttribute('content',  'rgb(16, 17, 22)');
 		setTimeout(messageAction, 3000);
 	}, []);
 

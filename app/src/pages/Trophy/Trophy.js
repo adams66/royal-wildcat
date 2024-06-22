@@ -18,6 +18,11 @@ function Trophy() {
     setTrophy(2)
    }
 
+   useEffect(()=>{
+    document.querySelector('meta[name="theme-color"]').setAttribute('content',  'rgb(16, 17, 22)');
+
+   })
+
     return (  
 
 <Foundation >
