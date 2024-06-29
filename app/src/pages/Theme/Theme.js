@@ -50,7 +50,7 @@ function Theme() {
 	return (
 		<div style={{ overflow: 'hidden' }} className="container-fluid">
 			<div style={{ left: '0', right: '0' }} className="row position-fixed ">
-				<div className="col p-2">
+				<div className="col p-4">
 					<h1 className="text-center text-light">Select a Theme</h1>
 				</div>
 			</div>
