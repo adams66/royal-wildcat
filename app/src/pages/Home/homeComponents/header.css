@@ -1,0 +1,9 @@
+swiper-container{
+    height: 400px;
+    margin-top: 20px;
+}
+
+swiper-container > *{
+background-color: rgb(16, 17, 22);
+
+}

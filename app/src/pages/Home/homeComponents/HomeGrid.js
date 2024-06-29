@@ -4,7 +4,7 @@ import Key from '../../../key/key.json';
 
 function HomeGrid(props) {
 	return (
-		<div className="row m-3 m-md-4 m-lg-5">
+		<div className="row m-2 m-md-3 m-lg-3">
 			{Key.homeCards.map((r) => {
 				return (
 					<div className="col-12 col-md-6 col-lg-3 mb-3">
