@@ -3,7 +3,8 @@ swiper-container{
     margin-top: 20px;
 }
 
-swiper-container > *{
-background-color: rgb(16, 17, 22);
 
+
+swiper-slide video{
+    width: 100%;
 }
