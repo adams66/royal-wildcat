@@ -16,7 +16,7 @@ function Home(props) {
 	return (
 		<Foundation>
 			<HomeHeader cards={props.cards} />
-			<HomeGrid cards={props.cards}  />
+			{/* <HomeGrid cards={props.cards}  /> */}
 		</Foundation>
 	);
 }

@@ -11,6 +11,7 @@ function Foundation(props) {
 	const [hamburger, setHamburger] = useState(0);
 	const [hamburgerClass, setHamburgerClass] = useState("hamburger d-block d-xl-none");
 	const [sidebarSwitch, setSidebarSwitch] = useState("sidebar position-fixed d-none d-xl-block");
+	const [n, setN] = useState(0);
 
 
 	useEffect(()=>{
@@ -45,8 +46,8 @@ function Foundation(props) {
 	});
 
 	return (
-		<div>
-			<Sidebar classes={sidebarSwitch} />
+		<div> 
+			<Sidebar nav={n}classes={sidebarSwitch} />
 			<Main hamburgerFunction={hamburgerFunction} hamburgerClass={hamburgerClass}>
 				{props.children}
 			</Main>

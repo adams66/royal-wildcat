@@ -18,11 +18,13 @@ function NavLinks(props){
     let activeStyle = {fontWeight: "bolder",  color: "rgb(102, 16, 242)"};
     let normalStyle = {color: "#fff"}
 
+    
+
     return(
 
         <li  class="nav-item text-center">
         <NavLink onClick={click}  style={({ isActive }) =>
-              isActive ? activeStyle : normalStyle} className="sidebar-navLink nav-link" to={props.path}><div className="">{props.name}</div> <i className={props.icon +"d-none"} ></i>
+              isActive ? activeStyle : normalStyle} className="sidebar-navLink nav-link" to={props.path}><div className="">{props.name}</div> <i className={props.icon } ></i>
               </NavLink>
           </li>
 

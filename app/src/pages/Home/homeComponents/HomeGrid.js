@@ -8,9 +8,9 @@ function HomeGrid(props) {
 			{Key.homeCards.map((r) => {
 				return (
 					<div className="col-12 col-md-6 col-lg-3 mb-3">
-						<div className="card" style={{ height: '100%', backgroundColor: '#101116' }}>
-							<div style={{height:"250px"}} className="card-body p-3">
-		
+						<div className="card splash" style={{ height: '300px' }}>
+							<div  className="card-body p-0">
+							<a style={{"backgroundColor":"rgb(102, 16, 242)"}} className="btn btn-primary">Click</a>
 							</div>
 						</div>
 					</div>

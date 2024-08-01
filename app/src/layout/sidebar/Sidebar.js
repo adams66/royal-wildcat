@@ -9,7 +9,9 @@ import NavLinks from './Links';
 
 function Sidebar(props) {
 
-	
+	var title = <h2 className="text-center d-none d-xl-block logo" >{key.title}</h2>;
+	var icon =  <h2 className="text-center d-none d-xl-block logo" ><i className="bi bi-house-door-fill"></i> </h2>
+
 
 	function resetButton() {
 		localStorage.removeItem('theme');
@@ -23,17 +25,19 @@ function Sidebar(props) {
 		<div  className={props.classes + " background"}>
 			<div className="Logo p-3">
 				<a className="navbar-brand" href="/">
-					<h2 className="text-center d-none d-xl-block logo">{key.title}</h2>
+					
+					{props.nav == 0 ? title : icon }
+					
 				</a>
 			</div>
 
 			<ul class="nav flex-column navbar-dark">
-				<NavLinks  path="/" name="HOME" icon="bi bi-cloud" />
+				<NavLinks  path="/" name="HOME" icon="bi bi-house-door-fill" />
 				<NavLinks  path="/draft" name="DRAFT HISTORY" icon="bi bi-cloud" />
 				{/* <NavLinks  path="/overall" name="OVERALL" /> */}
 				{/* <NavLinks  path="/stats" name="STATS" /> */}
 				<NavLinks  path="/hall-of-fame" name="HALL OF FAME" icon="bi bi-cloud"/>
-				<NavLinks  path="/trophy" name="TROPHY" />
+				<NavLinks  path="/trophy" name="TROPHY" icon="bi bi-cloud" />
 				<NavLinks  path="/nflTeams" name="NFL TEAMS" icon="bi bi-cloud" />
 				{/* <NavLinks  path="/map" name="MAP" /> */}
 			</ul>
